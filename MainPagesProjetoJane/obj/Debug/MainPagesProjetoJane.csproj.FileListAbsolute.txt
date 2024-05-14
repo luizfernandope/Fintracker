@@ -1,0 +1,13 @@
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\bin\Debug\MainPagesProjetoJane.exe.config
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\bin\Debug\MainPagesProjetoJane.exe
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\bin\Debug\MainPagesProjetoJane.pdb
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.csproj.AssemblyReference.cache
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.Form1.resources
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.Properties.Resources.resources
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.csproj.GenerateResource.cache
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.csproj.CoreCompileInputs.cache
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.exe
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.pdb
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\bin\Debug\Guna.UI2.dll
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPage.11102EE9.Up2Date
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.homePage.resources

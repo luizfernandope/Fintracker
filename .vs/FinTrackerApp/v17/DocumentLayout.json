@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|d:\\repositorios\\c#\\mainpagesprojetojane\\mainpagesprojetojane\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\homePage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:MainPagesProjetoJane\\homePage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:MainPagesProjetoJane\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:MainPagesProjetoJane\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "homePage.cs",
+              "DocumentMoniker": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\homePage.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\homePage.cs",
+              "ToolTip": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\homePage.cs",
+              "RelativeToolTip": "MainPagesProjetoJane\\homePage.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:35:40.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "homePage.cs [Design]",
+              "DocumentMoniker": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\homePage.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\homePage.cs",
+              "ToolTip": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\homePage.cs [Design]",
+              "RelativeToolTip": "MainPagesProjetoJane\\homePage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:16:53.262Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Form1.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\Form1.cs",
+              "ToolTip": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Form1.cs",
+              "RelativeToolTip": "MainPagesProjetoJane\\Form1.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAASwBoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T01:00:11.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Form1.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\Form1.cs",
+              "ToolTip": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Form1.cs [Design]",
+              "RelativeToolTip": "MainPagesProjetoJane\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T23:44:44.083Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
