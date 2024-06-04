@@ -11,3 +11,8 @@ D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\FinTracke
 D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\FinTrack.A8D9643A.Up2Date
 D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.exe
 D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.pdb
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\bin\Debug\System.Data.SqlServerCe.dll
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\bin\Debug\PT\System.Data.SqlServerCe.resources.dll
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.ClientesPage.resources
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.NovoClienteForm.resources
+D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.Pages.ImportPage.resources

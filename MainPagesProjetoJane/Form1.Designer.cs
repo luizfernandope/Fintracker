@@ -122,6 +122,7 @@
             this.btnImportar.TabIndex = 2;
             this.btnImportar.Text = "Importar";
             this.btnImportar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnImportar.CheckedChanged += new System.EventHandler(this.btnImportar_CheckedChanged);
             // 
             // btnClientes
             // 
@@ -151,6 +152,7 @@
             this.btnClientes.TabIndex = 2;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnClientes.CheckedChanged += new System.EventHandler(this.btnClientes_CheckedChanged);
             // 
             // btnFornecedores
             // 
@@ -297,6 +299,7 @@
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Visão Geral";
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnHome.CheckedChanged += new System.EventHandler(this.btnHome_CheckedChanged);
             // 
             // pictureBox1
             // 
@@ -356,6 +359,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
