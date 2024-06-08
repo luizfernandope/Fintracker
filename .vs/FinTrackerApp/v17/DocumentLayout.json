@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\",
+  "WorkspaceRootPath": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|d:\\repositorios\\c#\\mainpagesprojetojane\\mainpagesprojetojane\\pages\\importpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\pages\\importpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|c:\\users\\murilo\\desktop\\projeto jane\\fintracker\\mainpagesprojetojane\\novoclienteform2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\novoclienteform2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|d:\\repositorios\\c#\\mainpagesprojetojane\\mainpagesprojetojane\\pages\\importpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\pages\\importpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|c:\\users\\murilo\\desktop\\projeto jane\\fintracker\\mainpagesprojetojane\\clientespage2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\clientespage2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|d:\\repositorios\\c#\\mainpagesprojetojane\\mainpagesprojetojane\\novoclienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\novoclienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|c:\\users\\murilo\\desktop\\projeto jane\\fintracker\\mainpagesprojetojane\\novofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\novofornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +22,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NovoClienteForm.cs [Design]",
-              "DocumentMoniker": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\NovoClienteForm.cs",
-              "RelativeDocumentMoniker": "MainPagesProjetoJane\\NovoClienteForm.cs",
-              "ToolTip": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\NovoClienteForm.cs [Design]",
-              "RelativeToolTip": "MainPagesProjetoJane\\NovoClienteForm.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "NovoClienteForm2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\NovoClienteForm2.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\NovoClienteForm2.cs",
+              "ToolTip": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\NovoClienteForm2.cs [Design]",
+              "RelativeToolTip": "MainPagesProjetoJane\\NovoClienteForm2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T02:12:05.033Z",
+              "WhenOpened": "2024-06-08T21:21:20.853Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ImportPage.cs",
-              "DocumentMoniker": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "RelativeDocumentMoniker": "MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "ToolTip": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "RelativeToolTip": "MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAhwBkAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "NovoFornecedor.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\NovoFornecedor.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\NovoFornecedor.cs",
+              "ToolTip": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\NovoFornecedor.cs [Design]",
+              "RelativeToolTip": "MainPagesProjetoJane\\NovoFornecedor.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T02:09:21.501Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-08T21:21:15.63Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ImportPage.cs [Design]",
-              "DocumentMoniker": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "RelativeDocumentMoniker": "MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "ToolTip": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Pages\\ImportPage.cs [Design]",
-              "RelativeToolTip": "MainPagesProjetoJane\\Pages\\ImportPage.cs [Design]",
+              "Title": "ClientesPage2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\ClientesPage2.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\ClientesPage2.cs",
+              "ToolTip": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\ClientesPage2.cs [Design]",
+              "RelativeToolTip": "MainPagesProjetoJane\\ClientesPage2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T22:51:51.895Z",
+              "WhenOpened": "2024-06-08T21:09:56.564Z",
               "EditorCaption": " [Design]"
             }
           ]
