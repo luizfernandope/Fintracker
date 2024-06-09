@@ -1,18 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\",
+  "WorkspaceRootPath": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|d:\\repositorios\\c#\\mainpagesprojetojane\\mainpagesprojetojane\\pages\\importpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\pages\\importpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|c:\\users\\murilo\\desktop\\projeto jane\\fintracker\\mainpagesprojetojane\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|d:\\repositorios\\c#\\mainpagesprojetojane\\mainpagesprojetojane\\pages\\importpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\pages\\importpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|c:\\users\\murilo\\desktop\\projeto jane\\fintracker\\mainpagesprojetojane\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\homepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|d:\\repositorios\\c#\\mainpagesprojetojane\\mainpagesprojetojane\\novoclienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\novoclienteform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\mainpagesprojetojane\\clientespage2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\clientespage2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\mainpagesprojetojane\\clientespage2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\clientespage2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|c:\\users\\murilo\\desktop\\projeto jane\\fintracker\\mainpagesprojetojane\\clientespage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{956A7DA4-667B-4F09-B9CF-E09ABEF610F7}|MainPagesProjetoJane\\FinTrackerApp.csproj|solutionrelative:mainpagesprojetojane\\clientespage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,39 +34,65 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NovoClienteForm.cs [Design]",
-              "DocumentMoniker": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\NovoClienteForm.cs",
-              "RelativeDocumentMoniker": "MainPagesProjetoJane\\NovoClienteForm.cs",
-              "ToolTip": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\NovoClienteForm.cs [Design]",
-              "RelativeToolTip": "MainPagesProjetoJane\\NovoClienteForm.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "ClientesPage.cs",
+              "DocumentMoniker": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\ClientesPage.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\ClientesPage.cs",
+              "ToolTip": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\ClientesPage.cs",
+              "RelativeToolTip": "MainPagesProjetoJane\\ClientesPage.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAgwB8AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T02:12:05.033Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-09T01:59:44.45Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ImportPage.cs",
-              "DocumentMoniker": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "RelativeDocumentMoniker": "MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "ToolTip": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "RelativeToolTip": "MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAhwBkAAAAAAAAA",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\Form1.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\Form1.cs",
+              "ToolTip": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\Form1.cs",
+              "RelativeToolTip": "MainPagesProjetoJane\\Form1.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAYwCgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T02:09:21.501Z",
+              "WhenOpened": "2024-06-09T01:45:03.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ImportPage.cs [Design]",
-              "DocumentMoniker": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "RelativeDocumentMoniker": "MainPagesProjetoJane\\Pages\\ImportPage.cs",
-              "ToolTip": "D:\\Repositorios\\C#\\MainPagesProjetoJane\\MainPagesProjetoJane\\Pages\\ImportPage.cs [Design]",
-              "RelativeToolTip": "MainPagesProjetoJane\\Pages\\ImportPage.cs [Design]",
+              "Title": "homePage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\homePage.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\homePage.cs",
+              "ToolTip": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\homePage.cs [Design]",
+              "RelativeToolTip": "MainPagesProjetoJane\\homePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T22:51:51.895Z",
+              "WhenOpened": "2024-06-09T01:44:49.457Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientesPage2.cs",
+              "DocumentMoniker": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\ClientesPage2.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\ClientesPage2.cs",
+              "ToolTip": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\ClientesPage2.cs",
+              "RelativeToolTip": "MainPagesProjetoJane\\ClientesPage2.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAADwvyUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-09T00:04:27.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientesPage2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\ClientesPage2.cs",
+              "RelativeDocumentMoniker": "MainPagesProjetoJane\\ClientesPage2.cs",
+              "ToolTip": "C:\\Users\\Murilo\\Desktop\\Projeto Jane\\Fintracker\\MainPagesProjetoJane\\ClientesPage2.cs [Design]",
+              "RelativeToolTip": "MainPagesProjetoJane\\ClientesPage2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T21:09:56.564Z",
               "EditorCaption": " [Design]"
             }
           ]

@@ -153,6 +153,7 @@
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnClientes.CheckedChanged += new System.EventHandler(this.btnClientes_CheckedChanged);
+            this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
             // btnFornecedores
             // 
@@ -182,6 +183,7 @@
             this.btnFornecedores.TabIndex = 2;
             this.btnFornecedores.Text = "Fornecedores";
             this.btnFornecedores.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnFornecedores.Click += new System.EventHandler(this.btnFornecedores_Click);
             // 
             // btnContas
             // 
@@ -318,7 +320,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(210, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1090, 73);
+            this.panel2.Size = new System.Drawing.Size(1074, 73);
             this.panel2.TabIndex = 1;
             // 
             // lblData
@@ -338,7 +340,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 72);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1090, 1);
+            this.panel3.Size = new System.Drawing.Size(1074, 1);
             this.panel3.TabIndex = 0;
             // 
             // panelPrincipal
@@ -346,14 +348,14 @@
             this.panelPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelPrincipal.Location = new System.Drawing.Point(210, 73);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(1090, 647);
+            this.panelPrincipal.Size = new System.Drawing.Size(1074, 647);
             this.panelPrincipal.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(1300, 720);
+            this.ClientSize = new System.Drawing.Size(1284, 720);
             this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

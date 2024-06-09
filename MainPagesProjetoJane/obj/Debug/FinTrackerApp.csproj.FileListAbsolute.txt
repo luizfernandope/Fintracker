@@ -16,3 +16,24 @@ D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\bin\Debug\PT\System
 D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.ClientesPage.resources
 D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.NovoClienteForm.resources
 D:\Repositorios\C#\MainPagesProjetoJane\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.Pages.ImportPage.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\bin\Debug\MainPagesProjetoJane.exe.config
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\bin\Debug\MainPagesProjetoJane.exe
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\bin\Debug\MainPagesProjetoJane.pdb
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\bin\Debug\Guna.UI2.dll
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\bin\Debug\PT\System.Data.SqlServerCe.resources.dll
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\FinTrackerApp.csproj.AssemblyReference.cache
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.ClientesPage.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.ClientesPage2.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.Form1.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.homePage.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.NovoClienteForm.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.Pages.ImportPage.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.Properties.Resources.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\FinTrackerApp.csproj.GenerateResource.cache
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\FinTrackerApp.csproj.CoreCompileInputs.cache
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\FinTrack.A8D9643A.Up2Date
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.exe
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.pdb
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.FornecedoresPage.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.NovoClienteForm2.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.NovoFornecedor.resources
