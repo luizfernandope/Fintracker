@@ -48,7 +48,7 @@
             btnAdicionarCliente.ForeColor = System.Drawing.SystemColors.Control;
             btnAdicionarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnAdicionarCliente.Image")));
             btnAdicionarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnAdicionarCliente.Location = new System.Drawing.Point(1125, 77);
+            btnAdicionarCliente.Location = new System.Drawing.Point(716, 76);
             btnAdicionarCliente.Name = "btnAdicionarCliente";
             btnAdicionarCliente.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             btnAdicionarCliente.Size = new System.Drawing.Size(113, 51);
@@ -56,6 +56,7 @@
             btnAdicionarCliente.Text = "Novo Cliente";
             btnAdicionarCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             btnAdicionarCliente.UseVisualStyleBackColor = false;
+            btnAdicionarCliente.Click += new System.EventHandler(this.btnAdicionarCliente_Click);
             // 
             // label1
             // 
@@ -76,6 +77,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(327, 58);
             this.textBox1.TabIndex = 13;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dataGridView1
             // 
@@ -94,7 +96,7 @@
             this.btnExcluir.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcluir.Location = new System.Drawing.Point(1018, 77);
+            this.btnExcluir.Location = new System.Drawing.Point(609, 76);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(92, 51);
             this.btnExcluir.TabIndex = 17;

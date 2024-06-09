@@ -63,26 +63,6 @@ namespace MainPagesProjetoJane.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Captura_de_tela_2024_06_08_171138 {
-            get {
-                object obj = ResourceManager.GetObject("Captura de tela 2024-06-08 171138", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Captura_de_tela_2024_06_08_172705 {
-            get {
-                object obj = ResourceManager.GetObject("Captura de tela 2024-06-08 172705", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icon_coins {
             get {
                 object obj = ResourceManager.GetObject("icon_coins", resourceCulture);

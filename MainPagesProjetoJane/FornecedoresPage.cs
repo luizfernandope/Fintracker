@@ -16,5 +16,12 @@ namespace MainPagesProjetoJane
         {
             InitializeComponent();
         }
+
+
+        private void btnAdicionarFornecedor_Click(object sender, EventArgs e)
+        {
+            NovoFornecedor novoFornecedor = new NovoFornecedor();
+            novoFornecedor.Show();
+        }
     }
 }

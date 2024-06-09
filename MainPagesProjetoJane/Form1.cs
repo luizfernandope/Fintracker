@@ -49,13 +49,24 @@ namespace MainPagesProjetoJane
         private void btnClientes_CheckedChanged(object sender, EventArgs e)
         {
             if (btnClientes.Checked)
-                trocarTela(new ClientesPage());
+                trocarTela(new ClientesPage2());
         }
 
         private void btnImportar_CheckedChanged(object sender, EventArgs e)
         {
             if (btnImportar.Checked)
                 trocarTela(new ImportPage());
+        }
+
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFornecedores_Click(object sender, EventArgs e)
+        {
+            if (btnFornecedores.Checked)
+                trocarTela(new FornecedoresPage());
         }
     }
 }

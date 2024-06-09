@@ -34,3 +34,6 @@ C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\F
 C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\FinTrack.A8D9643A.Up2Date
 C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.exe
 C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.pdb
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.FornecedoresPage.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.NovoClienteForm2.resources
+C:\Users\Murilo\Desktop\Projeto Jane\Fintracker\MainPagesProjetoJane\obj\Debug\MainPagesProjetoJane.NovoFornecedor.resources

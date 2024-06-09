@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MainPagesProjetoJane.Models;
+using MainPagesProjetoJane;
 
 namespace MainPagesProjetoJane
 {
@@ -15,6 +17,25 @@ namespace MainPagesProjetoJane
         public ClientesPage2()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            DataBaseInterface dataBase = new DataBaseInterface();
+            DataTable dataTable = dataBase.buscaClientesAuto(textBox1.Text);
+            if (dataTable != null)
+            {
+                foreach (DataRow row in dataTable.Rows)
+                {
+                    dataGridView1.Rows.Add(row.ItemArray);
+                }
+            }
+        }
+
+        private void btnAdicionarCliente_Click(object sender, EventArgs e)
+        {
+            NovoClienteForm2 novoCliente = new NovoClienteForm2();
+            novoCliente.Show();
         }
     }
 }

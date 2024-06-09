@@ -28,18 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.Button btnAdicionarFornecedor;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FornecedoresPage));
-            System.Windows.Forms.Button btnAdicionarCliente;
             this.button1 = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            btnAdicionarCliente = new System.Windows.Forms.Button();
+            btnAdicionarFornecedor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnAdicionarFornecedor
+            // 
+            btnAdicionarFornecedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            btnAdicionarFornecedor.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnAdicionarFornecedor.ForeColor = System.Drawing.SystemColors.Control;
+            btnAdicionarFornecedor.Image = ((System.Drawing.Image)(resources.GetObject("btnAdicionarFornecedor.Image")));
+            btnAdicionarFornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnAdicionarFornecedor.Location = new System.Drawing.Point(655, 73);
+            btnAdicionarFornecedor.Name = "btnAdicionarFornecedor";
+            btnAdicionarFornecedor.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            btnAdicionarFornecedor.Size = new System.Drawing.Size(138, 51);
+            btnAdicionarFornecedor.TabIndex = 23;
+            btnAdicionarFornecedor.Text = "Novo Fornecedor";
+            btnAdicionarFornecedor.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnAdicionarFornecedor.UseVisualStyleBackColor = false;
+            btnAdicionarFornecedor.Click += new System.EventHandler(this.btnAdicionarFornecedor_Click);
             // 
             // button1
             // 
@@ -61,7 +78,7 @@
             this.btnExcluir.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnExcluir.Image = ((System.Drawing.Image)(resources.GetObject("btnExcluir.Image")));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExcluir.Location = new System.Drawing.Point(1016, 72);
+            this.btnExcluir.Location = new System.Drawing.Point(547, 72);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(92, 51);
             this.btnExcluir.TabIndex = 24;
@@ -69,22 +86,6 @@
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcluir.UseVisualStyleBackColor = false;
-            // 
-            // btnAdicionarCliente
-            // 
-            btnAdicionarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            btnAdicionarCliente.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btnAdicionarCliente.ForeColor = System.Drawing.SystemColors.Control;
-            btnAdicionarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnAdicionarCliente.Image")));
-            btnAdicionarCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnAdicionarCliente.Location = new System.Drawing.Point(1124, 73);
-            btnAdicionarCliente.Name = "btnAdicionarCliente";
-            btnAdicionarCliente.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            btnAdicionarCliente.Size = new System.Drawing.Size(138, 51);
-            btnAdicionarCliente.TabIndex = 23;
-            btnAdicionarCliente.Text = "Novo Fornecedor";
-            btnAdicionarCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            btnAdicionarCliente.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -135,7 +136,7 @@
             this.ClientSize = new System.Drawing.Size(1284, 681);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnExcluir);
-            this.Controls.Add(btnAdicionarCliente);
+            this.Controls.Add(btnAdicionarFornecedor);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
