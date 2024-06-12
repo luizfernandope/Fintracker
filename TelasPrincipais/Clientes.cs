@@ -17,5 +17,10 @@ namespace FinTracker.TelasPrincipais
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
         }
+
+        private void pnlPesquisarCliente_Click(object sender, EventArgs e)
+        {
+            txbPesquisa.Focus();
+        }
     }
 }

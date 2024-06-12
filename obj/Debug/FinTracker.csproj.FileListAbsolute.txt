@@ -17,3 +17,6 @@ D:\Repositorios\C#\FinTracker\obj\Debug\FinTracker.csproj.CoreCompileInputs.cach
 D:\Repositorios\C#\FinTracker\obj\Debug\FinTracker.csproj.Up2Date
 D:\Repositorios\C#\FinTracker\obj\Debug\FinTracker.exe
 D:\Repositorios\C#\FinTracker\obj\Debug\FinTracker.pdb
+D:\Repositorios\C#\FinTracker\bin\Debug\CircularProgressBar.dll
+D:\Repositorios\C#\FinTracker\bin\Debug\WinFormAnimation.dll
+D:\Repositorios\C#\FinTracker\bin\Debug\CircularProgressBar.xml

@@ -18,8 +18,10 @@ namespace FinTracker.Telas
         {
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
-            mudarAlturaComboBox(comboBox1, 27);
+            
             dateTimePicker1.MaxDate = DateTime.Today;
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
             
         }
 
