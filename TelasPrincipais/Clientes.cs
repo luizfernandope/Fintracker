@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinTracker.AlternativeTelas;
 
 namespace FinTracker.TelasPrincipais
 {
@@ -21,6 +22,12 @@ namespace FinTracker.TelasPrincipais
         private void pnlPesquisarCliente_Click(object sender, EventArgs e)
         {
             txbPesquisa.Focus();
+        }
+
+        private void btnNovoCliente_Click(object sender, EventArgs e)
+        {
+            ClienteFormManipulacao formManipulacao = new ClienteFormManipulacao();
+            formManipulacao.Show();
         }
     }
 }

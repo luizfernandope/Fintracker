@@ -3,36 +3,56 @@
   "WorkspaceRootPath": "D:\\Repositorios\\C#\\FinTracker\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|d:\\repositorios\\c#\\fintracker\\telasprincipais\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|d:\\repositorios\\c#\\fintracker\\telasprincipais\\pagamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\pagamentos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|d:\\repositorios\\c#\\fintracker\\telasprincipais\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|d:\\repositorios\\c#\\fintracker\\telasprincipais\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|d:\\repositorios\\c#\\fintracker\\telasprincipais\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|d:\\repositorios\\c#\\fintracker\\telasprincipais\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|D:\\Repositorios\\C#\\FinTracker\\telasprincipais\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|D:\\Repositorios\\C#\\FinTracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|D:\\Repositorios\\C#\\FinTracker\\telasprincipais\\importar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\importar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|D:\\Repositorios\\C#\\FinTracker\\telasprincipais\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Repositorios\\C#\\FinTracker\\packages\\CircularProgressBar.2.8.0.16\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:packages\\CircularProgressBar.2.8.0.16\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|D:\\Repositorios\\C#\\FinTracker\\telasprincipais\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|D:\\Repositorios\\C#\\FinTracker\\telasprincipais\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|D:\\Repositorios\\C#\\FinTracker\\alternativetelas\\clienteformmanipulacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:alternativetelas\\clienteformmanipulacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|d:\\repositorios\\c#\\fintracker\\telasprincipais\\fornecedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\fornecedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|D:\\Repositorios\\C#\\FinTracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|D:\\Repositorios\\C#\\FinTracker\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|D:\\Repositorios\\C#\\FinTracker\\telasprincipais\\importar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{88BC61AC-6F38-456E-B796-B66EE14450CE}|FinTracker.csproj|solutionrelative:telasprincipais\\importar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,24 +62,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pagamentos.cs [Design]",
+              "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Pagamentos.cs",
+              "RelativeDocumentMoniker": "TelasPrincipais\\Pagamentos.cs",
+              "ToolTip": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Pagamentos.cs [Design]",
+              "RelativeToolTip": "TelasPrincipais\\Pagamentos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T01:49:51.879Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Vendas.cs",
+              "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Vendas.cs",
+              "RelativeDocumentMoniker": "TelasPrincipais\\Vendas.cs",
+              "ToolTip": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Vendas.cs",
+              "RelativeToolTip": "TelasPrincipais\\Vendas.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAMwBMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T01:38:37.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Vendas.cs [Design]",
+              "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Vendas.cs",
+              "RelativeDocumentMoniker": "TelasPrincipais\\Vendas.cs",
+              "ToolTip": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Vendas.cs [Design]",
+              "RelativeToolTip": "TelasPrincipais\\Vendas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T01:33:06.74Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Fornecedores.cs [Design]",
+              "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Fornecedores.cs",
+              "RelativeDocumentMoniker": "TelasPrincipais\\Fornecedores.cs",
+              "ToolTip": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Fornecedores.cs [Design]",
+              "RelativeToolTip": "TelasPrincipais\\Fornecedores.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T00:59:21.946Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteFormManipulacao.cs [Design]",
+              "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\AlternativeTelas\\ClienteFormManipulacao.cs",
+              "RelativeDocumentMoniker": "AlternativeTelas\\ClienteFormManipulacao.cs",
+              "ToolTip": "D:\\Repositorios\\C#\\FinTracker\\AlternativeTelas\\ClienteFormManipulacao.cs [Design]",
+              "RelativeToolTip": "AlternativeTelas\\ClienteFormManipulacao.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T00:41:33.975Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Clientes.cs",
               "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Clientes.cs",
               "RelativeDocumentMoniker": "TelasPrincipais\\Clientes.cs",
               "ToolTip": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Clientes.cs",
               "RelativeToolTip": "TelasPrincipais\\Clientes.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAD4vxYAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-11T23:53:34.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Clientes.cs [Design]",
               "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Clientes.cs",
               "RelativeDocumentMoniker": "TelasPrincipais\\Clientes.cs",
@@ -71,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "readme.txt",
               "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\packages\\CircularProgressBar.2.8.0.16\\readme.txt",
               "RelativeDocumentMoniker": "packages\\CircularProgressBar.2.8.0.16\\readme.txt",
@@ -79,11 +160,12 @@
               "RelativeToolTip": "packages\\CircularProgressBar.2.8.0.16\\readme.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-06-11T01:26:35.639Z"
+              "WhenOpened": "2024-06-11T01:26:35.639Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Home.cs",
               "RelativeDocumentMoniker": "TelasPrincipais\\Home.cs",
@@ -101,39 +183,38 @@
               "RelativeDocumentMoniker": "TelasPrincipais\\Home.cs",
               "ToolTip": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Home.cs",
               "RelativeToolTip": "TelasPrincipais\\Home.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T03:54:54.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "D:\\Repositorios\\C#\\FinTracker\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAEcAAAARAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAEQAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T03:56:09.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Importar.cs [Design]",
               "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Importar.cs",
               "RelativeDocumentMoniker": "TelasPrincipais\\Importar.cs",
               "ToolTip": "D:\\Repositorios\\C#\\FinTracker\\TelasPrincipais\\Importar.cs [Design]",
               "RelativeToolTip": "TelasPrincipais\\Importar.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T01:47:31.99Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-09T01:47:31.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\Repositorios\\C#\\FinTracker\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

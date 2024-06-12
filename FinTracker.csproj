@@ -71,6 +71,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlternativeTelas\ClienteFormManipulacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternativeTelas\ClienteFormManipulacao.Designer.cs">
+      <DependentUpon>ClienteFormManipulacao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     <Compile Include="TelasPrincipais\Vendas.Designer.cs">
       <DependentUpon>Vendas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AlternativeTelas\ClienteFormManipulacao.resx">
+      <DependentUpon>ClienteFormManipulacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -275,7 +284,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AlternativeTelas\" />
     <Folder Include="BD\" />
     <Folder Include="Models\" />
   </ItemGroup>

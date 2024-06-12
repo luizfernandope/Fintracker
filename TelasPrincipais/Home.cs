@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinTracker.AlternativeTelas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,7 +23,6 @@ namespace FinTracker.Telas
             dateTimePicker1.MaxDate = DateTime.Today;
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
-            
         }
 
         /*
