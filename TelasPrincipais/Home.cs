@@ -1,4 +1,5 @@
 ﻿using FinTracker.AlternativeTelas;
+using FinTracker.TelasPrincipais;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -85,5 +86,10 @@ namespace FinTracker.Telas
             combo.Refresh();
         }
 
+        private void pnlVerPerfil_Click(object sender, MouseEventArgs e)
+        {
+            Perfil perfil = new Perfil();
+            perfil.Show();
+        }
     }
 }

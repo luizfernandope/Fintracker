@@ -17,5 +17,11 @@ namespace FinTracker.TelasPrincipais
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
         }
+
+        private void pnlVerPerfil_Click(object sender, MouseEventArgs e)
+        {
+            Perfil perfil = new Perfil();
+            perfil.Show();
+        }
     }
 }

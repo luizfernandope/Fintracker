@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Resources;
+using FinTracker.Properties;
 
 namespace FinTracker.TelasPrincipais
 {
@@ -16,6 +18,13 @@ namespace FinTracker.TelasPrincipais
         {
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
+        }
+
+
+        private void pnlVerPerfil_Click(object sender, MouseEventArgs e)
+        {
+            Perfil perfil = new Perfil();
+            perfil.Show();
         }
     }
 }

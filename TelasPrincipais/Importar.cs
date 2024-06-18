@@ -1,4 +1,5 @@
-﻿using MiniExcelLibs;
+﻿using FinTracker.TelasPrincipais;
+using MiniExcelLibs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +19,6 @@ namespace FinTracker.Telas
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
         }
-
         private void panel1_DragDrop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
@@ -55,6 +55,12 @@ namespace FinTracker.Telas
                     dataGridView1.Rows.Add(user.RA, user.Turma, user.Pronome, user.Matricula, user.Aluno, user.Curso);
                 }
             }
+        }
+
+        private void pnlVerPerfil_Click(object sender, MouseEventArgs e)
+        {
+            Perfil perfil = new Perfil();
+            perfil.Show();
         }
     }
     public class UserAccount

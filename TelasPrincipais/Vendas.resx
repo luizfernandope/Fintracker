@@ -121,7 +121,7 @@
   <data name="btn_EditVenda.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAb8AAADCCAYAAADZ2MzZAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAA2C5JREFUeF61/fn//2+bF3T5f2QLLRSZZIu2GIJZaZpptFpWWobiRostkgMXsji4
+        vwAADr8BOAVTJAAA2C5JREFUeF61/fn//2+bF3T5f2QLLRSZZIu2GIJZaZpptFpWWobiRostkgMXsji4
         sA2oQFlkFmZithuXwsDAsM3AOMCwydYFI9sE/APfjv14HMt5Pp+vz/fih8ftfL3f/8D99jjO5fkX/cXf
         8a99hfm3en7ar5H82yD/9p9O+cavpfyar/4dtPb8KMi/k/Mzvjvy7/L8w9/91b+75Nd99e+h/OifSauF
         f3P+vT/r11N81fz7fnbmx3h+zvd89e9v+Us8/8j3fPUfiPwGyV/6nZkf6/m5mv/gz/2NJX/ZP8r5Xln/
@@ -1049,7 +1049,7 @@
   <data name="btn_DelVenda.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAcAAAADLCAYAAAD5lUMEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAxH9JREFUeF693fv//39Wz3uXi0ZGOUWMVCgUpZIkhUonoYNTopMkERUjo4ki6UD9
+        vwAADr8BOAVTJAAAxH9JREFUeF693fv//39Wz3uXi0ZGOUWMVCgUpZIkhUonoYNTopMkERUjo4ki6UD9
         O6ZB35kpo2bbythbNfbe1RSaaTs0k0Nk67Mfaz3XWs/7uj/Wejwfz9f7nR/ul+f7/RdcL7fH8/D6OX//
         5/7cF3//Xd7l3MtkL3vxGt/P+3mxb3vXdz33839+7LUvf3neL/gFun8ge7d3O/fusneP/cNf+AvzftEv
         0v2jX/yL837JL3nx7b5f+kt1L73He7z49vcYf4/rS7/sl8375b/8xeve8z2P4d9jr/8Vv+Lcr/yVL95g
@@ -1893,7 +1893,7 @@
   <data name="btn_AdVenda.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAcAAAADFCAYAAADDnyJ0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAA5XNJREFUeF613ee6vstR3/k5jBnbe4wNOAgQFkGACCKJDAIRhJAQSIKNALNBBIFA
+        vgAADr4B6kKxwAAA5XNJREFUeF613ee6vstR3/k5jBnbe4wNOAgQFkGACCKJDAIRhJAQSIKNALNBBIFA
         EiLnjG1McADhMB5sJnjswR7Dma2pXL+qru77ftZ/86KuZ53B5/pWd9/rf/qfP+FjnnT+jsz/8ok8f/fp
         f/mkv/v0N2I+9ulvvPZjn/4mzyd/XMzf+kc8H6/zuo9/eul1f0/nU3T+10/5+zqfyvMPnv72p+l8zKf/
         Q/r9h/Ir8/rXPP0dn8/4BJm/6/OZnyjzsZ/F80k6b/ikp497w2tjPv6zP1nnc3T+3uf8o6e/97k5f//z

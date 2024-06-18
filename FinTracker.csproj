@@ -77,6 +77,18 @@
     <Compile Include="AlternativeTelas\ClienteFormManipulacao.Designer.cs">
       <DependentUpon>ClienteFormManipulacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlternativeTelas\EditarPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternativeTelas\EditarPerfil.Designer.cs">
+      <DependentUpon>EditarPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlternativeTelas\MudarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternativeTelas\MudarSenha.Designer.cs">
+      <DependentUpon>MudarSenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +133,12 @@
     <Compile Include="TelasPrincipais\Pagamentos.Designer.cs">
       <DependentUpon>Pagamentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelasPrincipais\Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasPrincipais\Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelasPrincipais\Vendas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +147,12 @@
     </Compile>
     <EmbeddedResource Include="AlternativeTelas\ClienteFormManipulacao.resx">
       <DependentUpon>ClienteFormManipulacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlternativeTelas\EditarPerfil.resx">
+      <DependentUpon>EditarPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlternativeTelas\MudarSenha.resx">
+      <DependentUpon>MudarSenha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -160,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelasPrincipais\Pagamentos.resx">
       <DependentUpon>Pagamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelasPrincipais\Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelasPrincipais\Vendas.resx">
       <DependentUpon>Vendas.cs</DependentUpon>
@@ -286,6 +313,9 @@
   <ItemGroup>
     <Folder Include="BD\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\shapes_backgrounds\whiteCardBg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

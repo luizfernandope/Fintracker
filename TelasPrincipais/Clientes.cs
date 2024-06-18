@@ -18,7 +18,6 @@ namespace FinTracker.TelasPrincipais
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
         }
-
         private void pnlPesquisarCliente_Click(object sender, EventArgs e)
         {
             txbPesquisa.Focus();
@@ -28,6 +27,12 @@ namespace FinTracker.TelasPrincipais
         {
             ClienteFormManipulacao formManipulacao = new ClienteFormManipulacao();
             formManipulacao.Show();
+        }
+
+        private void pnlVerPerfil_Click(object sender, MouseEventArgs e)
+        {
+            Perfil perfil = new Perfil();
+            perfil.Show();
         }
     }
 }
