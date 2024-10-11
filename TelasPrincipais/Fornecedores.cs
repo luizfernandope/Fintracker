@@ -46,7 +46,7 @@ namespace FinTracker.TelasPrincipais
             dataGridView1.Columns["cidade"].MinimumWidth = 46;
             dataGridView1.Columns["Estado"].MinimumWidth = 42;
             dataGridView1.Columns["cep"].MinimumWidth = 60;
-            dataGridView1.Columns["telefone"].MinimumWidth = 70;
+            dataGridView1.Columns["telefone"].MinimumWidth = 86;
             dataGridView1.Columns["email"].MinimumWidth = 40;
             dataGridView1.Columns["status"].MinimumWidth = 40;
             dataGridView1.Columns["nome"].FillWeight = 4;
