@@ -1,6 +1,11 @@
-﻿using MySql.Data.MySqlClient;
+﻿using FinTracker.Interfaces;
+using FinTracker.Models;
+using MySql.Data.MySqlClient;
 using System;
+using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace FinTracker.BD
 {
@@ -12,28 +17,31 @@ namespace FinTracker.BD
         {
             _connectionString = connectionString;
         }
-
-        public void AddFornecedor(string nome, DateTime dataCadastro, string cnpj, string endereco, string bairro, string cidade, string estado, string cep, string telefone, string email, string status)
+        public FornecedorRepository()
         {
-            using (MySqlConnection conn = new MySqlConnection(_connectionString))
-            {
-                conn.Open();
-                string query = "INSERT INTO Fornecedor (Nome, Data_de_Cadastro, CNPJ, Endereço, Bairro, Cidade, Estado, CEP, Telefone, Email, Status) " +
+
+        }
+
+        public void AddFornecedor(object fornecedor)
+        {
+            Cliente f = (Cliente)fornecedor;
+            MySqlConnection conn = MetodosDB.conexao();
+                string query = "INSERT INTO Fornecedor (Nome, Data_de_Cadastro, CNPJ, Endereco, Bairro, Cidade, Estado, CEP, Telefone, Email, Status) " +
                                "VALUES (@Nome, @DataCadastro, @CNPJ, @Endereco, @Bairro, @Cidade, @Estado, @CEP, @Telefone, @Email, @Status)";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Nome", nome);
-                cmd.Parameters.AddWithValue("@DataCadastro", dataCadastro);
-                cmd.Parameters.AddWithValue("@CNPJ", cnpj);
-                cmd.Parameters.AddWithValue("@Endereco", endereco);
-                cmd.Parameters.AddWithValue("@Bairro", bairro);
-                cmd.Parameters.AddWithValue("@Cidade", cidade);
-                cmd.Parameters.AddWithValue("@Estado", estado);
-                cmd.Parameters.AddWithValue("@CEP", cep);
-                cmd.Parameters.AddWithValue("@Telefone", telefone);
-                cmd.Parameters.AddWithValue("@Email", email);
-                cmd.Parameters.AddWithValue("@Status", status);
+                cmd.Parameters.AddWithValue("@Nome",f.Nome);
+                cmd.Parameters.AddWithValue("@DataCadastro", f.Data_de_Cadastro);
+                cmd.Parameters.AddWithValue("@CNPJ", f.CNPJ);
+                cmd.Parameters.AddWithValue("@Endereco", f.Endereco);
+                cmd.Parameters.AddWithValue("@Bairro", f.Bairro);
+                cmd.Parameters.AddWithValue("@Cidade", f.Cidade);
+                cmd.Parameters.AddWithValue("@Estado", f.Estado);
+                cmd.Parameters.AddWithValue("@CEP", f.CEP);
+                cmd.Parameters.AddWithValue("@Telefone", f.Telefone);
+                cmd.Parameters.AddWithValue("@Email", f.Email);
+                cmd.Parameters.AddWithValue("@Status", f.Status);
                 cmd.ExecuteNonQuery();
-            }
+            
         }
 
         public DataTable GetFornecedores()
@@ -49,39 +57,64 @@ namespace FinTracker.BD
             }
         }
 
-        public void UpdateFornecedor(int idFornecedor, string nome, DateTime dataCadastro, string cnpj, string endereco, string bairro, string cidade, string estado, string cep, string telefone, string email, string status)
+        public void UpdateFornecedor(object fornecedor)
         {
-            using (MySqlConnection conn = new MySqlConnection(_connectionString))
-            {
-                conn.Open();
-                string query = "UPDATE Fornecedor SET Nome = @Nome, Data_de_Cadastro = @DataCadastro, CNPJ = @CNPJ, Endereço = @Endereco, Bairro = @Bairro, Cidade = @Cidade, Estado = @Estado, CEP = @CEP, Telefone = @Telefone, Email = @Email, Status = @Status WHERE id_Fornecedor = @idFornecedor";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@idFornecedor", idFornecedor);
-                cmd.Parameters.AddWithValue("@Nome", nome);
-                cmd.Parameters.AddWithValue("@DataCadastro", dataCadastro);
-                cmd.Parameters.AddWithValue("@CNPJ", cnpj);
-                cmd.Parameters.AddWithValue("@Endereco", endereco);
-                cmd.Parameters.AddWithValue("@Bairro", bairro);
-                cmd.Parameters.AddWithValue("@Cidade", cidade);
-                cmd.Parameters.AddWithValue("@Estado", estado);
-                cmd.Parameters.AddWithValue("@CEP", cep);
-                cmd.Parameters.AddWithValue("@Telefone", telefone);
-                cmd.Parameters.AddWithValue("@Email", email);
-                cmd.Parameters.AddWithValue("@Status", status);
-                cmd.ExecuteNonQuery();
-            }
+            Cliente f = (Cliente)fornecedor;
+            MySqlConnection conn = MetodosDB.conexao();
+            string query = "UPDATE Fornecedor SET Nome = @Nome, CNPJ = @CNPJ, Endereco = @Endereco, Bairro = @Bairro, Cidade = @Cidade, Estado = @Estado, CEP = @CEP, Telefone = @Telefone, Email = @Email, Status = @Status WHERE id_Fornecedor = @idFornecedor";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@idFornecedor", f.id_Cliente);
+            cmd.Parameters.AddWithValue("@Nome", f.Nome);
+            cmd.Parameters.AddWithValue("@CNPJ", f.CNPJ);
+            cmd.Parameters.AddWithValue("@Endereco", f.Endereco);
+            cmd.Parameters.AddWithValue("@Bairro", f.Bairro);
+            cmd.Parameters.AddWithValue("@Cidade", f.Cidade);
+            cmd.Parameters.AddWithValue("@Estado", f.Estado);
+            cmd.Parameters.AddWithValue("@CEP", f.CEP);
+            cmd.Parameters.AddWithValue("@Telefone", f.Telefone);
+            cmd.Parameters.AddWithValue("@Email", f.Email);
+            cmd.Parameters.AddWithValue("@Status", f.Status);
+            cmd.ExecuteNonQuery();
         }
 
         public void DeleteFornecedor(int idFornecedor)
         {
-            using (MySqlConnection conn = new MySqlConnection(_connectionString))
+            MySqlConnection conn = MetodosDB.conexao();
+            string query = "DELETE FROM Fornecedor WHERE id_Fornecedor = @idFornecedor";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@idFornecedor", idFornecedor);
+            cmd.ExecuteNonQuery();
+        }
+
+        public void DeleteListaFornecedor(List<int> idFornecedores)
+        {
+            foreach (int id in idFornecedores)
+                DeleteFornecedor(id);
+        }
+
+
+        public DataTable pesquisarEmTudo(string strBusca)
+        {
+            MySqlConnection conn = MetodosDB.conexao();
+            string query = "select * from fornecedor " +
+                $"WHERE id_Fornecedor = '{strBusca}' or Nome LIKE '%{strBusca}%' or CNPJ LIKE '%{strBusca}%' or Endereco LIKE '%{strBusca}%' or Bairro LIKE '%{strBusca}%' or " +
+                $"Cidade LIKE '%{strBusca}%' or Estado LIKE '%{strBusca}%' or CEP LIKE '%{strBusca}%' or Telefone LIKE '%{strBusca}%' or Email LIKE '%{strBusca}%' or " +
+                $"Status LIKE '%{strBusca}%' or Data_de_Cadastro like '%{strBusca}%'";
+
+            try
             {
-                conn.Open();
-                string query = "DELETE FROM Fornecedor WHERE id_Fornecedor = @idFornecedor";
+
                 MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@idFornecedor", idFornecedor);
-                cmd.ExecuteNonQuery();
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
             }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro: " + erro.Message);
+            }
+            return null;
         }
     }
 }

@@ -192,7 +192,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -203,6 +203,8 @@
             this.dataGridView1.Size = new System.Drawing.Size(1222, 435);
             this.dataGridView1.TabIndex = 32;
             this.dataGridView1.DataSourceChanged += new System.EventHandler(this.dataGridView1_DataSourceChanged);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // panel1
             // 
@@ -258,6 +260,7 @@
             this.txbPesquisa.Name = "txbPesquisa";
             this.txbPesquisa.Size = new System.Drawing.Size(331, 24);
             this.txbPesquisa.TabIndex = 25;
+            this.txbPesquisa.TextChanged += new System.EventHandler(this.txbPesquisa_TextChanged);
             // 
             // btnExcluir
             // 
@@ -278,6 +281,7 @@
             this.btnExcluir.TabIndex = 29;
             this.btnExcluir.Text = "    Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // pictureBox2
             // 
@@ -289,6 +293,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(45, 45);
             this.pictureBox2.TabIndex = 28;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // btnNovoCliente
             // 
@@ -309,6 +314,7 @@
             this.btnNovoCliente.TabIndex = 29;
             this.btnNovoCliente.Text = "    Novo fornecedor";
             this.btnNovoCliente.UseVisualStyleBackColor = false;
+            this.btnNovoCliente.Click += new System.EventHandler(this.btnNovoCliente_Click);
             // 
             // label1
             // 

@@ -28,40 +28,107 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlVerPerfil = new System.Windows.Forms.Panel();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.label50 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.lblData = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.chekVendas = new System.Windows.Forms.CheckBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.tbData2 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.tbData1 = new System.Windows.Forms.TextBox();
-            this.btnFiltrarPorData = new System.Windows.Forms.Button();
+            this.panelFiltros = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnFiltrar = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlPaginasPeriodoTempo = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label42 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label49 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.proximaPagina = new System.Windows.Forms.PictureBox();
+            this.paginaAnterior = new System.Windows.Forms.PictureBox();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.despesasAllTime = new System.Windows.Forms.Label();
+            this.verSaidas = new System.Windows.Forms.PictureBox();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.receitaAllTime = new System.Windows.Forms.Label();
+            this.verReceita = new System.Windows.Forms.PictureBox();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
+            this.cmbTransacoesNeste = new System.Windows.Forms.ComboBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.aPagarNeste = new System.Windows.Forms.Label();
+            this.aReceberNeste = new System.Windows.Forms.Label();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.label52 = new System.Windows.Forms.Label();
+            this.saidasPeriodo = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.entradasPeriodo = new System.Windows.Forms.Label();
+            this.cmbReceitaUltimo = new System.Windows.Forms.ComboBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.lucroPeriodo = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.panel34 = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.anoDoPeriodo = new System.Windows.Forms.DateTimePicker();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.rdbMes = new System.Windows.Forms.RadioButton();
+            this.rdbTrimestre = new System.Windows.Forms.RadioButton();
+            this.rdbSemestre = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pagina1infoPeriodo = new System.Windows.Forms.PictureBox();
+            this.pagina2infoPeriodo = new System.Windows.Forms.PictureBox();
+            this.pagina3infoPeriodo = new System.Windows.Forms.PictureBox();
+            this.pagina4infoPeriodo = new System.Windows.Forms.PictureBox();
+            this.panel22 = new System.Windows.Forms.Panel();
+            this.qtdClientes = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.pictureBox16 = new System.Windows.Forms.PictureBox();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.qtdFornecedores = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.pictureBox14 = new System.Windows.Forms.PictureBox();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.qtdVendas = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
+            this.panel21 = new System.Windows.Forms.Panel();
+            this.qtdPagamentos = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.valorCard1 = new System.Windows.Forms.Label();
             this.tituloCard1 = new System.Windows.Forms.Label();
-            this.panelFiltros = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.chekFornecedores = new System.Windows.Forms.CheckBox();
-            this.btnFiltrar = new System.Windows.Forms.Button();
-            this.chekClientes = new System.Windows.Forms.CheckBox();
-            this.chekPagamentos = new System.Windows.Forms.CheckBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.valorCard5 = new System.Windows.Forms.Label();
             this.tituloCard5 = new System.Windows.Forms.Label();
@@ -83,96 +150,56 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.valorCard3 = new System.Windows.Forms.Label();
             this.tituloCard3 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.qtdVendas = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.qtdFornecedores = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.qtdPagamentos = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.qtdClientes = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pnlPaginasPeriodoTempo = new System.Windows.Forms.Panel();
-            this.pagina1infoPeriodo = new System.Windows.Forms.PictureBox();
-            this.pagina2infoPeriodo = new System.Windows.Forms.PictureBox();
-            this.pagina3infoPeriodo = new System.Windows.Forms.PictureBox();
-            this.pagina4infoPeriodo = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel34 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.rdbMes = new System.Windows.Forms.RadioButton();
-            this.rdbTrimestre = new System.Windows.Forms.RadioButton();
-            this.rdbSemestre = new System.Windows.Forms.RadioButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.label51 = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label42 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label49 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.proximaPagina = new System.Windows.Forms.PictureBox();
-            this.paginaAnterior = new System.Windows.Forms.PictureBox();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chekFornecedores = new System.Windows.Forms.CheckBox();
+            this.chekClientes = new System.Windows.Forms.CheckBox();
+            this.chekPagamentos = new System.Windows.Forms.CheckBox();
+            this.chekVendas = new System.Windows.Forms.CheckBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.tbData2 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.tbData1 = new System.Windows.Forms.TextBox();
+            this.btnFiltrarPorData = new System.Windows.Forms.Button();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.pnlVerPerfil.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
-            this.panel7.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panelFiltros.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.pnlPaginasPeriodoTempo.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.panel26.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.proximaPagina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paginaAnterior)).BeginInit();
+            this.panel27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.verSaidas)).BeginInit();
+            this.panel28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.verReceita)).BeginInit();
+            this.panel23.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel34.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.panel18.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pagina1infoPeriodo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pagina2infoPeriodo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pagina3infoPeriodo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pagina4infoPeriodo)).BeginInit();
+            this.panel22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.panel20.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            this.panel19.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
+            this.panel21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -180,38 +207,11 @@
             this.panel17.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel13.SuspendLayout();
-            this.panel19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            this.panel20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            this.panel21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            this.panel22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.pnlPaginasPeriodoTempo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pagina1infoPeriodo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagina2infoPeriodo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagina3infoPeriodo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagina4infoPeriodo)).BeginInit();
-            this.panel34.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
-            this.panel26.SuspendLayout();
-            this.panel27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
-            this.panel28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            this.panel23.SuspendLayout();
-            this.panel29.SuspendLayout();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.proximaPagina)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paginaAnterior)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -222,7 +222,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1334, 73);
+            this.panel2.Size = new System.Drawing.Size(1283, 73);
             this.panel2.TabIndex = 24;
             // 
             // pnlVerPerfil
@@ -236,24 +236,11 @@
             this.pnlVerPerfil.Controls.Add(this.label59);
             this.pnlVerPerfil.Controls.Add(this.pictureBox20);
             this.pnlVerPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlVerPerfil.Location = new System.Drawing.Point(1064, 12);
+            this.pnlVerPerfil.Location = new System.Drawing.Point(1029, 12);
             this.pnlVerPerfil.Name = "pnlVerPerfil";
             this.pnlVerPerfil.Size = new System.Drawing.Size(230, 53);
             this.pnlVerPerfil.TabIndex = 3;
             this.pnlVerPerfil.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox19.BackgroundImage = global::FinTracker.Properties.Resources.icon_setaDir;
-            this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox19.Location = new System.Drawing.Point(210, 18);
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(10, 16);
-            this.pictureBox19.TabIndex = 63;
-            this.pictureBox19.TabStop = false;
-            this.pictureBox19.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
             // 
             // label50
             // 
@@ -280,18 +267,6 @@
             this.label59.Text = "Nome Sobrenome";
             this.label59.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
             // 
-            // pictureBox20
-            // 
-            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox20.BackgroundImage = global::FinTracker.Properties.Resources.icon_clientes2;
-            this.pictureBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox20.Location = new System.Drawing.Point(10, 7);
-            this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(37, 37);
-            this.pictureBox20.TabIndex = 0;
-            this.pictureBox20.TabStop = false;
-            this.pictureBox20.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
-            // 
             // lblData
             // 
             this.lblData.AutoSize = true;
@@ -309,7 +284,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 72);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1334, 1);
+            this.panel3.Size = new System.Drawing.Size(1283, 1);
             this.panel3.TabIndex = 0;
             // 
             // label1
@@ -318,158 +293,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.label1.Location = new System.Drawing.Point(35, 224);
+            this.label1.Location = new System.Drawing.Point(35, 217);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(419, 25);
             this.label1.TabIndex = 25;
             this.label1.Text = "Informações por período de tempo";
-            // 
-            // chekVendas
-            // 
-            this.chekVendas.AutoSize = true;
-            this.chekVendas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chekVendas.BackgroundImage")));
-            this.chekVendas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.chekVendas.Checked = true;
-            this.chekVendas.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chekVendas.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chekVendas.Location = new System.Drawing.Point(23, 69);
-            this.chekVendas.Name = "chekVendas";
-            this.chekVendas.Padding = new System.Windows.Forms.Padding(10);
-            this.chekVendas.Size = new System.Drawing.Size(93, 40);
-            this.chekVendas.TabIndex = 27;
-            this.chekVendas.Text = "Vendas";
-            this.chekVendas.UseVisualStyleBackColor = true;
-            // 
-            // panel7
-            // 
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel7.Controls.Add(this.panel9);
-            this.panel7.Controls.Add(this.label10);
-            this.panel7.Controls.Add(this.panel24);
-            this.panel7.Controls.Add(this.btnFiltrarPorData);
-            this.panel7.Location = new System.Drawing.Point(40, 270);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(333, 128);
-            this.panel7.TabIndex = 26;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel9.Controls.Add(this.tbData2);
-            this.panel9.Location = new System.Drawing.Point(195, 15);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(120, 36);
-            this.panel9.TabIndex = 45;
-            // 
-            // tbData2
-            // 
-            this.tbData2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.tbData2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbData2.Font = new System.Drawing.Font("Verdana", 12F);
-            this.tbData2.Location = new System.Drawing.Point(3, 10);
-            this.tbData2.MaxLength = 10;
-            this.tbData2.Multiline = true;
-            this.tbData2.Name = "tbData2";
-            this.tbData2.Size = new System.Drawing.Size(114, 23);
-            this.tbData2.TabIndex = 0;
-            this.tbData2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbData2.TextChanged += new System.EventHandler(this.inputData_TextChanged);
-            this.tbData2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numberOnlyInTextBox_KeyPress);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(152, 24);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(29, 16);
-            this.label10.TabIndex = 29;
-            this.label10.Text = "até";
-            // 
-            // panel24
-            // 
-            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.panel24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel24.BackgroundImage")));
-            this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel24.Controls.Add(this.tbData1);
-            this.panel24.Location = new System.Drawing.Point(18, 15);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(120, 36);
-            this.panel24.TabIndex = 45;
-            // 
-            // tbData1
-            // 
-            this.tbData1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.tbData1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbData1.Font = new System.Drawing.Font("Verdana", 12F);
-            this.tbData1.Location = new System.Drawing.Point(3, 10);
-            this.tbData1.MaxLength = 10;
-            this.tbData1.Multiline = true;
-            this.tbData1.Name = "tbData1";
-            this.tbData1.Size = new System.Drawing.Size(114, 23);
-            this.tbData1.TabIndex = 0;
-            this.tbData1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbData1.TextChanged += new System.EventHandler(this.inputData_TextChanged);
-            this.tbData1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numberOnlyInTextBox_KeyPress);
-            // 
-            // btnFiltrarPorData
-            // 
-            this.btnFiltrarPorData.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnFiltrarPorData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.btnFiltrarPorData.FlatAppearance.BorderSize = 0;
-            this.btnFiltrarPorData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFiltrarPorData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrarPorData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.btnFiltrarPorData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFiltrarPorData.Location = new System.Drawing.Point(18, 70);
-            this.btnFiltrarPorData.MinimumSize = new System.Drawing.Size(145, 30);
-            this.btnFiltrarPorData.Name = "btnFiltrarPorData";
-            this.btnFiltrarPorData.Size = new System.Drawing.Size(297, 40);
-            this.btnFiltrarPorData.TabIndex = 1;
-            this.btnFiltrarPorData.Text = "Confirmar";
-            this.btnFiltrarPorData.UseVisualStyleBackColor = false;
-            this.btnFiltrarPorData.Click += new System.EventHandler(this.buscarInfoPorPeriodo_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Controls.Add(this.valorCard1);
-            this.panel1.Controls.Add(this.tituloCard1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(271, 88);
-            this.panel1.TabIndex = 26;
-            // 
-            // valorCard1
-            // 
-            this.valorCard1.AutoSize = true;
-            this.valorCard1.BackColor = System.Drawing.Color.Transparent;
-            this.valorCard1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valorCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.valorCard1.Location = new System.Drawing.Point(18, 50);
-            this.valorCard1.Name = "valorCard1";
-            this.valorCard1.Size = new System.Drawing.Size(22, 25);
-            this.valorCard1.TabIndex = 1;
-            this.valorCard1.Text = "-";
-            // 
-            // tituloCard1
-            // 
-            this.tituloCard1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tituloCard1.BackColor = System.Drawing.Color.Transparent;
-            this.tituloCard1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tituloCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.tituloCard1.Location = new System.Drawing.Point(18, 8);
-            this.tituloCard1.Name = "tituloCard1";
-            this.tituloCard1.Size = new System.Drawing.Size(175, 38);
-            this.tituloCard1.TabIndex = 1;
-            this.tituloCard1.Text = "Valor total de vendas";
             // 
             // panelFiltros
             // 
@@ -484,10 +312,10 @@
             this.panelFiltros.Controls.Add(this.chekClientes);
             this.panelFiltros.Controls.Add(this.chekPagamentos);
             this.panelFiltros.Controls.Add(this.chekVendas);
-            this.panelFiltros.Location = new System.Drawing.Point(404, 270);
+            this.panelFiltros.Location = new System.Drawing.Point(404, 263);
             this.panelFiltros.MinimumSize = new System.Drawing.Size(564, 127);
             this.panelFiltros.Name = "panelFiltros";
-            this.panelFiltros.Size = new System.Drawing.Size(805, 127);
+            this.panelFiltros.Size = new System.Drawing.Size(855, 127);
             this.panelFiltros.TabIndex = 28;
             this.panelFiltros.Resize += new System.EventHandler(this.panelFiltros_SizeChanged);
             // 
@@ -503,20 +331,6 @@
             this.label11.TabIndex = 26;
             this.label11.Text = "Filtrar mostradores";
             // 
-            // chekFornecedores
-            // 
-            this.chekFornecedores.AutoSize = true;
-            this.chekFornecedores.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chekFornecedores.BackgroundImage")));
-            this.chekFornecedores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.chekFornecedores.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chekFornecedores.Location = new System.Drawing.Point(414, 69);
-            this.chekFornecedores.Name = "chekFornecedores";
-            this.chekFornecedores.Padding = new System.Windows.Forms.Padding(10);
-            this.chekFornecedores.Size = new System.Drawing.Size(135, 40);
-            this.chekFornecedores.TabIndex = 27;
-            this.chekFornecedores.Text = "Fornecedores";
-            this.chekFornecedores.UseVisualStyleBackColor = true;
-            // 
             // btnFiltrar
             // 
             this.btnFiltrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -526,7 +340,7 @@
             this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
             this.btnFiltrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFiltrar.Location = new System.Drawing.Point(579, 69);
+            this.btnFiltrar.Location = new System.Drawing.Point(629, 69);
             this.btnFiltrar.MinimumSize = new System.Drawing.Size(145, 30);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(203, 40);
@@ -534,34 +348,6 @@
             this.btnFiltrar.Text = "Confirmar";
             this.btnFiltrar.UseVisualStyleBackColor = false;
             this.btnFiltrar.Click += new System.EventHandler(this.buscarInfoPorPeriodo_Click);
-            // 
-            // chekClientes
-            // 
-            this.chekClientes.AutoSize = true;
-            this.chekClientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chekClientes.BackgroundImage")));
-            this.chekClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.chekClientes.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chekClientes.Location = new System.Drawing.Point(291, 69);
-            this.chekClientes.Name = "chekClientes";
-            this.chekClientes.Padding = new System.Windows.Forms.Padding(10);
-            this.chekClientes.Size = new System.Drawing.Size(98, 40);
-            this.chekClientes.TabIndex = 27;
-            this.chekClientes.Text = "Clientes";
-            this.chekClientes.UseVisualStyleBackColor = true;
-            // 
-            // chekPagamentos
-            // 
-            this.chekPagamentos.AutoSize = true;
-            this.chekPagamentos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chekPagamentos.BackgroundImage")));
-            this.chekPagamentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.chekPagamentos.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chekPagamentos.Location = new System.Drawing.Point(141, 69);
-            this.chekPagamentos.Name = "chekPagamentos";
-            this.chekPagamentos.Padding = new System.Windows.Forms.Padding(10);
-            this.chekPagamentos.Size = new System.Drawing.Size(126, 40);
-            this.chekPagamentos.TabIndex = 27;
-            this.chekPagamentos.Text = "Pagamentos";
-            this.chekPagamentos.UseVisualStyleBackColor = true;
             // 
             // tableLayoutPanel1
             // 
@@ -583,474 +369,15 @@
             this.tableLayoutPanel1.Controls.Add(this.panel17, 6, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel16, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel13, 4, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(40, 442);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(40, 435);
             this.tableLayoutPanel1.MinimumSize = new System.Drawing.Size(930, 209);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1169, 209);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1222, 209);
             this.tableLayoutPanel1.TabIndex = 29;
-            // 
-            // panel11
-            // 
-            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
-            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel11.Controls.Add(this.valorCard5);
-            this.panel11.Controls.Add(this.tituloCard5);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(3, 117);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(271, 89);
-            this.panel11.TabIndex = 26;
-            // 
-            // valorCard5
-            // 
-            this.valorCard5.AutoSize = true;
-            this.valorCard5.BackColor = System.Drawing.Color.Transparent;
-            this.valorCard5.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valorCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.valorCard5.Location = new System.Drawing.Point(18, 50);
-            this.valorCard5.Name = "valorCard5";
-            this.valorCard5.Size = new System.Drawing.Size(22, 25);
-            this.valorCard5.TabIndex = 1;
-            this.valorCard5.Text = "-";
-            // 
-            // tituloCard5
-            // 
-            this.tituloCard5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tituloCard5.BackColor = System.Drawing.Color.Transparent;
-            this.tituloCard5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tituloCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.tituloCard5.Location = new System.Drawing.Point(18, 8);
-            this.tituloCard5.Name = "tituloCard5";
-            this.tituloCard5.Size = new System.Drawing.Size(209, 38);
-            this.tituloCard5.TabIndex = 1;
-            this.tituloCard5.Text = "Vendas pendentes";
-            // 
-            // panel12
-            // 
-            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel12.Controls.Add(this.valorCard2);
-            this.panel12.Controls.Add(this.tituloCard2);
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(300, 3);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(271, 88);
-            this.panel12.TabIndex = 26;
-            // 
-            // valorCard2
-            // 
-            this.valorCard2.AutoSize = true;
-            this.valorCard2.BackColor = System.Drawing.Color.Transparent;
-            this.valorCard2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valorCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.valorCard2.Location = new System.Drawing.Point(18, 50);
-            this.valorCard2.Name = "valorCard2";
-            this.valorCard2.Size = new System.Drawing.Size(22, 25);
-            this.valorCard2.TabIndex = 1;
-            this.valorCard2.Text = "-";
-            // 
-            // tituloCard2
-            // 
-            this.tituloCard2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tituloCard2.BackColor = System.Drawing.Color.Transparent;
-            this.tituloCard2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tituloCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.tituloCard2.Location = new System.Drawing.Point(18, 8);
-            this.tituloCard2.Name = "tituloCard2";
-            this.tituloCard2.Size = new System.Drawing.Size(209, 38);
-            this.tituloCard2.TabIndex = 1;
-            this.tituloCard2.Text = "Valor médio de venda";
-            // 
-            // panel14
-            // 
-            this.panel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel14.BackgroundImage")));
-            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel14.Controls.Add(this.valorCard7);
-            this.panel14.Controls.Add(this.tituloCard7);
-            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(597, 117);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(271, 89);
-            this.panel14.TabIndex = 26;
-            // 
-            // valorCard7
-            // 
-            this.valorCard7.AutoSize = true;
-            this.valorCard7.BackColor = System.Drawing.Color.Transparent;
-            this.valorCard7.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valorCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.valorCard7.Location = new System.Drawing.Point(18, 50);
-            this.valorCard7.Name = "valorCard7";
-            this.valorCard7.Size = new System.Drawing.Size(22, 25);
-            this.valorCard7.TabIndex = 1;
-            this.valorCard7.Text = "-";
-            // 
-            // tituloCard7
-            // 
-            this.tituloCard7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tituloCard7.BackColor = System.Drawing.Color.Transparent;
-            this.tituloCard7.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tituloCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.tituloCard7.Location = new System.Drawing.Point(18, 8);
-            this.tituloCard7.Name = "tituloCard7";
-            this.tituloCard7.Size = new System.Drawing.Size(209, 38);
-            this.tituloCard7.TabIndex = 1;
-            this.tituloCard7.Text = "Nº Clientes com vendas registradas neste período";
-            // 
-            // panel15
-            // 
-            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
-            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel15.Controls.Add(this.tituloCard6);
-            this.panel15.Controls.Add(this.valorCard6);
-            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(300, 117);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(271, 89);
-            this.panel15.TabIndex = 26;
-            // 
-            // tituloCard6
-            // 
-            this.tituloCard6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tituloCard6.BackColor = System.Drawing.Color.Transparent;
-            this.tituloCard6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tituloCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.tituloCard6.Location = new System.Drawing.Point(18, 8);
-            this.tituloCard6.Name = "tituloCard6";
-            this.tituloCard6.Size = new System.Drawing.Size(209, 38);
-            this.tituloCard6.TabIndex = 2;
-            this.tituloCard6.Text = "Nº de produdos únicos vendidos";
-            // 
-            // valorCard6
-            // 
-            this.valorCard6.AutoSize = true;
-            this.valorCard6.BackColor = System.Drawing.Color.Transparent;
-            this.valorCard6.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valorCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.valorCard6.Location = new System.Drawing.Point(18, 50);
-            this.valorCard6.Name = "valorCard6";
-            this.valorCard6.Size = new System.Drawing.Size(22, 25);
-            this.valorCard6.TabIndex = 1;
-            this.valorCard6.Text = "-";
-            // 
-            // panel17
-            // 
-            this.panel17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel17.BackgroundImage")));
-            this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel17.Controls.Add(this.tituloCard8);
-            this.panel17.Controls.Add(this.valorCard8);
-            this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(894, 117);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(272, 89);
-            this.panel17.TabIndex = 26;
-            // 
-            // tituloCard8
-            // 
-            this.tituloCard8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tituloCard8.BackColor = System.Drawing.Color.Transparent;
-            this.tituloCard8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tituloCard8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.tituloCard8.Location = new System.Drawing.Point(18, 8);
-            this.tituloCard8.Name = "tituloCard8";
-            this.tituloCard8.Size = new System.Drawing.Size(209, 38);
-            this.tituloCard8.TabIndex = 2;
-            this.tituloCard8.Text = "Quantidade de produtos vendidos";
-            // 
-            // valorCard8
-            // 
-            this.valorCard8.AutoSize = true;
-            this.valorCard8.BackColor = System.Drawing.Color.Transparent;
-            this.valorCard8.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valorCard8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.valorCard8.Location = new System.Drawing.Point(18, 50);
-            this.valorCard8.Name = "valorCard8";
-            this.valorCard8.Size = new System.Drawing.Size(22, 25);
-            this.valorCard8.TabIndex = 1;
-            this.valorCard8.Text = "-";
-            // 
-            // panel16
-            // 
-            this.panel16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel16.BackgroundImage")));
-            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel16.Controls.Add(this.valorCard4);
-            this.panel16.Controls.Add(this.tituloCard4);
-            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(894, 3);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(272, 88);
-            this.panel16.TabIndex = 26;
-            // 
-            // valorCard4
-            // 
-            this.valorCard4.AutoSize = true;
-            this.valorCard4.BackColor = System.Drawing.Color.Transparent;
-            this.valorCard4.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valorCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.valorCard4.Location = new System.Drawing.Point(18, 50);
-            this.valorCard4.Name = "valorCard4";
-            this.valorCard4.Size = new System.Drawing.Size(22, 25);
-            this.valorCard4.TabIndex = 1;
-            this.valorCard4.Text = "-";
-            // 
-            // tituloCard4
-            // 
-            this.tituloCard4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tituloCard4.BackColor = System.Drawing.Color.Transparent;
-            this.tituloCard4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tituloCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.tituloCard4.Location = new System.Drawing.Point(18, 8);
-            this.tituloCard4.Name = "tituloCard4";
-            this.tituloCard4.Size = new System.Drawing.Size(209, 38);
-            this.tituloCard4.TabIndex = 1;
-            this.tituloCard4.Text = "Vendas concluídas";
-            // 
-            // panel13
-            // 
-            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
-            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel13.Controls.Add(this.valorCard3);
-            this.panel13.Controls.Add(this.tituloCard3);
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(597, 3);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(271, 88);
-            this.panel13.TabIndex = 26;
-            // 
-            // valorCard3
-            // 
-            this.valorCard3.AutoSize = true;
-            this.valorCard3.BackColor = System.Drawing.Color.Transparent;
-            this.valorCard3.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.valorCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.valorCard3.Location = new System.Drawing.Point(18, 50);
-            this.valorCard3.Name = "valorCard3";
-            this.valorCard3.Size = new System.Drawing.Size(22, 25);
-            this.valorCard3.TabIndex = 1;
-            this.valorCard3.Text = "-";
-            // 
-            // tituloCard3
-            // 
-            this.tituloCard3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tituloCard3.BackColor = System.Drawing.Color.Transparent;
-            this.tituloCard3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tituloCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.tituloCard3.Location = new System.Drawing.Point(18, 8);
-            this.tituloCard3.Name = "tituloCard3";
-            this.tituloCard3.Size = new System.Drawing.Size(209, 38);
-            this.tituloCard3.TabIndex = 1;
-            this.tituloCard3.Text = "Vendas canceladas";
-            // 
-            // panel19
-            // 
-            this.panel19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel19.BackgroundImage")));
-            this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel19.Controls.Add(this.qtdVendas);
-            this.panel19.Controls.Add(this.label29);
-            this.panel19.Controls.Add(this.pictureBox13);
-            this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel19.Location = new System.Drawing.Point(601, 3);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(263, 94);
-            this.panel19.TabIndex = 26;
-            // 
-            // qtdVendas
-            // 
-            this.qtdVendas.AutoSize = true;
-            this.qtdVendas.BackColor = System.Drawing.Color.Transparent;
-            this.qtdVendas.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qtdVendas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.qtdVendas.Location = new System.Drawing.Point(91, 45);
-            this.qtdVendas.Name = "qtdVendas";
-            this.qtdVendas.Size = new System.Drawing.Size(22, 25);
-            this.qtdVendas.TabIndex = 1;
-            this.qtdVendas.Text = "-";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Transparent;
-            this.label29.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.label29.Location = new System.Drawing.Point(93, 16);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(138, 16);
-            this.label29.TabIndex = 1;
-            this.label29.Text = "Vendas efetuadas";
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox13.BackgroundImage = global::FinTracker.Properties.Resources.icon_clientes;
-            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(54, 54);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 0;
-            this.pictureBox13.TabStop = false;
-            // 
-            // panel20
-            // 
-            this.panel20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel20.BackgroundImage")));
-            this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel20.Controls.Add(this.qtdFornecedores);
-            this.panel20.Controls.Add(this.label31);
-            this.panel20.Controls.Add(this.pictureBox14);
-            this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(302, 3);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(263, 94);
-            this.panel20.TabIndex = 26;
-            // 
-            // qtdFornecedores
-            // 
-            this.qtdFornecedores.AutoSize = true;
-            this.qtdFornecedores.BackColor = System.Drawing.Color.Transparent;
-            this.qtdFornecedores.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qtdFornecedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.qtdFornecedores.Location = new System.Drawing.Point(91, 45);
-            this.qtdFornecedores.Name = "qtdFornecedores";
-            this.qtdFornecedores.Size = new System.Drawing.Size(22, 25);
-            this.qtdFornecedores.TabIndex = 1;
-            this.qtdFornecedores.Text = "-";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.BackColor = System.Drawing.Color.Transparent;
-            this.label31.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.label31.Location = new System.Drawing.Point(93, 16);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(107, 16);
-            this.label31.TabIndex = 1;
-            this.label31.Text = "Fornecedores";
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox14.BackgroundImage = global::FinTracker.Properties.Resources.icon_clientes;
-            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(54, 54);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 0;
-            this.pictureBox14.TabStop = false;
-            // 
-            // panel21
-            // 
-            this.panel21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel21.BackgroundImage")));
-            this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel21.Controls.Add(this.qtdPagamentos);
-            this.panel21.Controls.Add(this.label33);
-            this.panel21.Controls.Add(this.pictureBox15);
-            this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel21.Location = new System.Drawing.Point(900, 3);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(266, 94);
-            this.panel21.TabIndex = 26;
-            // 
-            // qtdPagamentos
-            // 
-            this.qtdPagamentos.AutoSize = true;
-            this.qtdPagamentos.BackColor = System.Drawing.Color.Transparent;
-            this.qtdPagamentos.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qtdPagamentos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.qtdPagamentos.Location = new System.Drawing.Point(91, 45);
-            this.qtdPagamentos.Name = "qtdPagamentos";
-            this.qtdPagamentos.Size = new System.Drawing.Size(22, 25);
-            this.qtdPagamentos.TabIndex = 1;
-            this.qtdPagamentos.Text = "-";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.BackColor = System.Drawing.Color.Transparent;
-            this.label33.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.label33.Location = new System.Drawing.Point(93, 16);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(143, 16);
-            this.label33.TabIndex = 1;
-            this.label33.Text = "Pagamentos feitos";
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox15.BackgroundImage = global::FinTracker.Properties.Resources.icon_clientes;
-            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(54, 54);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
-            // 
-            // panel22
-            // 
-            this.panel22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel22.BackgroundImage")));
-            this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel22.Controls.Add(this.qtdClientes);
-            this.panel22.Controls.Add(this.label35);
-            this.panel22.Controls.Add(this.pictureBox16);
-            this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel22.Location = new System.Drawing.Point(3, 3);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(263, 94);
-            this.panel22.TabIndex = 26;
-            // 
-            // qtdClientes
-            // 
-            this.qtdClientes.AutoSize = true;
-            this.qtdClientes.BackColor = System.Drawing.Color.Transparent;
-            this.qtdClientes.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qtdClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.qtdClientes.Location = new System.Drawing.Point(91, 45);
-            this.qtdClientes.Name = "qtdClientes";
-            this.qtdClientes.Size = new System.Drawing.Size(22, 25);
-            this.qtdClientes.TabIndex = 1;
-            this.qtdClientes.Text = "-";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.Color.Transparent;
-            this.label35.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.label35.Location = new System.Drawing.Point(93, 16);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(66, 16);
-            this.label35.TabIndex = 1;
-            this.label35.Text = "Clientes";
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox16.BackgroundImage = global::FinTracker.Properties.Resources.icon_clientes;
-            this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(18, 16);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(54, 54);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 0;
-            this.pictureBox16.TabStop = false;
             // 
             // tableLayoutPanel2
             // 
@@ -1068,12 +395,12 @@
             this.tableLayoutPanel2.Controls.Add(this.panel20, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel19, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel21, 6, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(40, 107);
-            this.tableLayoutPanel2.MinimumSize = new System.Drawing.Size(1062, 100);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(40, 100);
+            this.tableLayoutPanel2.MinimumSize = new System.Drawing.Size(1222, 100);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1169, 100);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1222, 100);
             this.tableLayoutPanel2.TabIndex = 30;
             // 
             // panel4
@@ -1081,10 +408,10 @@
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.pnlPaginasPeriodoTempo);
-            this.panel4.Location = new System.Drawing.Point(40, 409);
+            this.panel4.Location = new System.Drawing.Point(40, 402);
             this.panel4.MinimumSize = new System.Drawing.Size(930, 22);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1169, 22);
+            this.panel4.Size = new System.Drawing.Size(1222, 22);
             this.panel4.TabIndex = 32;
             // 
             // pnlPaginasPeriodoTempo
@@ -1095,62 +422,10 @@
             this.pnlPaginasPeriodoTempo.Controls.Add(this.pagina2infoPeriodo);
             this.pnlPaginasPeriodoTempo.Controls.Add(this.pagina3infoPeriodo);
             this.pnlPaginasPeriodoTempo.Controls.Add(this.pagina4infoPeriodo);
-            this.pnlPaginasPeriodoTempo.Location = new System.Drawing.Point(1077, 0);
+            this.pnlPaginasPeriodoTempo.Location = new System.Drawing.Point(1130, 0);
             this.pnlPaginasPeriodoTempo.Name = "pnlPaginasPeriodoTempo";
             this.pnlPaginasPeriodoTempo.Size = new System.Drawing.Size(88, 22);
             this.pnlPaginasPeriodoTempo.TabIndex = 46;
-            // 
-            // pagina1infoPeriodo
-            // 
-            this.pagina1infoPeriodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pagina1infoPeriodo.BackgroundImage")));
-            this.pagina1infoPeriodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pagina1infoPeriodo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pagina1infoPeriodo.Location = new System.Drawing.Point(7, 7);
-            this.pagina1infoPeriodo.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.pagina1infoPeriodo.Name = "pagina1infoPeriodo";
-            this.pagina1infoPeriodo.Size = new System.Drawing.Size(8, 8);
-            this.pagina1infoPeriodo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pagina1infoPeriodo.TabIndex = 3;
-            this.pagina1infoPeriodo.TabStop = false;
-            this.pagina1infoPeriodo.Click += new System.EventHandler(this.mudarPaginaNoClickBolinha);
-            // 
-            // pagina2infoPeriodo
-            // 
-            this.pagina2infoPeriodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pagina2infoPeriodo.BackgroundImage")));
-            this.pagina2infoPeriodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pagina2infoPeriodo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pagina2infoPeriodo.Location = new System.Drawing.Point(28, 7);
-            this.pagina2infoPeriodo.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.pagina2infoPeriodo.Name = "pagina2infoPeriodo";
-            this.pagina2infoPeriodo.Size = new System.Drawing.Size(8, 8);
-            this.pagina2infoPeriodo.TabIndex = 6;
-            this.pagina2infoPeriodo.TabStop = false;
-            this.pagina2infoPeriodo.Click += new System.EventHandler(this.mudarPaginaNoClickBolinha);
-            // 
-            // pagina3infoPeriodo
-            // 
-            this.pagina3infoPeriodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pagina3infoPeriodo.BackgroundImage")));
-            this.pagina3infoPeriodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pagina3infoPeriodo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pagina3infoPeriodo.Location = new System.Drawing.Point(49, 7);
-            this.pagina3infoPeriodo.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.pagina3infoPeriodo.Name = "pagina3infoPeriodo";
-            this.pagina3infoPeriodo.Size = new System.Drawing.Size(8, 8);
-            this.pagina3infoPeriodo.TabIndex = 6;
-            this.pagina3infoPeriodo.TabStop = false;
-            this.pagina3infoPeriodo.Click += new System.EventHandler(this.mudarPaginaNoClickBolinha);
-            // 
-            // pagina4infoPeriodo
-            // 
-            this.pagina4infoPeriodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pagina4infoPeriodo.BackgroundImage")));
-            this.pagina4infoPeriodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pagina4infoPeriodo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pagina4infoPeriodo.Location = new System.Drawing.Point(70, 7);
-            this.pagina4infoPeriodo.Name = "pagina4infoPeriodo";
-            this.pagina4infoPeriodo.Size = new System.Drawing.Size(8, 8);
-            this.pagina4infoPeriodo.TabIndex = 4;
-            this.pagina4infoPeriodo.TabStop = false;
-            this.pagina4infoPeriodo.Click += new System.EventHandler(this.mudarPaginaNoClickBolinha);
             // 
             // label4
             // 
@@ -1158,11 +433,621 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.label4.Location = new System.Drawing.Point(35, 721);
+            this.label4.Location = new System.Drawing.Point(35, 714);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(367, 25);
             this.label4.TabIndex = 25;
             this.label4.Text = "Relatório de entradas e saidas";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel3.ColumnCount = 5;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel3.Controls.Add(this.panel26, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.panel23, 4, 0);
+            this.tableLayoutPanel3.Controls.Add(this.panel29, 2, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(40, 1087);
+            this.tableLayoutPanel3.MinimumSize = new System.Drawing.Size(1222, 265);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 1;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1222, 265);
+            this.tableLayoutPanel3.TabIndex = 41;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.Color.Transparent;
+            this.panel26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel26.Controls.Add(this.panel27);
+            this.panel26.Controls.Add(this.panel28);
+            this.panel26.Controls.Add(this.label51);
+            this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel26.Location = new System.Drawing.Point(3, 3);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(374, 259);
+            this.panel26.TabIndex = 40;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.Transparent;
+            this.label51.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.label51.Location = new System.Drawing.Point(15, 19);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(239, 18);
+            this.label51.TabIndex = 25;
+            this.label51.Text = "Dados de todos os tempos";
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.AutoScroll = true;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label48);
+            this.panel6.Controls.Add(this.label43);
+            this.panel6.Controls.Add(this.dateTimePicker3);
+            this.panel6.Controls.Add(this.dateTimePicker2);
+            this.panel6.Controls.Add(this.label42);
+            this.panel6.Controls.Add(this.button1);
+            this.panel6.Location = new System.Drawing.Point(40, 1402);
+            this.panel6.MinimumSize = new System.Drawing.Size(897, 142);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1222, 142);
+            this.panel6.TabIndex = 42;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(21, 101);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(36, 18);
+            this.label48.TabIndex = 44;
+            this.label48.Text = "Até";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(21, 63);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(30, 18);
+            this.label43.TabIndex = 44;
+            this.label43.Text = "De";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker3.Location = new System.Drawing.Point(68, 97);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(380, 27);
+            this.dateTimePicker3.TabIndex = 43;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker2.Location = new System.Drawing.Point(68, 59);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(380, 27);
+            this.dateTimePicker2.TabIndex = 43;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.Color.Transparent;
+            this.label42.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.label42.Location = new System.Drawing.Point(20, 15);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(402, 23);
+            this.label42.TabIndex = 26;
+            this.label42.Text = "Fluxo de caixa em periodo de tempo";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(774, 15);
+            this.button1.MinimumSize = new System.Drawing.Size(145, 30);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(425, 109);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Confirmar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView1.Location = new System.Drawing.Point(40, 1574);
+            this.dataGridView1.MinimumSize = new System.Drawing.Size(897, 142);
+            this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.Size = new System.Drawing.Size(1222, 572);
+            this.dataGridView1.TabIndex = 43;
+            // 
+            // label49
+            // 
+            this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
+            this.label49.Location = new System.Drawing.Point(40, 2535);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(1150, 40);
+            this.label49.TabIndex = 44;
+            this.label49.Text = "Espaçamento para dar o scrol horizontal e vertical correto (40pxs de margin)";
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.Controls.Add(this.proximaPagina);
+            this.panel5.Controls.Add(this.paginaAnterior);
+            this.panel5.Location = new System.Drawing.Point(40, 656);
+            this.panel5.MinimumSize = new System.Drawing.Size(930, 40);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(1222, 40);
+            this.panel5.TabIndex = 45;
+            // 
+            // proximaPagina
+            // 
+            this.proximaPagina.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.proximaPagina.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("proximaPagina.BackgroundImage")));
+            this.proximaPagina.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.proximaPagina.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.proximaPagina.Location = new System.Drawing.Point(1177, 0);
+            this.proximaPagina.Name = "proximaPagina";
+            this.proximaPagina.Size = new System.Drawing.Size(40, 40);
+            this.proximaPagina.TabIndex = 33;
+            this.proximaPagina.TabStop = false;
+            this.proximaPagina.Click += new System.EventHandler(this.mudarPagina);
+            // 
+            // paginaAnterior
+            // 
+            this.paginaAnterior.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.paginaAnterior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("paginaAnterior.BackgroundImage")));
+            this.paginaAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.paginaAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.paginaAnterior.Location = new System.Drawing.Point(1105, 0);
+            this.paginaAnterior.Name = "paginaAnterior";
+            this.paginaAnterior.Size = new System.Drawing.Size(40, 40);
+            this.paginaAnterior.TabIndex = 33;
+            this.paginaAnterior.TabStop = false;
+            this.paginaAnterior.Click += new System.EventHandler(this.mudarPagina);
+            // 
+            // panel27
+            // 
+            this.panel27.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel27.BackgroundImage")));
+            this.panel27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel27.Controls.Add(this.label44);
+            this.panel27.Controls.Add(this.despesasAllTime);
+            this.panel27.Controls.Add(this.verSaidas);
+            this.panel27.Location = new System.Drawing.Point(18, 166);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(263, 75);
+            this.panel27.TabIndex = 41;
+            // 
+            // label44
+            // 
+            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label44.BackColor = System.Drawing.Color.Transparent;
+            this.label44.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
+            this.label44.Location = new System.Drawing.Point(3, 38);
+            this.label44.Name = "label44";
+            this.label44.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.label44.Size = new System.Drawing.Size(203, 23);
+            this.label44.TabIndex = 26;
+            this.label44.Text = "Total despesas";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // despesasAllTime
+            // 
+            this.despesasAllTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.despesasAllTime.BackColor = System.Drawing.Color.Transparent;
+            this.despesasAllTime.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.despesasAllTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.despesasAllTime.Location = new System.Drawing.Point(3, 15);
+            this.despesasAllTime.Name = "despesasAllTime";
+            this.despesasAllTime.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.despesasAllTime.Size = new System.Drawing.Size(203, 23);
+            this.despesasAllTime.TabIndex = 27;
+            this.despesasAllTime.Text = "-";
+            this.despesasAllTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // verSaidas
+            // 
+            this.verSaidas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.verSaidas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.verSaidas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("verSaidas.BackgroundImage")));
+            this.verSaidas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.verSaidas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.verSaidas.Location = new System.Drawing.Point(217, 19);
+            this.verSaidas.Name = "verSaidas";
+            this.verSaidas.Size = new System.Drawing.Size(36, 36);
+            this.verSaidas.TabIndex = 0;
+            this.verSaidas.TabStop = false;
+            this.verSaidas.Click += new System.EventHandler(this.changeVisibityDadosTodosTempos);
+            // 
+            // panel28
+            // 
+            this.panel28.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel28.BackgroundImage")));
+            this.panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel28.Controls.Add(this.label46);
+            this.panel28.Controls.Add(this.receitaAllTime);
+            this.panel28.Controls.Add(this.verReceita);
+            this.panel28.Location = new System.Drawing.Point(18, 71);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(263, 75);
+            this.panel28.TabIndex = 41;
+            // 
+            // label46
+            // 
+            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
+            this.label46.Location = new System.Drawing.Point(3, 38);
+            this.label46.Name = "label46";
+            this.label46.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.label46.Size = new System.Drawing.Size(203, 23);
+            this.label46.TabIndex = 26;
+            this.label46.Text = "Total receita";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // receitaAllTime
+            // 
+            this.receitaAllTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.receitaAllTime.BackColor = System.Drawing.Color.Transparent;
+            this.receitaAllTime.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.receitaAllTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(134)))), ((int)(((byte)(50)))));
+            this.receitaAllTime.Location = new System.Drawing.Point(3, 15);
+            this.receitaAllTime.Name = "receitaAllTime";
+            this.receitaAllTime.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.receitaAllTime.Size = new System.Drawing.Size(203, 23);
+            this.receitaAllTime.TabIndex = 27;
+            this.receitaAllTime.Text = "-";
+            this.receitaAllTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // verReceita
+            // 
+            this.verReceita.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.verReceita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.verReceita.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("verReceita.BackgroundImage")));
+            this.verReceita.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.verReceita.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.verReceita.Location = new System.Drawing.Point(217, 19);
+            this.verReceita.Name = "verReceita";
+            this.verReceita.Size = new System.Drawing.Size(36, 36);
+            this.verReceita.TabIndex = 0;
+            this.verReceita.TabStop = false;
+            this.verReceita.Click += new System.EventHandler(this.changeVisibityDadosTodosTempos);
+            // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.Transparent;
+            this.panel23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel23.BackgroundImage")));
+            this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel23.Controls.Add(this.label38);
+            this.panel23.Controls.Add(this.label39);
+            this.panel23.Controls.Add(this.label40);
+            this.panel23.Controls.Add(this.label41);
+            this.panel23.Controls.Add(this.circularProgressBar1);
+            this.panel23.Controls.Add(this.cmbTransacoesNeste);
+            this.panel23.Controls.Add(this.label27);
+            this.panel23.Controls.Add(this.aPagarNeste);
+            this.panel23.Controls.Add(this.aReceberNeste);
+            this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel23.Location = new System.Drawing.Point(843, 3);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(376, 259);
+            this.panel23.TabIndex = 40;
+            // 
+            // label38
+            // 
+            this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(2)))), ((int)(((byte)(2)))));
+            this.label38.Location = new System.Drawing.Point(98, 244);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(8, 8);
+            this.label38.TabIndex = 45;
+            // 
+            // label39
+            // 
+            this.label39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(134)))), ((int)(((byte)(50)))));
+            this.label39.Location = new System.Drawing.Point(19, 243);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(8, 8);
+            this.label39.TabIndex = 46;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(108, 241);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(52, 13);
+            this.label40.TabIndex = 43;
+            this.label40.Text = "A pagar";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(29, 241);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(63, 13);
+            this.label41.TabIndex = 44;
+            this.label41.Text = "A receber";
+            // 
+            // circularProgressBar1
+            // 
+            this.circularProgressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.CubicEaseInOut;
+            this.circularProgressBar1.AnimationSpeed = 1000;
+            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
+            this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.circularProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.circularProgressBar1.InnerMargin = 0;
+            this.circularProgressBar1.InnerWidth = -1;
+            this.circularProgressBar1.Location = new System.Drawing.Point(199, 90);
+            this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
+            this.circularProgressBar1.Name = "circularProgressBar1";
+            this.circularProgressBar1.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(2)))), ((int)(((byte)(2)))));
+            this.circularProgressBar1.OuterMargin = -25;
+            this.circularProgressBar1.OuterWidth = 25;
+            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(134)))), ((int)(((byte)(50)))));
+            this.circularProgressBar1.ProgressWidth = 25;
+            this.circularProgressBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
+            this.circularProgressBar1.Size = new System.Drawing.Size(160, 160);
+            this.circularProgressBar1.StartAngle = 270;
+            this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
+            this.circularProgressBar1.SubscriptText = "";
+            this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
+            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBar1.SuperscriptText = "";
+            this.circularProgressBar1.TabIndex = 42;
+            this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
+            this.circularProgressBar1.Value = 68;
+            // 
+            // cmbTransacoesNeste
+            // 
+            this.cmbTransacoesNeste.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbTransacoesNeste.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTransacoesNeste.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTransacoesNeste.FormattingEnabled = true;
+            this.cmbTransacoesNeste.Items.AddRange(new object[] {
+            "Mês",
+            "Bimestre",
+            "Trimestre",
+            "Semestre",
+            "Ano"});
+            this.cmbTransacoesNeste.Location = new System.Drawing.Point(17, 45);
+            this.cmbTransacoesNeste.Name = "cmbTransacoesNeste";
+            this.cmbTransacoesNeste.Size = new System.Drawing.Size(342, 26);
+            this.cmbTransacoesNeste.TabIndex = 26;
+            this.cmbTransacoesNeste.SelectedIndexChanged += new System.EventHandler(this.atualizaTransacoesPendentes);
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.label27.Location = new System.Drawing.Point(15, 19);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(262, 18);
+            this.label27.TabIndex = 25;
+            this.label27.Text = "Transações pendentes neste";
+            // 
+            // aPagarNeste
+            // 
+            this.aPagarNeste.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.aPagarNeste.BackColor = System.Drawing.Color.Transparent;
+            this.aPagarNeste.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aPagarNeste.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(2)))), ((int)(((byte)(2)))));
+            this.aPagarNeste.Location = new System.Drawing.Point(22, 155);
+            this.aPagarNeste.Name = "aPagarNeste";
+            this.aPagarNeste.Size = new System.Drawing.Size(148, 23);
+            this.aPagarNeste.TabIndex = 25;
+            this.aPagarNeste.Text = "-";
+            this.aPagarNeste.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // aReceberNeste
+            // 
+            this.aReceberNeste.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.aReceberNeste.BackColor = System.Drawing.Color.Transparent;
+            this.aReceberNeste.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aReceberNeste.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(134)))), ((int)(((byte)(50)))));
+            this.aReceberNeste.Location = new System.Drawing.Point(22, 110);
+            this.aReceberNeste.Name = "aReceberNeste";
+            this.aReceberNeste.Size = new System.Drawing.Size(148, 23);
+            this.aReceberNeste.TabIndex = 25;
+            this.aReceberNeste.Text = "-";
+            this.aReceberNeste.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.Transparent;
+            this.panel29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel29.BackgroundImage")));
+            this.panel29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel29.Controls.Add(this.label52);
+            this.panel29.Controls.Add(this.saidasPeriodo);
+            this.panel29.Controls.Add(this.label54);
+            this.panel29.Controls.Add(this.entradasPeriodo);
+            this.panel29.Controls.Add(this.cmbReceitaUltimo);
+            this.panel29.Controls.Add(this.label56);
+            this.panel29.Controls.Add(this.lucroPeriodo);
+            this.panel29.Controls.Add(this.label58);
+            this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel29.Location = new System.Drawing.Point(423, 3);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(374, 259);
+            this.panel29.TabIndex = 40;
+            // 
+            // label52
+            // 
+            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label52.BackColor = System.Drawing.Color.Transparent;
+            this.label52.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
+            this.label52.Location = new System.Drawing.Point(0, 227);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(374, 23);
+            this.label52.TabIndex = 29;
+            this.label52.Text = "Saidas neste periodo";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // saidasPeriodo
+            // 
+            this.saidasPeriodo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.saidasPeriodo.BackColor = System.Drawing.Color.Transparent;
+            this.saidasPeriodo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saidasPeriodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.saidasPeriodo.Location = new System.Drawing.Point(0, 204);
+            this.saidasPeriodo.Name = "saidasPeriodo";
+            this.saidasPeriodo.Size = new System.Drawing.Size(374, 23);
+            this.saidasPeriodo.TabIndex = 30;
+            this.saidasPeriodo.Text = "-";
+            this.saidasPeriodo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label54
+            // 
+            this.label54.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label54.BackColor = System.Drawing.Color.Transparent;
+            this.label54.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
+            this.label54.Location = new System.Drawing.Point(0, 161);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(374, 23);
+            this.label54.TabIndex = 27;
+            this.label54.Text = "Entradas neste periodo";
+            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // entradasPeriodo
+            // 
+            this.entradasPeriodo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.entradasPeriodo.BackColor = System.Drawing.Color.Transparent;
+            this.entradasPeriodo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.entradasPeriodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(123)))), ((int)(((byte)(189)))));
+            this.entradasPeriodo.Location = new System.Drawing.Point(0, 138);
+            this.entradasPeriodo.Name = "entradasPeriodo";
+            this.entradasPeriodo.Size = new System.Drawing.Size(374, 23);
+            this.entradasPeriodo.TabIndex = 28;
+            this.entradasPeriodo.Text = "-";
+            this.entradasPeriodo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cmbReceitaUltimo
+            // 
+            this.cmbReceitaUltimo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbReceitaUltimo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbReceitaUltimo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbReceitaUltimo.FormattingEnabled = true;
+            this.cmbReceitaUltimo.Items.AddRange(new object[] {
+            "Mês",
+            "Bimestre",
+            "Trimestre",
+            "Semestre",
+            "Ano"});
+            this.cmbReceitaUltimo.Location = new System.Drawing.Point(251, 15);
+            this.cmbReceitaUltimo.Name = "cmbReceitaUltimo";
+            this.cmbReceitaUltimo.Size = new System.Drawing.Size(106, 26);
+            this.cmbReceitaUltimo.TabIndex = 26;
+            this.cmbReceitaUltimo.SelectedIndexChanged += new System.EventHandler(this.atualizarReceitaDoUltimo);
+            // 
+            // label56
+            // 
+            this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label56.BackColor = System.Drawing.Color.Transparent;
+            this.label56.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
+            this.label56.Location = new System.Drawing.Point(0, 95);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(374, 23);
+            this.label56.TabIndex = 25;
+            this.label56.Text = "Lucro neste periodo";
+            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lucroPeriodo
+            // 
+            this.lucroPeriodo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lucroPeriodo.BackColor = System.Drawing.Color.Transparent;
+            this.lucroPeriodo.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lucroPeriodo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(134)))), ((int)(((byte)(50)))));
+            this.lucroPeriodo.Location = new System.Drawing.Point(0, 72);
+            this.lucroPeriodo.Name = "lucroPeriodo";
+            this.lucroPeriodo.Size = new System.Drawing.Size(374, 23);
+            this.lucroPeriodo.TabIndex = 25;
+            this.lucroPeriodo.Text = "-";
+            this.lucroPeriodo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.BackColor = System.Drawing.Color.Transparent;
+            this.label58.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.label58.Location = new System.Drawing.Point(15, 19);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(159, 18);
+            this.label58.TabIndex = 25;
+            this.label58.Text = "Receita do ultimo";
             // 
             // panel34
             // 
@@ -1172,11 +1057,29 @@
             this.panel34.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel34.Controls.Add(this.chart1);
             this.panel34.Controls.Add(this.panel18);
-            this.panel34.Location = new System.Drawing.Point(40, 769);
+            this.panel34.Location = new System.Drawing.Point(40, 762);
             this.panel34.MinimumSize = new System.Drawing.Size(669, 285);
             this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(1169, 285);
+            this.panel34.Size = new System.Drawing.Size(1222, 285);
             this.panel34.TabIndex = 38;
+            // 
+            // chart1
+            // 
+            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(5, 4);
+            this.chart1.Name = "chart1";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(850, 277);
+            this.chart1.TabIndex = 42;
+            this.chart1.Text = "chart1";
             // 
             // panel18
             // 
@@ -1184,7 +1087,7 @@
             this.panel18.BackColor = System.Drawing.Color.Transparent;
             this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Controls.Add(this.dateTimePicker1);
+            this.panel18.Controls.Add(this.anoDoPeriodo);
             this.panel18.Controls.Add(this.flowLayoutPanel2);
             this.panel18.Controls.Add(this.label7);
             this.panel18.Controls.Add(this.label9);
@@ -1192,20 +1095,21 @@
             this.panel18.Controls.Add(this.label8);
             this.panel18.Controls.Add(this.label26);
             this.panel18.Controls.Add(this.label5);
-            this.panel18.Location = new System.Drawing.Point(866, 48);
+            this.panel18.Location = new System.Drawing.Point(919, 48);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(281, 193);
             this.panel18.TabIndex = 41;
             // 
-            // dateTimePicker1
+            // anoDoPeriodo
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(18, 118);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(117, 20);
-            this.dateTimePicker1.TabIndex = 39;
+            this.anoDoPeriodo.CustomFormat = "yyyy";
+            this.anoDoPeriodo.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.anoDoPeriodo.Location = new System.Drawing.Point(18, 118);
+            this.anoDoPeriodo.Name = "anoDoPeriodo";
+            this.anoDoPeriodo.ShowUpDown = true;
+            this.anoDoPeriodo.Size = new System.Drawing.Size(117, 20);
+            this.anoDoPeriodo.TabIndex = 39;
+            this.anoDoPeriodo.ValueChanged += new System.EventHandler(this.atualizaGrafico);
             // 
             // flowLayoutPanel2
             // 
@@ -1322,627 +1226,730 @@
             this.label5.TabIndex = 41;
             this.label5.Text = "Periodo de tempo";
             // 
-            // tableLayoutPanel3
+            // pagina1infoPeriodo
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.pagina1infoPeriodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pagina1infoPeriodo.BackgroundImage")));
+            this.pagina1infoPeriodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pagina1infoPeriodo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pagina1infoPeriodo.Location = new System.Drawing.Point(7, 7);
+            this.pagina1infoPeriodo.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.pagina1infoPeriodo.Name = "pagina1infoPeriodo";
+            this.pagina1infoPeriodo.Size = new System.Drawing.Size(8, 8);
+            this.pagina1infoPeriodo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pagina1infoPeriodo.TabIndex = 3;
+            this.pagina1infoPeriodo.TabStop = false;
+            this.pagina1infoPeriodo.Click += new System.EventHandler(this.mudarPaginaNoClickBolinha);
+            // 
+            // pagina2infoPeriodo
+            // 
+            this.pagina2infoPeriodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pagina2infoPeriodo.BackgroundImage")));
+            this.pagina2infoPeriodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pagina2infoPeriodo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pagina2infoPeriodo.Location = new System.Drawing.Point(28, 7);
+            this.pagina2infoPeriodo.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.pagina2infoPeriodo.Name = "pagina2infoPeriodo";
+            this.pagina2infoPeriodo.Size = new System.Drawing.Size(8, 8);
+            this.pagina2infoPeriodo.TabIndex = 6;
+            this.pagina2infoPeriodo.TabStop = false;
+            this.pagina2infoPeriodo.Click += new System.EventHandler(this.mudarPaginaNoClickBolinha);
+            // 
+            // pagina3infoPeriodo
+            // 
+            this.pagina3infoPeriodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pagina3infoPeriodo.BackgroundImage")));
+            this.pagina3infoPeriodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pagina3infoPeriodo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pagina3infoPeriodo.Location = new System.Drawing.Point(49, 7);
+            this.pagina3infoPeriodo.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.pagina3infoPeriodo.Name = "pagina3infoPeriodo";
+            this.pagina3infoPeriodo.Size = new System.Drawing.Size(8, 8);
+            this.pagina3infoPeriodo.TabIndex = 6;
+            this.pagina3infoPeriodo.TabStop = false;
+            this.pagina3infoPeriodo.Click += new System.EventHandler(this.mudarPaginaNoClickBolinha);
+            // 
+            // pagina4infoPeriodo
+            // 
+            this.pagina4infoPeriodo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pagina4infoPeriodo.BackgroundImage")));
+            this.pagina4infoPeriodo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pagina4infoPeriodo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pagina4infoPeriodo.Location = new System.Drawing.Point(70, 7);
+            this.pagina4infoPeriodo.Name = "pagina4infoPeriodo";
+            this.pagina4infoPeriodo.Size = new System.Drawing.Size(8, 8);
+            this.pagina4infoPeriodo.TabIndex = 4;
+            this.pagina4infoPeriodo.TabStop = false;
+            this.pagina4infoPeriodo.Click += new System.EventHandler(this.mudarPaginaNoClickBolinha);
+            // 
+            // panel22
+            // 
+            this.panel22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel22.BackgroundImage")));
+            this.panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel22.Controls.Add(this.qtdClientes);
+            this.panel22.Controls.Add(this.label35);
+            this.panel22.Controls.Add(this.pictureBox16);
+            this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel22.Location = new System.Drawing.Point(3, 3);
+            this.panel22.Name = "panel22";
+            this.panel22.Size = new System.Drawing.Size(277, 94);
+            this.panel22.TabIndex = 26;
+            // 
+            // qtdClientes
+            // 
+            this.qtdClientes.AutoSize = true;
+            this.qtdClientes.BackColor = System.Drawing.Color.Transparent;
+            this.qtdClientes.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qtdClientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.qtdClientes.Location = new System.Drawing.Point(91, 45);
+            this.qtdClientes.Name = "qtdClientes";
+            this.qtdClientes.Size = new System.Drawing.Size(22, 25);
+            this.qtdClientes.TabIndex = 1;
+            this.qtdClientes.Text = "-";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.label35.Location = new System.Drawing.Point(93, 16);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(66, 16);
+            this.label35.TabIndex = 1;
+            this.label35.Text = "Clientes";
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox16.BackgroundImage = global::FinTracker.Properties.Resources.icon_clientes;
+            this.pictureBox16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(54, 54);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 0;
+            this.pictureBox16.TabStop = false;
+            // 
+            // panel20
+            // 
+            this.panel20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel20.BackgroundImage")));
+            this.panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel20.Controls.Add(this.qtdFornecedores);
+            this.panel20.Controls.Add(this.label31);
+            this.panel20.Controls.Add(this.pictureBox14);
+            this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel20.Location = new System.Drawing.Point(316, 3);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(277, 94);
+            this.panel20.TabIndex = 26;
+            // 
+            // qtdFornecedores
+            // 
+            this.qtdFornecedores.AutoSize = true;
+            this.qtdFornecedores.BackColor = System.Drawing.Color.Transparent;
+            this.qtdFornecedores.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qtdFornecedores.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.qtdFornecedores.Location = new System.Drawing.Point(91, 45);
+            this.qtdFornecedores.Name = "qtdFornecedores";
+            this.qtdFornecedores.Size = new System.Drawing.Size(22, 25);
+            this.qtdFornecedores.TabIndex = 1;
+            this.qtdFornecedores.Text = "-";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.label31.Location = new System.Drawing.Point(93, 16);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(107, 16);
+            this.label31.TabIndex = 1;
+            this.label31.Text = "Fornecedores";
+            // 
+            // pictureBox14
+            // 
+            this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox14.BackgroundImage = global::FinTracker.Properties.Resources.icon_clientes;
+            this.pictureBox14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
+            this.pictureBox14.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox14.Name = "pictureBox14";
+            this.pictureBox14.Size = new System.Drawing.Size(54, 54);
+            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox14.TabIndex = 0;
+            this.pictureBox14.TabStop = false;
+            // 
+            // panel19
+            // 
+            this.panel19.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel19.BackgroundImage")));
+            this.panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel19.Controls.Add(this.qtdVendas);
+            this.panel19.Controls.Add(this.label29);
+            this.panel19.Controls.Add(this.pictureBox13);
+            this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel19.Location = new System.Drawing.Point(629, 3);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(277, 94);
+            this.panel19.TabIndex = 26;
+            // 
+            // qtdVendas
+            // 
+            this.qtdVendas.AutoSize = true;
+            this.qtdVendas.BackColor = System.Drawing.Color.Transparent;
+            this.qtdVendas.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qtdVendas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.qtdVendas.Location = new System.Drawing.Point(91, 45);
+            this.qtdVendas.Name = "qtdVendas";
+            this.qtdVendas.Size = new System.Drawing.Size(22, 25);
+            this.qtdVendas.TabIndex = 1;
+            this.qtdVendas.Text = "-";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.label29.Location = new System.Drawing.Point(93, 16);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(138, 16);
+            this.label29.TabIndex = 1;
+            this.label29.Text = "Vendas efetuadas";
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox13.BackgroundImage = global::FinTracker.Properties.Resources.icon_clientes;
+            this.pictureBox13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
+            this.pictureBox13.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(54, 54);
+            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox13.TabIndex = 0;
+            this.pictureBox13.TabStop = false;
+            // 
+            // panel21
+            // 
+            this.panel21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel21.BackgroundImage")));
+            this.panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel21.Controls.Add(this.qtdPagamentos);
+            this.panel21.Controls.Add(this.label33);
+            this.panel21.Controls.Add(this.pictureBox15);
+            this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel21.Location = new System.Drawing.Point(942, 3);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(277, 94);
+            this.panel21.TabIndex = 26;
+            // 
+            // qtdPagamentos
+            // 
+            this.qtdPagamentos.AutoSize = true;
+            this.qtdPagamentos.BackColor = System.Drawing.Color.Transparent;
+            this.qtdPagamentos.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qtdPagamentos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.qtdPagamentos.Location = new System.Drawing.Point(91, 45);
+            this.qtdPagamentos.Name = "qtdPagamentos";
+            this.qtdPagamentos.Size = new System.Drawing.Size(22, 25);
+            this.qtdPagamentos.TabIndex = 1;
+            this.qtdPagamentos.Text = "-";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.label33.Location = new System.Drawing.Point(93, 16);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(143, 16);
+            this.label33.TabIndex = 1;
+            this.label33.Text = "Pagamentos feitos";
+            // 
+            // pictureBox15
+            // 
+            this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox15.BackgroundImage = global::FinTracker.Properties.Resources.icon_clientes;
+            this.pictureBox15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
+            this.pictureBox15.Location = new System.Drawing.Point(18, 16);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(54, 54);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox15.TabIndex = 0;
+            this.pictureBox15.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.valorCard1);
+            this.panel1.Controls.Add(this.tituloCard1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(284, 88);
+            this.panel1.TabIndex = 26;
+            // 
+            // valorCard1
+            // 
+            this.valorCard1.AutoSize = true;
+            this.valorCard1.BackColor = System.Drawing.Color.Transparent;
+            this.valorCard1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valorCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.valorCard1.Location = new System.Drawing.Point(18, 50);
+            this.valorCard1.Name = "valorCard1";
+            this.valorCard1.Size = new System.Drawing.Size(22, 25);
+            this.valorCard1.TabIndex = 1;
+            this.valorCard1.Text = "-";
+            // 
+            // tituloCard1
+            // 
+            this.tituloCard1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel3.ColumnCount = 5;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.Controls.Add(this.panel26, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.panel23, 4, 0);
-            this.tableLayoutPanel3.Controls.Add(this.panel29, 2, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(40, 1094);
-            this.tableLayoutPanel3.MinimumSize = new System.Drawing.Size(1130, 265);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(1169, 265);
-            this.tableLayoutPanel3.TabIndex = 41;
+            this.tituloCard1.BackColor = System.Drawing.Color.Transparent;
+            this.tituloCard1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tituloCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.tituloCard1.Location = new System.Drawing.Point(18, 8);
+            this.tituloCard1.Name = "tituloCard1";
+            this.tituloCard1.Size = new System.Drawing.Size(188, 38);
+            this.tituloCard1.TabIndex = 1;
+            this.tituloCard1.Text = "Valor total de vendas";
             // 
-            // panel26
+            // panel11
             // 
-            this.panel26.BackColor = System.Drawing.Color.Transparent;
-            this.panel26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel26.Controls.Add(this.panel27);
-            this.panel26.Controls.Add(this.panel28);
-            this.panel26.Controls.Add(this.label51);
-            this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel26.Location = new System.Drawing.Point(3, 3);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(357, 259);
-            this.panel26.TabIndex = 40;
+            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
+            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel11.Controls.Add(this.valorCard5);
+            this.panel11.Controls.Add(this.tituloCard5);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel11.Location = new System.Drawing.Point(3, 117);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(284, 89);
+            this.panel11.TabIndex = 26;
             // 
-            // panel27
+            // valorCard5
             // 
-            this.panel27.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.valorCard5.AutoSize = true;
+            this.valorCard5.BackColor = System.Drawing.Color.Transparent;
+            this.valorCard5.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valorCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.valorCard5.Location = new System.Drawing.Point(18, 50);
+            this.valorCard5.Name = "valorCard5";
+            this.valorCard5.Size = new System.Drawing.Size(22, 25);
+            this.valorCard5.TabIndex = 1;
+            this.valorCard5.Text = "-";
+            // 
+            // tituloCard5
+            // 
+            this.tituloCard5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel27.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel27.BackgroundImage")));
-            this.panel27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel27.Controls.Add(this.label44);
-            this.panel27.Controls.Add(this.label45);
-            this.panel27.Controls.Add(this.pictureBox21);
-            this.panel27.Location = new System.Drawing.Point(18, 166);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(246, 75);
-            this.panel27.TabIndex = 41;
+            this.tituloCard5.BackColor = System.Drawing.Color.Transparent;
+            this.tituloCard5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tituloCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.tituloCard5.Location = new System.Drawing.Point(18, 8);
+            this.tituloCard5.Name = "tituloCard5";
+            this.tituloCard5.Size = new System.Drawing.Size(222, 38);
+            this.tituloCard5.TabIndex = 1;
+            this.tituloCard5.Text = "Vendas pendentes";
             // 
-            // label44
+            // panel12
             // 
-            this.label44.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
+            this.panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel12.Controls.Add(this.valorCard2);
+            this.panel12.Controls.Add(this.tituloCard2);
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(313, 3);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(284, 88);
+            this.panel12.TabIndex = 26;
+            // 
+            // valorCard2
+            // 
+            this.valorCard2.AutoSize = true;
+            this.valorCard2.BackColor = System.Drawing.Color.Transparent;
+            this.valorCard2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valorCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.valorCard2.Location = new System.Drawing.Point(18, 50);
+            this.valorCard2.Name = "valorCard2";
+            this.valorCard2.Size = new System.Drawing.Size(22, 25);
+            this.valorCard2.TabIndex = 1;
+            this.valorCard2.Text = "-";
+            // 
+            // tituloCard2
+            // 
+            this.tituloCard2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
-            this.label44.Location = new System.Drawing.Point(3, 38);
-            this.label44.Name = "label44";
-            this.label44.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.label44.Size = new System.Drawing.Size(186, 23);
-            this.label44.TabIndex = 26;
-            this.label44.Text = "Total saida";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tituloCard2.BackColor = System.Drawing.Color.Transparent;
+            this.tituloCard2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tituloCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.tituloCard2.Location = new System.Drawing.Point(18, 8);
+            this.tituloCard2.Name = "tituloCard2";
+            this.tituloCard2.Size = new System.Drawing.Size(222, 38);
+            this.tituloCard2.TabIndex = 1;
+            this.tituloCard2.Text = "Valor médio de venda";
             // 
-            // label45
+            // panel14
             // 
-            this.label45.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel14.BackgroundImage")));
+            this.panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel14.Controls.Add(this.valorCard7);
+            this.panel14.Controls.Add(this.tituloCard7);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel14.Location = new System.Drawing.Point(623, 117);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(284, 89);
+            this.panel14.TabIndex = 26;
+            // 
+            // valorCard7
+            // 
+            this.valorCard7.AutoSize = true;
+            this.valorCard7.BackColor = System.Drawing.Color.Transparent;
+            this.valorCard7.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valorCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.valorCard7.Location = new System.Drawing.Point(18, 50);
+            this.valorCard7.Name = "valorCard7";
+            this.valorCard7.Size = new System.Drawing.Size(22, 25);
+            this.valorCard7.TabIndex = 1;
+            this.valorCard7.Text = "-";
+            // 
+            // tituloCard7
+            // 
+            this.tituloCard7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label45.Location = new System.Drawing.Point(3, 15);
-            this.label45.Name = "label45";
-            this.label45.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.label45.Size = new System.Drawing.Size(186, 23);
-            this.label45.TabIndex = 27;
-            this.label45.Text = "$ 6.829,88";
-            this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tituloCard7.BackColor = System.Drawing.Color.Transparent;
+            this.tituloCard7.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tituloCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.tituloCard7.Location = new System.Drawing.Point(18, 8);
+            this.tituloCard7.Name = "tituloCard7";
+            this.tituloCard7.Size = new System.Drawing.Size(222, 38);
+            this.tituloCard7.TabIndex = 1;
+            this.tituloCard7.Text = "Nº Clientes com vendas registradas neste período";
             // 
-            // pictureBox21
+            // panel15
             // 
-            this.pictureBox21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pictureBox21.BackgroundImage = global::FinTracker.Properties.Resources.icon_olhoFechadoBranco_1_;
-            this.pictureBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox21.Location = new System.Drawing.Point(200, 19);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox21.TabIndex = 0;
-            this.pictureBox21.TabStop = false;
+            this.panel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel15.BackgroundImage")));
+            this.panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel15.Controls.Add(this.tituloCard6);
+            this.panel15.Controls.Add(this.valorCard6);
+            this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel15.Location = new System.Drawing.Point(313, 117);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(284, 89);
+            this.panel15.TabIndex = 26;
             // 
-            // panel28
+            // tituloCard6
             // 
-            this.panel28.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tituloCard6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel28.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel28.BackgroundImage")));
-            this.panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel28.Controls.Add(this.label46);
-            this.panel28.Controls.Add(this.label47);
-            this.panel28.Controls.Add(this.pictureBox22);
-            this.panel28.Location = new System.Drawing.Point(18, 71);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(246, 75);
-            this.panel28.TabIndex = 41;
+            this.tituloCard6.BackColor = System.Drawing.Color.Transparent;
+            this.tituloCard6.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tituloCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.tituloCard6.Location = new System.Drawing.Point(18, 8);
+            this.tituloCard6.Name = "tituloCard6";
+            this.tituloCard6.Size = new System.Drawing.Size(222, 38);
+            this.tituloCard6.TabIndex = 2;
+            this.tituloCard6.Text = "Nº de produdos únicos vendidos";
             // 
-            // label46
+            // valorCard6
             // 
-            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.valorCard6.AutoSize = true;
+            this.valorCard6.BackColor = System.Drawing.Color.Transparent;
+            this.valorCard6.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valorCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.valorCard6.Location = new System.Drawing.Point(18, 50);
+            this.valorCard6.Name = "valorCard6";
+            this.valorCard6.Size = new System.Drawing.Size(22, 25);
+            this.valorCard6.TabIndex = 1;
+            this.valorCard6.Text = "-";
+            // 
+            // panel17
+            // 
+            this.panel17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel17.BackgroundImage")));
+            this.panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel17.Controls.Add(this.tituloCard8);
+            this.panel17.Controls.Add(this.valorCard8);
+            this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel17.Location = new System.Drawing.Point(933, 117);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(286, 89);
+            this.panel17.TabIndex = 26;
+            // 
+            // tituloCard8
+            // 
+            this.tituloCard8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
-            this.label46.Location = new System.Drawing.Point(3, 38);
-            this.label46.Name = "label46";
-            this.label46.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.label46.Size = new System.Drawing.Size(186, 23);
-            this.label46.TabIndex = 26;
-            this.label46.Text = "Total receita";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tituloCard8.BackColor = System.Drawing.Color.Transparent;
+            this.tituloCard8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tituloCard8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.tituloCard8.Location = new System.Drawing.Point(18, 8);
+            this.tituloCard8.Name = "tituloCard8";
+            this.tituloCard8.Size = new System.Drawing.Size(223, 38);
+            this.tituloCard8.TabIndex = 2;
+            this.tituloCard8.Text = "Quantidade de produtos vendidos";
             // 
-            // label47
+            // valorCard8
             // 
-            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.valorCard8.AutoSize = true;
+            this.valorCard8.BackColor = System.Drawing.Color.Transparent;
+            this.valorCard8.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valorCard8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.valorCard8.Location = new System.Drawing.Point(18, 50);
+            this.valorCard8.Name = "valorCard8";
+            this.valorCard8.Size = new System.Drawing.Size(22, 25);
+            this.valorCard8.TabIndex = 1;
+            this.valorCard8.Text = "-";
+            // 
+            // panel16
+            // 
+            this.panel16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel16.BackgroundImage")));
+            this.panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel16.Controls.Add(this.valorCard4);
+            this.panel16.Controls.Add(this.tituloCard4);
+            this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel16.Location = new System.Drawing.Point(933, 3);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(286, 88);
+            this.panel16.TabIndex = 26;
+            // 
+            // valorCard4
+            // 
+            this.valorCard4.AutoSize = true;
+            this.valorCard4.BackColor = System.Drawing.Color.Transparent;
+            this.valorCard4.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valorCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.valorCard4.Location = new System.Drawing.Point(18, 50);
+            this.valorCard4.Name = "valorCard4";
+            this.valorCard4.Size = new System.Drawing.Size(22, 25);
+            this.valorCard4.TabIndex = 1;
+            this.valorCard4.Text = "-";
+            // 
+            // tituloCard4
+            // 
+            this.tituloCard4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label47.BackColor = System.Drawing.Color.Transparent;
-            this.label47.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(134)))), ((int)(((byte)(50)))));
-            this.label47.Location = new System.Drawing.Point(3, 15);
-            this.label47.Name = "label47";
-            this.label47.Padding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.label47.Size = new System.Drawing.Size(186, 23);
-            this.label47.TabIndex = 27;
-            this.label47.Text = "$ 6.829,88";
-            this.label47.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tituloCard4.BackColor = System.Drawing.Color.Transparent;
+            this.tituloCard4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tituloCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.tituloCard4.Location = new System.Drawing.Point(18, 8);
+            this.tituloCard4.Name = "tituloCard4";
+            this.tituloCard4.Size = new System.Drawing.Size(223, 38);
+            this.tituloCard4.TabIndex = 1;
+            this.tituloCard4.Text = "Vendas concluídas";
             // 
-            // pictureBox22
+            // panel13
             // 
-            this.pictureBox22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.pictureBox22.BackgroundImage = global::FinTracker.Properties.Resources.icon_olhoFechadoBranco_1_;
-            this.pictureBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox22.Location = new System.Drawing.Point(200, 19);
-            this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(36, 36);
-            this.pictureBox22.TabIndex = 0;
-            this.pictureBox22.TabStop = false;
+            this.panel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel13.BackgroundImage")));
+            this.panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel13.Controls.Add(this.valorCard3);
+            this.panel13.Controls.Add(this.tituloCard3);
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel13.Location = new System.Drawing.Point(623, 3);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(284, 88);
+            this.panel13.TabIndex = 26;
             // 
-            // label51
+            // valorCard3
             // 
-            this.label51.AutoSize = true;
-            this.label51.BackColor = System.Drawing.Color.Transparent;
-            this.label51.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.label51.Location = new System.Drawing.Point(15, 19);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(239, 18);
-            this.label51.TabIndex = 25;
-            this.label51.Text = "Dados de todos os tempos";
+            this.valorCard3.AutoSize = true;
+            this.valorCard3.BackColor = System.Drawing.Color.Transparent;
+            this.valorCard3.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.valorCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.valorCard3.Location = new System.Drawing.Point(18, 50);
+            this.valorCard3.Name = "valorCard3";
+            this.valorCard3.Size = new System.Drawing.Size(22, 25);
+            this.valorCard3.TabIndex = 1;
+            this.valorCard3.Text = "-";
             // 
-            // panel23
+            // tituloCard3
             // 
-            this.panel23.BackColor = System.Drawing.Color.Transparent;
-            this.panel23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel23.BackgroundImage")));
-            this.panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel23.Controls.Add(this.label38);
-            this.panel23.Controls.Add(this.label39);
-            this.panel23.Controls.Add(this.label40);
-            this.panel23.Controls.Add(this.label41);
-            this.panel23.Controls.Add(this.circularProgressBar1);
-            this.panel23.Controls.Add(this.comboBox2);
-            this.panel23.Controls.Add(this.label27);
-            this.panel23.Controls.Add(this.label37);
-            this.panel23.Controls.Add(this.label36);
-            this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel23.Location = new System.Drawing.Point(809, 3);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(357, 259);
-            this.panel23.TabIndex = 40;
-            // 
-            // label38
-            // 
-            this.label38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(2)))), ((int)(((byte)(2)))));
-            this.label38.Location = new System.Drawing.Point(98, 244);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(8, 8);
-            this.label38.TabIndex = 45;
-            // 
-            // label39
-            // 
-            this.label39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(134)))), ((int)(((byte)(50)))));
-            this.label39.Location = new System.Drawing.Point(19, 243);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(8, 8);
-            this.label39.TabIndex = 46;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(108, 241);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(52, 13);
-            this.label40.TabIndex = 43;
-            this.label40.Text = "A pagar";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(29, 241);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(63, 13);
-            this.label41.TabIndex = 44;
-            this.label41.Text = "A receber";
-            // 
-            // circularProgressBar1
-            // 
-            this.circularProgressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.CubicEaseInOut;
-            this.circularProgressBar1.AnimationSpeed = 1000;
-            this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
-            this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
-            this.circularProgressBar1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.circularProgressBar1.InnerMargin = 0;
-            this.circularProgressBar1.InnerWidth = -1;
-            this.circularProgressBar1.Location = new System.Drawing.Point(180, 90);
-            this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
-            this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(2)))), ((int)(((byte)(2)))));
-            this.circularProgressBar1.OuterMargin = -25;
-            this.circularProgressBar1.OuterWidth = 25;
-            this.circularProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(134)))), ((int)(((byte)(50)))));
-            this.circularProgressBar1.ProgressWidth = 25;
-            this.circularProgressBar1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 36F);
-            this.circularProgressBar1.Size = new System.Drawing.Size(160, 160);
-            this.circularProgressBar1.StartAngle = 270;
-            this.circularProgressBar1.SubscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
-            this.circularProgressBar1.SubscriptText = "";
-            this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(166)))), ((int)(((byte)(166)))));
-            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
-            this.circularProgressBar1.SuperscriptText = "";
-            this.circularProgressBar1.TabIndex = 42;
-            this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
-            this.circularProgressBar1.Value = 68;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tituloCard3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Mês",
-            "Bimestre",
-            "Trimestre",
-            "Semestre",
-            "Ano"});
-            this.comboBox2.Location = new System.Drawing.Point(17, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(323, 26);
-            this.comboBox2.TabIndex = 26;
+            this.tituloCard3.BackColor = System.Drawing.Color.Transparent;
+            this.tituloCard3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tituloCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.tituloCard3.Location = new System.Drawing.Point(18, 8);
+            this.tituloCard3.Name = "tituloCard3";
+            this.tituloCard3.Size = new System.Drawing.Size(222, 38);
+            this.tituloCard3.TabIndex = 1;
+            this.tituloCard3.Text = "Vendas canceladas";
             // 
-            // label27
+            // chekFornecedores
             // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.Transparent;
-            this.label27.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.label27.Location = new System.Drawing.Point(15, 19);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(262, 18);
-            this.label27.TabIndex = 25;
-            this.label27.Text = "Transações pendentes neste";
+            this.chekFornecedores.AutoSize = true;
+            this.chekFornecedores.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chekFornecedores.BackgroundImage")));
+            this.chekFornecedores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.chekFornecedores.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chekFornecedores.Location = new System.Drawing.Point(414, 69);
+            this.chekFornecedores.Name = "chekFornecedores";
+            this.chekFornecedores.Padding = new System.Windows.Forms.Padding(10);
+            this.chekFornecedores.Size = new System.Drawing.Size(135, 40);
+            this.chekFornecedores.TabIndex = 27;
+            this.chekFornecedores.Text = "Fornecedores";
+            this.chekFornecedores.UseVisualStyleBackColor = true;
             // 
-            // label37
+            // chekClientes
             // 
-            this.label37.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label37.BackColor = System.Drawing.Color.Transparent;
-            this.label37.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(2)))), ((int)(((byte)(2)))));
-            this.label37.Location = new System.Drawing.Point(22, 155);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(129, 23);
-            this.label37.TabIndex = 25;
-            this.label37.Text = "$ 6.829,88";
-            this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.chekClientes.AutoSize = true;
+            this.chekClientes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chekClientes.BackgroundImage")));
+            this.chekClientes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.chekClientes.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chekClientes.Location = new System.Drawing.Point(291, 69);
+            this.chekClientes.Name = "chekClientes";
+            this.chekClientes.Padding = new System.Windows.Forms.Padding(10);
+            this.chekClientes.Size = new System.Drawing.Size(98, 40);
+            this.chekClientes.TabIndex = 27;
+            this.chekClientes.Text = "Clientes";
+            this.chekClientes.UseVisualStyleBackColor = true;
             // 
-            // label36
+            // chekPagamentos
             // 
-            this.label36.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label36.BackColor = System.Drawing.Color.Transparent;
-            this.label36.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(134)))), ((int)(((byte)(50)))));
-            this.label36.Location = new System.Drawing.Point(22, 110);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(129, 23);
-            this.label36.TabIndex = 25;
-            this.label36.Text = "$ 6.829,88";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.chekPagamentos.AutoSize = true;
+            this.chekPagamentos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chekPagamentos.BackgroundImage")));
+            this.chekPagamentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.chekPagamentos.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chekPagamentos.Location = new System.Drawing.Point(141, 69);
+            this.chekPagamentos.Name = "chekPagamentos";
+            this.chekPagamentos.Padding = new System.Windows.Forms.Padding(10);
+            this.chekPagamentos.Size = new System.Drawing.Size(126, 40);
+            this.chekPagamentos.TabIndex = 27;
+            this.chekPagamentos.Text = "Pagamentos";
+            this.chekPagamentos.UseVisualStyleBackColor = true;
             // 
-            // panel29
+            // chekVendas
             // 
-            this.panel29.BackColor = System.Drawing.Color.Transparent;
-            this.panel29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel29.BackgroundImage")));
-            this.panel29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel29.Controls.Add(this.label52);
-            this.panel29.Controls.Add(this.label53);
-            this.panel29.Controls.Add(this.label54);
-            this.panel29.Controls.Add(this.label55);
-            this.panel29.Controls.Add(this.comboBox1);
-            this.panel29.Controls.Add(this.label56);
-            this.panel29.Controls.Add(this.label57);
-            this.panel29.Controls.Add(this.label58);
-            this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel29.Location = new System.Drawing.Point(406, 3);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(357, 259);
-            this.panel29.TabIndex = 40;
+            this.chekVendas.AutoSize = true;
+            this.chekVendas.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("chekVendas.BackgroundImage")));
+            this.chekVendas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.chekVendas.Checked = true;
+            this.chekVendas.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chekVendas.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chekVendas.Location = new System.Drawing.Point(23, 69);
+            this.chekVendas.Name = "chekVendas";
+            this.chekVendas.Padding = new System.Windows.Forms.Padding(10);
+            this.chekVendas.Size = new System.Drawing.Size(93, 40);
+            this.chekVendas.TabIndex = 27;
+            this.chekVendas.Text = "Vendas";
+            this.chekVendas.UseVisualStyleBackColor = true;
             // 
-            // label52
+            // panel7
             // 
-            this.label52.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label52.BackColor = System.Drawing.Color.Transparent;
-            this.label52.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
-            this.label52.Location = new System.Drawing.Point(0, 227);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(357, 23);
-            this.label52.TabIndex = 29;
-            this.label52.Text = "Saidas neste periodo";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
+            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel7.Controls.Add(this.panel9);
+            this.panel7.Controls.Add(this.label10);
+            this.panel7.Controls.Add(this.panel24);
+            this.panel7.Controls.Add(this.btnFiltrarPorData);
+            this.panel7.Location = new System.Drawing.Point(40, 263);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(333, 128);
+            this.panel7.TabIndex = 26;
             // 
-            // label53
+            // panel9
             // 
-            this.label53.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label53.BackColor = System.Drawing.Color.Transparent;
-            this.label53.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label53.Location = new System.Drawing.Point(0, 204);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(357, 23);
-            this.label53.TabIndex = 30;
-            this.label53.Text = "$ 6.829,88";
-            this.label53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
+            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel9.Controls.Add(this.tbData2);
+            this.panel9.Location = new System.Drawing.Point(195, 15);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(120, 36);
+            this.panel9.TabIndex = 45;
             // 
-            // label54
+            // tbData2
             // 
-            this.label54.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label54.BackColor = System.Drawing.Color.Transparent;
-            this.label54.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
-            this.label54.Location = new System.Drawing.Point(0, 161);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(357, 23);
-            this.label54.TabIndex = 27;
-            this.label54.Text = "Entradas neste periodo";
-            this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tbData2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.tbData2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbData2.Font = new System.Drawing.Font("Verdana", 12F);
+            this.tbData2.Location = new System.Drawing.Point(3, 10);
+            this.tbData2.MaxLength = 10;
+            this.tbData2.Multiline = true;
+            this.tbData2.Name = "tbData2";
+            this.tbData2.Size = new System.Drawing.Size(114, 23);
+            this.tbData2.TabIndex = 0;
+            this.tbData2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbData2.TextChanged += new System.EventHandler(this.inputData_TextChanged);
+            this.tbData2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numberOnlyInTextBox_KeyPress);
             // 
-            // label55
+            // label10
             // 
-            this.label55.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label55.BackColor = System.Drawing.Color.Transparent;
-            this.label55.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(123)))), ((int)(((byte)(189)))));
-            this.label55.Location = new System.Drawing.Point(0, 138);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(357, 23);
-            this.label55.TabIndex = 28;
-            this.label55.Text = "$ 6.829,88";
-            this.label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(152, 24);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(29, 16);
+            this.label10.TabIndex = 29;
+            this.label10.Text = "até";
             // 
-            // comboBox1
+            // panel24
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Mês",
-            "Bimestre",
-            "Trimestre",
-            "Semestre",
-            "Ano"});
-            this.comboBox1.Location = new System.Drawing.Point(234, 15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(106, 26);
-            this.comboBox1.TabIndex = 26;
+            this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.panel24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel24.BackgroundImage")));
+            this.panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel24.Controls.Add(this.tbData1);
+            this.panel24.Location = new System.Drawing.Point(18, 15);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(120, 36);
+            this.panel24.TabIndex = 45;
             // 
-            // label56
+            // tbData1
             // 
-            this.label56.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label56.BackColor = System.Drawing.Color.Transparent;
-            this.label56.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(174)))), ((int)(((byte)(174)))));
-            this.label56.Location = new System.Drawing.Point(0, 95);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(357, 23);
-            this.label56.TabIndex = 25;
-            this.label56.Text = "Lucro neste periodo";
-            this.label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.tbData1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.tbData1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbData1.Font = new System.Drawing.Font("Verdana", 12F);
+            this.tbData1.Location = new System.Drawing.Point(3, 10);
+            this.tbData1.MaxLength = 10;
+            this.tbData1.Multiline = true;
+            this.tbData1.Name = "tbData1";
+            this.tbData1.Size = new System.Drawing.Size(114, 23);
+            this.tbData1.TabIndex = 0;
+            this.tbData1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbData1.TextChanged += new System.EventHandler(this.inputData_TextChanged);
+            this.tbData1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.numberOnlyInTextBox_KeyPress);
             // 
-            // label57
+            // btnFiltrarPorData
             // 
-            this.label57.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label57.BackColor = System.Drawing.Color.Transparent;
-            this.label57.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(134)))), ((int)(((byte)(50)))));
-            this.label57.Location = new System.Drawing.Point(0, 72);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(357, 23);
-            this.label57.TabIndex = 25;
-            this.label57.Text = "$ 6.829,88";
-            this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnFiltrarPorData.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnFiltrarPorData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.btnFiltrarPorData.FlatAppearance.BorderSize = 0;
+            this.btnFiltrarPorData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrarPorData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrarPorData.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.btnFiltrarPorData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFiltrarPorData.Location = new System.Drawing.Point(18, 70);
+            this.btnFiltrarPorData.MinimumSize = new System.Drawing.Size(145, 30);
+            this.btnFiltrarPorData.Name = "btnFiltrarPorData";
+            this.btnFiltrarPorData.Size = new System.Drawing.Size(297, 40);
+            this.btnFiltrarPorData.TabIndex = 1;
+            this.btnFiltrarPorData.Text = "Confirmar";
+            this.btnFiltrarPorData.UseVisualStyleBackColor = false;
+            this.btnFiltrarPorData.Click += new System.EventHandler(this.buscarInfoPorPeriodo_Click);
             // 
-            // label58
+            // pictureBox19
             // 
-            this.label58.AutoSize = true;
-            this.label58.BackColor = System.Drawing.Color.Transparent;
-            this.label58.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.label58.Location = new System.Drawing.Point(15, 19);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(159, 18);
-            this.label58.TabIndex = 25;
-            this.label58.Text = "Receita do ultimo";
+            this.pictureBox19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox19.BackgroundImage = global::FinTracker.Properties.Resources.icon_setaDir;
+            this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox19.Location = new System.Drawing.Point(210, 18);
+            this.pictureBox19.Name = "pictureBox19";
+            this.pictureBox19.Size = new System.Drawing.Size(10, 16);
+            this.pictureBox19.TabIndex = 63;
+            this.pictureBox19.TabStop = false;
+            this.pictureBox19.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
             // 
-            // panel6
+            // pictureBox20
             // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.AutoScroll = true;
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label48);
-            this.panel6.Controls.Add(this.label43);
-            this.panel6.Controls.Add(this.dateTimePicker3);
-            this.panel6.Controls.Add(this.dateTimePicker2);
-            this.panel6.Controls.Add(this.label42);
-            this.panel6.Controls.Add(this.button1);
-            this.panel6.Location = new System.Drawing.Point(40, 1409);
-            this.panel6.MinimumSize = new System.Drawing.Size(897, 142);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1169, 142);
-            this.panel6.TabIndex = 42;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(21, 101);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(36, 18);
-            this.label48.TabIndex = 44;
-            this.label48.Text = "Até";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(21, 63);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(30, 18);
-            this.label43.TabIndex = 44;
-            this.label43.Text = "De";
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Location = new System.Drawing.Point(68, 97);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(380, 27);
-            this.dateTimePicker3.TabIndex = 43;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(68, 59);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(380, 27);
-            this.dateTimePicker2.TabIndex = 43;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.BackColor = System.Drawing.Color.Transparent;
-            this.label42.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
-            this.label42.Location = new System.Drawing.Point(20, 15);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(402, 23);
-            this.label42.TabIndex = 26;
-            this.label42.Text = "Fluxo de caixa em periodo de tempo";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(721, 15);
-            this.button1.MinimumSize = new System.Drawing.Size(145, 30);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(425, 109);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Confirmar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(40, 1581);
-            this.dataGridView1.MinimumSize = new System.Drawing.Size(897, 142);
-            this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(1169, 572);
-            this.dataGridView1.TabIndex = 43;
-            // 
-            // label49
-            // 
-            this.label49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
-            this.label49.Location = new System.Drawing.Point(40, 2154);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(1150, 40);
-            this.label49.TabIndex = 44;
-            this.label49.Text = "Espaçamento para dar o scrol horizontal e vertical correto (40pxs de margin)";
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.proximaPagina);
-            this.panel5.Controls.Add(this.paginaAnterior);
-            this.panel5.Location = new System.Drawing.Point(40, 663);
-            this.panel5.MinimumSize = new System.Drawing.Size(930, 40);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1169, 40);
-            this.panel5.TabIndex = 45;
-            // 
-            // proximaPagina
-            // 
-            this.proximaPagina.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.proximaPagina.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("proximaPagina.BackgroundImage")));
-            this.proximaPagina.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.proximaPagina.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.proximaPagina.Location = new System.Drawing.Point(1124, 0);
-            this.proximaPagina.Name = "proximaPagina";
-            this.proximaPagina.Size = new System.Drawing.Size(40, 40);
-            this.proximaPagina.TabIndex = 33;
-            this.proximaPagina.TabStop = false;
-            this.proximaPagina.Click += new System.EventHandler(this.mudarPagina);
-            // 
-            // paginaAnterior
-            // 
-            this.paginaAnterior.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.paginaAnterior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("paginaAnterior.BackgroundImage")));
-            this.paginaAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.paginaAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.paginaAnterior.Location = new System.Drawing.Point(1052, 0);
-            this.paginaAnterior.Name = "paginaAnterior";
-            this.paginaAnterior.Size = new System.Drawing.Size(40, 40);
-            this.paginaAnterior.TabIndex = 33;
-            this.paginaAnterior.TabStop = false;
-            this.paginaAnterior.Click += new System.EventHandler(this.mudarPagina);
-            // 
-            // chart1
-            // 
-            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(5, 4);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(797, 277);
-            this.chart1.TabIndex = 42;
-            this.chart1.Text = "chart1";
+            this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox20.BackgroundImage = global::FinTracker.Properties.Resources.icon_clientes2;
+            this.pictureBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox20.Location = new System.Drawing.Point(10, 7);
+            this.pictureBox20.Name = "pictureBox20";
+            this.pictureBox20.Size = new System.Drawing.Size(37, 37);
+            this.pictureBox20.TabIndex = 0;
+            this.pictureBox20.TabStop = false;
+            this.pictureBox20.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
             // 
             // Home
             // 
@@ -1950,7 +1957,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(1351, 1232);
+            this.ClientSize = new System.Drawing.Size(1300, 700);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label49);
             this.Controls.Add(this.dataGridView1);
@@ -1971,19 +1978,53 @@
             this.panel2.PerformLayout();
             this.pnlVerPerfil.ResumeLayout(false);
             this.pnlVerPerfil.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panelFiltros.ResumeLayout(false);
             this.panelFiltros.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.pnlPaginasPeriodoTempo.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            this.panel26.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.proximaPagina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paginaAnterior)).EndInit();
+            this.panel27.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.verSaidas)).EndInit();
+            this.panel28.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.verReceita)).EndInit();
+            this.panel23.ResumeLayout(false);
+            this.panel23.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
+            this.panel34.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pagina1infoPeriodo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pagina2infoPeriodo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pagina3infoPeriodo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pagina4infoPeriodo)).EndInit();
+            this.panel22.ResumeLayout(false);
+            this.panel22.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            this.panel19.ResumeLayout(false);
+            this.panel19.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
+            this.panel21.ResumeLayout(false);
+            this.panel21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -1998,48 +2039,14 @@
             this.panel16.PerformLayout();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            this.panel22.ResumeLayout(false);
-            this.panel22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.pnlPaginasPeriodoTempo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pagina1infoPeriodo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagina2infoPeriodo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagina3infoPeriodo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pagina4infoPeriodo)).EndInit();
-            this.panel34.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.panel26.ResumeLayout(false);
-            this.panel26.PerformLayout();
-            this.panel27.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
-            this.panel28.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            this.panel23.ResumeLayout(false);
-            this.panel23.PerformLayout();
-            this.panel29.ResumeLayout(false);
-            this.panel29.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.proximaPagina)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.paginaAnterior)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel24.ResumeLayout(false);
+            this.panel24.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2111,38 +2118,38 @@
         private System.Windows.Forms.RadioButton rdbMes;
         private System.Windows.Forms.RadioButton rdbTrimestre;
         private System.Windows.Forms.RadioButton rdbSemestre;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker anoDoPeriodo;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.Label despesasAllTime;
+        private System.Windows.Forms.PictureBox verSaidas;
         private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.PictureBox pictureBox22;
+        private System.Windows.Forms.Label receitaAllTime;
+        private System.Windows.Forms.PictureBox verReceita;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label saidasPeriodo;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label entradasPeriodo;
+        private System.Windows.Forms.ComboBox cmbReceitaUltimo;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label lucroPeriodo;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbTransacoesNeste;
         private System.Windows.Forms.Panel panel23;
         private CircularProgressBar.CircularProgressBar circularProgressBar1;
-        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label aReceberNeste;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label aPagarNeste;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Button button1;
