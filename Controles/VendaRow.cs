@@ -91,8 +91,10 @@ namespace FinTracker.Controles
 
         public void abrirEdicao(object sender, EventArgs e)
         {
-            
+
             VendaFormManipulacao formEditarVenda = new VendaFormManipulacao(dadosVenda, telaVendas);
+            //abrir formEditarVenda no centro da tela
+            formEditarVenda.StartPosition = FormStartPosition.CenterScreen;
             formEditarVenda.Show();
         }
 

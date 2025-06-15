@@ -98,7 +98,13 @@ namespace FinTracker.BD
             List<Produto> produtos = new List<Produto>();
             while (reader.Read())
             {
-                produtos.Add(new Produto(reader.GetInt32(0), reader.GetString(1), reader.GetInt32(2), reader.GetDecimal(3)));
+                try { 
+                    produtos.Add(new Produto(reader.GetInt32(0), reader.GetString(1), reader.GetInt32(2), reader.GetDecimal(3)));
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Erro ao ler produto: " + ex.Message);
+                }
             }
             return produtos;
         }

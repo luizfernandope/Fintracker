@@ -328,6 +328,7 @@ namespace FinTracker.TelasPrincipais
         private void btn_AdVenda_Click(object sender, EventArgs e)
         {
             VendaFormManipulacao vendaForm = new VendaFormManipulacao(this);
+            vendaForm.StartPosition = FormStartPosition.CenterScreen;
             vendaForm.Show();
         }
 
@@ -365,8 +366,16 @@ namespace FinTracker.TelasPrincipais
             foreach(int i in indexVendasSelecionadas)
             {
                 //pega venda na linha atual
-                VendaRow venda = (VendaRow)tabela.GetControlFromPosition(0, i);
-                venda.abrirEdicao(null,null);
+                try
+                {
+                    VendaRow venda = (VendaRow)tabela.GetControlFromPosition(0, i);
+                    venda.abrirEdicao(null,null);
+
+                }
+                catch
+                {
+                    
+                }
             }
         }
 

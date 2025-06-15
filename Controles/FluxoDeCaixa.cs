@@ -117,6 +117,7 @@ namespace FinTracker.Controles
 
         private void preencherDataGrid(List<(String nomeProd, List<decimal> valorMes)> linhasEntradas, List<(String nomeSaida, List<decimal> valorMes)> linhasSaidas, List<(int Ano, int Mes)> datas, decimal totalCaixa)
         {
+            limparDataGrid();
             List<String> dataParaColunaDoFluxo = new List<string>();
             List<decimal> totalMesEntradas = new List<decimal>();
             List<decimal> totalMesSaidas = new List<decimal>();
@@ -225,8 +226,11 @@ namespace FinTracker.Controles
             // Insere cada valor em sua respectiva coluna
             for (int col = 2; col < dgv.Columns.Count; col++)
             {
-                decimal a = (decimal)dgv.Rows[indexRowResultado].Cells[col - 1].Value;
-                totalCaixa = totalCaixa + decimal.Parse(dgv.Rows[indexRowResultado].Cells[col - 1].Value.ToString());
+                decimal a = 0;
+                if (dgv.Rows[indexRowResultado].Cells[col - 1].Value != null)
+                    a = (decimal)dgv.Rows[indexRowResultado].Cells[col - 1].Value;
+                if(dgv.Rows[indexRowResultado].Cells[col - 1].Value != null)
+                    totalCaixa = totalCaixa + decimal.Parse(dgv.Rows[indexRowResultado].Cells[col - 1].Value.ToString());
                 dgv.Rows[indexRowSaldo].Cells[col].Value = totalCaixa;
             }
             destacarLinhaDataGrid(indexRowSaldo, Color.FromArgb(230, 230, 230), Color.Black);
@@ -238,13 +242,23 @@ namespace FinTracker.Controles
             // Insere cada valor em sua respectiva coluna
             for (int col = 1; col < dgv.Columns.Count; col++)
             {
-                decimal caixaMes = (decimal)dgv.Rows[indexRowTotalCaixa-1].Cells[col].Value + (decimal)dgv.Rows[indexRowTotalCaixa-2].Cells[col].Value;
+                decimal caixaMes = 0;
+                if (dgv.Rows[indexRowTotalCaixa - 1].Cells[col].Value != null &&
+                    dgv.Rows[indexRowTotalCaixa - 2].Cells[col].Value != null)
+                    caixaMes = (decimal)dgv.Rows[indexRowTotalCaixa-1].Cells[col].Value + (decimal)dgv.Rows[indexRowTotalCaixa-2].Cells[col].Value;
                 dgv.Rows[indexRowTotalCaixa].Cells[col].Value = caixaMes;
             }
             destacarLinhaDataGrid(indexRowTotalCaixa, Color.FromArgb(230, 230, 230), Color.Black);
 
             dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgv.RowHeadersVisible = false;
+        }
+
+        private void limparDataGrid()
+        {
+            // Limpa todas as colunas e linhas do DataGridView
+            dgv.Columns.Clear();
+            dgv.Rows.Clear();
         }
 
         private void destacarLinhaDataGrid(int index, Color corFundo, Color corTexto)

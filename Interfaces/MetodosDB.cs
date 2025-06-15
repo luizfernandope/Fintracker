@@ -16,7 +16,8 @@ namespace FinTracker.Interfaces
         {
             try
             {
-                MySqlConnection con = new MySqlConnection("Server=db4free.net;Database=bd_fintracker;User Id=manuelagadelho;Password=Ma14082002.");
+                //MySqlConnection con = new MySqlConnection("Server=db4free.net;Database=bd_fintracker;User Id=manuelagadelho;Password=Ma14082002.");
+                MySqlConnection con = new MySqlConnection("server=localhost;database=bd_fintracker;uid=root;pwd=admin;");
                 await con.OpenAsync();
                 return con;
             }
