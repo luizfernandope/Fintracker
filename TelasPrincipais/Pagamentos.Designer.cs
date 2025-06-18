@@ -211,6 +211,7 @@
             // 
             // dgv_Vendas
             // 
+            this.dgv_Vendas.AllowUserToAddRows = false;
             this.dgv_Vendas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -220,6 +221,7 @@
             this.dgv_Vendas.Name = "dgv_Vendas";
             this.dgv_Vendas.Size = new System.Drawing.Size(1219, 321);
             this.dgv_Vendas.TabIndex = 51;
+            this.dgv_Vendas.DataSourceChanged += new System.EventHandler(this.dgv_Vendas_DataSourceChanged);
             // 
             // panel1
             // 
@@ -312,6 +314,7 @@
             this.txbPesquisa.Name = "txbPesquisa";
             this.txbPesquisa.Size = new System.Drawing.Size(313, 24);
             this.txbPesquisa.TabIndex = 25;
+            this.txbPesquisa.TextChanged += new System.EventHandler(this.txbPesquisa_TextChanged);
             // 
             // label2
             // 
@@ -347,9 +350,10 @@
             this.btn_EditVenda.Name = "btn_EditVenda";
             this.btn_EditVenda.Size = new System.Drawing.Size(166, 65);
             this.btn_EditVenda.TabIndex = 56;
-            this.btn_EditVenda.Text = "Editar dados de venda";
+            this.btn_EditVenda.Text = "Editar dados de despesa";
             this.btn_EditVenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EditVenda.UseVisualStyleBackColor = true;
+            this.btn_EditVenda.Click += new System.EventHandler(this.btn_EditVenda_Click);
             // 
             // btn_DelVenda
             // 
@@ -361,9 +365,10 @@
             this.btn_DelVenda.Name = "btn_DelVenda";
             this.btn_DelVenda.Size = new System.Drawing.Size(166, 65);
             this.btn_DelVenda.TabIndex = 55;
-            this.btn_DelVenda.Text = "Excluir venda(s)";
+            this.btn_DelVenda.Text = "Excluir despesa(s)";
             this.btn_DelVenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_DelVenda.UseVisualStyleBackColor = true;
+            this.btn_DelVenda.Click += new System.EventHandler(this.btn_DelVenda_Click);
             // 
             // btn_AdVenda
             // 
@@ -375,9 +380,10 @@
             this.btn_AdVenda.Name = "btn_AdVenda";
             this.btn_AdVenda.Size = new System.Drawing.Size(166, 65);
             this.btn_AdVenda.TabIndex = 54;
-            this.btn_AdVenda.Text = "Adicionar nova venda";
+            this.btn_AdVenda.Text = "Adicionar nova despesa";
             this.btn_AdVenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_AdVenda.UseVisualStyleBackColor = true;
+            this.btn_AdVenda.Click += new System.EventHandler(this.btn_AdVenda_Click);
             // 
             // Pagamentos
             // 

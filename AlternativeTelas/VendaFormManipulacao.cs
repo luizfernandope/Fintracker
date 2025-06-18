@@ -315,7 +315,13 @@ namespace FinTracker.AlternativeTelas
             this.Text = "Nova venda";
             btnSalvar.Enabled = true;
             btnSalvar.Text = "Salvar";
+            if (a) 
             MessageBox.Show("Venda salva com sucesso.");
+            else
+            {
+                MessageBox.Show("Erro ao salvar venda.");
+                return;
+            }
             telaQueChamou.pegarVendas();//atualiza tabela da tela de Vendas
             limparInputs();
         }

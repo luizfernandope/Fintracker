@@ -3,6 +3,7 @@ using MySql.Data.MySqlClient;
 using System;
 using System.Data;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FinTracker.BD
 {
@@ -44,6 +45,27 @@ namespace FinTracker.BD
             }
         }
 
+        public async Task<DataTable> pesquisarPagamentos(string strBusca)
+        {
+            MySqlConnection conn = await MetodosDB.conexao();
+            string query = "SELECT * FROM Pagamento " +
+                $"WHERE id_Pagamento = '{strBusca}' OR Data LIKE '%{strBusca}%' OR Metodo LIKE '%{strBusca}%' OR Tipo LIKE '%{strBusca}%' " +
+                $"OR Parcelas LIKE '%{strBusca}%' OR Valor LIKE '%{strBusca}%' OR descricao LIKE '%{strBusca}%'";
+            try
+            {
+
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                await da.FillAsync(dt);
+                return dt;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro: " + erro.Message);
+            }
+            return null;
+        }
         public async void UpdatePagamento(int idPagamento, DateTime data, string metodo, string tipo, int parcelas, decimal valor)
         {
             MySqlConnection conn = await MetodosDB.conexao();
@@ -63,11 +85,10 @@ namespace FinTracker.BD
         public async void DeletePagamento(int idPagamento)
         {
             MySqlConnection conn = await MetodosDB.conexao();
-            conn.Open();
-                string query = "DELETE FROM Pagamento WHERE id_Pagamento = @idPagamento";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@idPagamento", idPagamento);
-                cmd.ExecuteNonQuery();
+            string query = "DELETE FROM Pagamento WHERE id_Pagamento = @idPagamento";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@idPagamento", idPagamento);
+            cmd.ExecuteNonQuery();
             
         }
     }

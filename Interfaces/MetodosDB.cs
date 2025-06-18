@@ -126,7 +126,75 @@ namespace FinTracker.Interfaces
             }
         }
 
-        //faz o metodo rejeitarCadastro que é responsável por rejeitar uma solicitação de cadastro
+        public static async Task<bool> cadastrarDespesa(Despesa despesa)
+        {
+            // Cria uma conexão com o banco de dados
+            MySqlConnection con = await conexao();
+            if (con == null)
+                return false;
+            // Cria uma consulta SQL para inserir a nova despesa na tabela despesas
+            String query = $"INSERT INTO pagamento (descricao, metodo, tipo, valor, parcelas, data) " +
+                $"VALUES ('{despesa.Descricao}', '{despesa.Metodo}', '{despesa.Tipo}', {despesa.Valor}, {despesa.Parcelas}, '{despesa.Data:yyyy-MM-dd HH:mm:ss}')";
+            MySqlCommand command = new MySqlCommand(query, con);
+            try
+            {
+                // Executa a consulta SQL
+                await command.ExecuteNonQueryAsync();
+                return true; // Despesa cadastrada com sucesso
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Erro ao cadastrar despesa: " + e.Message);
+                return false; // Falha ao cadastrar despesa
+            }
+        }
+        public static async Task<bool> atualizarDespesa(Despesa despesa)
+        {
+            // Cria uma conexão com o banco de dados
+            MySqlConnection con = await conexao();
+            if (con == null)
+                return false;
+            // Cria uma consulta SQL para atualizar a despesa na tabela despesas
+            String query = $"UPDATE pagamento SET descricao = '{despesa.Descricao}', metodo = '{despesa.Metodo}', " +
+                $"tipo = '{despesa.Tipo}', valor = {despesa.Valor.ToString().Replace(',', '.')}, parcelas = {despesa.Parcelas}, data = '{despesa.Data:yyyy-MM-dd HH:mm:ss}' " +
+                $"WHERE id_Pagamento = {despesa.Id}";
+            MySqlCommand command = new MySqlCommand(query, con);
+            try
+            {
+                // Executa a consulta SQL
+                await command.ExecuteNonQueryAsync();
+                return true; // Despesa atualizada com sucesso
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Erro ao atualizar despesa: " + e.Message);
+                return false; // Falha ao atualizar despesa
+            }
+        }
+
+        //metodo excluirDespesa
+        public static async Task<bool> excluirDespesa(int idDespesa)
+        {
+            // Cria uma conexão com o banco de dados
+            MySqlConnection con = await conexao();
+            if (con == null)
+                return false;
+            // Cria uma consulta SQL para excluir a despesa da tabela despesas
+            String query = $"DELETE FROM pagamento WHERE id_Pagamento = {idDespesa}";
+            MySqlCommand command = new MySqlCommand(query, con);
+            try
+            {
+                // Executa a consulta SQL
+                await command.ExecuteNonQueryAsync();
+                return true; // Despesa excluída com sucesso
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Erro ao excluir despesa: " + e.Message);
+                return false; // Falha ao excluir despesa
+            }
+        }
+
         public static async Task<bool> rejeitarCadastro(int idSolicitacao)
         {
             MySqlConnection con = await conexao();

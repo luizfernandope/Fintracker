@@ -148,6 +148,12 @@
     <Compile Include="AlternativeTelas\MudarSenha.Designer.cs">
       <DependentUpon>MudarSenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlternativeTelas\NovaDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternativeTelas\NovaDespesa.Designer.cs">
+      <DependentUpon>NovaDespesa.cs</DependentUpon>
+    </Compile>
     <Compile Include="AlternativeTelas\VendaFormManipulacao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,7 @@
     </Compile>
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Despesa.cs" />
     <Compile Include="Models\ItensVenda.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Models\Venda.cs" />
@@ -272,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AlternativeTelas\MudarSenha.resx">
       <DependentUpon>MudarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlternativeTelas\NovaDespesa.resx">
+      <DependentUpon>NovaDespesa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AlternativeTelas\VendaFormManipulacao.resx">
       <DependentUpon>VendaFormManipulacao.cs</DependentUpon>
