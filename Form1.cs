@@ -1,4 +1,6 @@
-﻿using FinTracker.Telas;
+﻿using FinTracker.LoginCadastro;
+using FinTracker.Models;
+using FinTracker.Telas;
 using FinTracker.TelasPrincipais;
 using System;
 using System.Collections.Generic;
@@ -16,28 +18,19 @@ namespace FinTracker
 {
     public partial class Form1 : Form
     {
-        
+        Admin admin;
+        Principal telaMae;
         public Form1()
         {
             InitializeComponent();
             mudarTelaDoPanelPrincipal(new Home());
         }
-        private void button1_Click(object sender, EventArgs e)
+        public Form1(Admin admin, Principal telaMae)
         {
-            this.Close();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            if(this.WindowState == FormWindowState.Maximized)
-                this.WindowState = FormWindowState.Normal;
-            else
-                this.WindowState = FormWindowState.Maximized;
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
+            InitializeComponent();
+            mudarTelaDoPanelPrincipal(new Home(admin));
+            this.admin = admin;
+            this.telaMae = telaMae;
         }
 
         public void trocarTela(object btnTelaAlvo)
@@ -58,19 +51,19 @@ namespace FinTracker
             button.ForeColor = Color.FromArgb(21, 39, 29);
 
             if (button.Name.Contains("Home"))
-                mudarTelaDoPanelPrincipal(new Home());
+                mudarTelaDoPanelPrincipal(new Home(admin));
             else if (button.Name.Contains("Vendas"))
-                mudarTelaDoPanelPrincipal(new Vendas());            
+                mudarTelaDoPanelPrincipal(new Vendas(admin));            
             else if (button.Name.Contains("Pagamen"))
-                mudarTelaDoPanelPrincipal(new Pagamentos());
+                mudarTelaDoPanelPrincipal(new Pagamentos(admin));
             else if (button.Name.Contains("Contas"))
-                mudarTelaDoPanelPrincipal(new Contas());
+                mudarTelaDoPanelPrincipal(new Contas(admin));
             else if (button.Name.Contains("Fornece"))
-                mudarTelaDoPanelPrincipal(new Fornecedores());
+                mudarTelaDoPanelPrincipal(new Fornecedores(admin));
             else if (button.Name.Contains("Client"))
-                mudarTelaDoPanelPrincipal(new Clientes());
+                mudarTelaDoPanelPrincipal(new Clientes(admin));
             else if (button.Name.Contains("Importar"))
-                mudarTelaDoPanelPrincipal(new Importar());
+                mudarTelaDoPanelPrincipal(new Importar(admin));
 
         }
 
@@ -119,6 +112,15 @@ namespace FinTracker
         private void btnImportar_Click(object sender, EventArgs e)
         {
             trocarTela(sender);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            telaMae.mudarTelaDoPanelPrincipal(new Login(telaMae));
+            telaMae.Size = new System.Drawing.Size(1080, 604); // Definindo um tamanho fixo para a tela principal
+            telaMae.MaximizeBox = false;
+            telaMae.WindowState = FormWindowState.Normal; // Normaliza a tela principal
+            telaMae.FormBorderStyle = FormBorderStyle.FixedSingle;
         }
     }
 }

@@ -8,14 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinTracker.AlternativeTelas;
+using FinTracker.Models;
 
 namespace FinTracker.TelasPrincipais
 {
     public partial class Perfil : Form
     {
+        Admin admin;
         public Perfil()
         {
             InitializeComponent();
+        }
+        public Perfil(Admin admin)
+        {
+            InitializeComponent();
+            this.admin = admin;
+            nome.Text = admin.GetNome();
+            email.Text = admin.GetEmail();
         }
         private void btnsHover(Object sender, EventArgs e)
         {

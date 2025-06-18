@@ -30,8 +30,8 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.email = new System.Windows.Forms.Label();
+            this.nome = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -56,8 +56,8 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.email);
+            this.panel1.Controls.Add(this.nome);
             this.panel1.Controls.Add(this.lblData);
             this.panel1.Location = new System.Drawing.Point(30, 40);
             this.panel1.Name = "panel1";
@@ -74,25 +74,25 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // email
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(134, 105);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(302, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "UMemail12345@gmail.com";
+            this.email.AutoSize = true;
+            this.email.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.Location = new System.Drawing.Point(134, 105);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(302, 23);
+            this.email.TabIndex = 2;
+            this.email.Text = "UMemail12345@gmail.com";
             // 
-            // label1
+            // nome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(132, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(661, 35);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Rurya Henri Yapkive de Olivera Miranda";
+            this.nome.AutoSize = true;
+            this.nome.Font = new System.Drawing.Font("Verdana", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome.Location = new System.Drawing.Point(132, 58);
+            this.nome.Name = "nome";
+            this.nome.Size = new System.Drawing.Size(661, 35);
+            this.nome.TabIndex = 2;
+            this.nome.Text = "Rurya Henri Yapkive de Olivera Miranda";
             // 
             // lblData
             // 
@@ -201,15 +201,14 @@
             this.pnlTela2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
             this.pnlTela2.Controls.Add(this.pnlTelaClicada);
             this.pnlTela2.Controls.Add(this.panelParaVoltar);
-            this.pnlTela2.Location = new System.Drawing.Point(0, 0);
+            this.pnlTela2.Location = new System.Drawing.Point(0, -1);
             this.pnlTela2.Name = "pnlTela2";
-            this.pnlTela2.Size = new System.Drawing.Size(860, 661);
+            this.pnlTela2.Size = new System.Drawing.Size(860, 662);
             this.pnlTela2.TabIndex = 4;
             this.pnlTela2.Visible = false;
             // 
             // pnlTelaClicada
             // 
-            this.pnlTelaClicada.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTelaClicada.Location = new System.Drawing.Point(0, 64);
             this.pnlTelaClicada.Name = "pnlTelaClicada";
             this.pnlTelaClicada.Size = new System.Drawing.Size(860, 597);
@@ -268,9 +267,9 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label nome;
         private System.Windows.Forms.Label lblData;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label email;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;

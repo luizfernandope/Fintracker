@@ -1,4 +1,6 @@
-﻿using FinTracker.TelasPrincipais;
+﻿using FinTracker.AlternativeTelas;
+using FinTracker.Models;
+using FinTracker.TelasPrincipais;
 using MiniExcelLibs;
 using System;
 using System.Collections.Generic;
@@ -14,10 +16,18 @@ namespace FinTracker.Telas
 {
     public partial class Importar : Form
     {
+        Admin admin;
         public Importar()
         {
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
+        }
+        public Importar(Admin admin)
+        {
+            InitializeComponent();
+            lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
+            this.admin = admin;
+            nomeUsuario.Text = admin.GetNome();
         }
         private void panel1_DragDrop(object sender, DragEventArgs e)
         {
@@ -59,8 +69,14 @@ namespace FinTracker.Telas
 
         private void pnlVerPerfil_Click(object sender, MouseEventArgs e)
         {
-            Perfil perfil = new Perfil();
+            Perfil perfil = new Perfil(admin);
             perfil.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            GerirNovosCadastros gerirNovosCadastros = new GerirNovosCadastros();
+            gerirNovosCadastros.Show();
         }
     }
     public class UserAccount

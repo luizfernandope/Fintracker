@@ -17,7 +17,8 @@ namespace FinTracker.TelasPrincipais
     public partial class Clientes : Form
     {
         ClienteRepository clienteRepository = new ClienteRepository();
-        public Clientes()
+        Admin admin;
+        public void inicializar()
         {
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
@@ -45,6 +46,16 @@ namespace FinTracker.TelasPrincipais
             dataGridView1.Columns.Add(columnEdit);
             dataGridView1.ReadOnly = true;
         }
+        public Clientes()
+        {
+            inicializar();
+        }
+        public Clientes(Admin admin)
+        {
+            inicializar();
+            this.admin = admin;
+            nomeUsuario.Text = admin.GetNome();
+        }
         private void pnlPesquisarCliente_Click(object sender, EventArgs e)
         {
             txbPesquisa.Focus();
@@ -64,7 +75,7 @@ namespace FinTracker.TelasPrincipais
 
         private void pnlVerPerfil_Click(object sender, MouseEventArgs e)
         {
-            Perfil perfil = new Perfil();
+            Perfil perfil = new Perfil(admin);
             perfil.Show();
         }
 
@@ -185,6 +196,12 @@ namespace FinTracker.TelasPrincipais
             dataGridView1.Columns["nome"].FillWeight = 12;
             dataGridView1.Columns["endereco"].FillWeight = 9;
             dataGridView1.Columns["email"].FillWeight = 9;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            GerirNovosCadastros gerirNovosCadastros = new GerirNovosCadastros();
+            gerirNovosCadastros.Show();
         }
     }
 }

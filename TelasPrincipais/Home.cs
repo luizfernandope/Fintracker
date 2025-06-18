@@ -1,5 +1,6 @@
 ﻿using FinTracker.AlternativeTelas;
 using FinTracker.Interfaces;
+using FinTracker.Models;
 using FinTracker.TelasPrincipais;
 using MySql.Data.MySqlClient;
 using System;
@@ -25,12 +26,12 @@ namespace FinTracker.Telas
     public partial class Home : Form
     {
         private String[] tabelasConfirmadas = null;//variavel para identificar tabelas que foram confirmadas em informações por periodo de tempo
-
-        public Home()
+        Admin admin;
+        public void inicializar()
         {
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de MMMMM \de yyyy.");
-            
+
             anoDoPeriodo.MaxDate = DateTime.Today;
             cmbReceitaUltimo.SelectedIndex = 0;
             cmbTransacoesNeste.SelectedIndex = 0;
@@ -39,11 +40,21 @@ namespace FinTracker.Telas
             CarregarDadosAsync();
             buscarInfoPorPeriodo_Click(null, null);
             atualizaGrafico(null, null);
-            
+
             addLabelTip(receitaAllTime, "Receita de todas as vendas + todas contas recebidas.");
             addLabelTip(despesasAllTime, "Soma de todas despesas (sem contar impostos).");
             //atualizarReceitaDoUltimo(null,null);
             atualizaTransacoesPendentes(null, null);
+        }
+        public Home()
+        {
+            inicializar();
+        }
+        public Home(Admin admin)
+        {
+            inicializar();
+            this.admin = admin;
+            nomeUsuario.Text = admin.GetNome();
         }
         private async void CarregarDadosAsync()
         {
@@ -65,7 +76,7 @@ namespace FinTracker.Telas
 
         private void pnlVerPerfil_Click(object sender, MouseEventArgs e)
         {
-            Perfil perfil = new Perfil();
+            Perfil perfil = new Perfil(admin);
             perfil.Show();
         }
 
@@ -774,6 +785,12 @@ namespace FinTracker.Telas
             }
 
             fluxoDeCaixa1.pegarDados(resultado);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            GerirNovosCadastros gerirNovosCadastros = new GerirNovosCadastros();
+            gerirNovosCadastros.Show();
         }
     }
 }

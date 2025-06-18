@@ -273,6 +273,16 @@ namespace FinTracker.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_notification {
+            get {
+                object obj = ResourceManager.GetObject("icon_notification", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_olhoAberto {
             get {
                 object obj = ResourceManager.GetObject("icon_olhoAberto", resourceCulture);

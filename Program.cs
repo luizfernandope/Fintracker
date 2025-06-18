@@ -1,4 +1,5 @@
 ﻿using FinTracker.AlternativeTelas;
+using FinTracker.LoginCadastro;
 using FinTracker.TelasPrincipais;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace FinTracker
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Principal());
         }
     }
 }

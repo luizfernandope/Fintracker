@@ -20,7 +20,8 @@ namespace FinTracker.TelasPrincipais
     public partial class Fornecedores : Form
     {
         private FornecedorRepository fornecedorRepository = new FornecedorRepository();
-        public Fornecedores()
+        Admin admin;
+        public void inicializar()
         {
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
@@ -49,10 +50,20 @@ namespace FinTracker.TelasPrincipais
 
             dataGridView1.ReadOnly = true;
         }
+        public Fornecedores()
+        {
+            inicializar();
+        }
+        public Fornecedores(Admin admin)
+        {
+            inicializar();
+            this.admin = admin;
+            nomeUsuario.Text = admin.GetNome();
+        }
 
         private void pnlVerPerfil_Click(object sender, MouseEventArgs e)
         {
-            Perfil perfil = new Perfil();
+            Perfil perfil = new Perfil(admin);
             perfil.Show();
         }
         public async void atualizarTabela()
@@ -187,6 +198,12 @@ namespace FinTracker.TelasPrincipais
         {
             txbPesquisa.Text = "";
             atualizarTabela();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            GerirNovosCadastros gerirNovosCadastros = new GerirNovosCadastros();
+            gerirNovosCadastros.Show();
         }
     }
 }

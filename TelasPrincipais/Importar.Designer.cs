@@ -46,11 +46,12 @@
             this.pnlVerPerfil = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.nomeUsuario = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblData = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.flpOpçõesDeTaela.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -59,6 +60,7 @@
             this.pnlVerPerfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // flpOpçõesDeTaela
@@ -276,6 +278,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.pnlVerPerfil);
             this.panel2.Controls.Add(this.lblData);
             this.panel2.Controls.Add(this.panel3);
@@ -293,12 +296,12 @@
             this.pnlVerPerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlVerPerfil.Controls.Add(this.pictureBox3);
             this.pnlVerPerfil.Controls.Add(this.label5);
-            this.pnlVerPerfil.Controls.Add(this.label4);
+            this.pnlVerPerfil.Controls.Add(this.nomeUsuario);
             this.pnlVerPerfil.Controls.Add(this.pictureBox2);
             this.pnlVerPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlVerPerfil.Location = new System.Drawing.Point(1030, 12);
+            this.pnlVerPerfil.Location = new System.Drawing.Point(956, 12);
             this.pnlVerPerfil.Name = "pnlVerPerfil";
-            this.pnlVerPerfil.Size = new System.Drawing.Size(230, 53);
+            this.pnlVerPerfil.Size = new System.Drawing.Size(304, 53);
             this.pnlVerPerfil.TabIndex = 3;
             this.pnlVerPerfil.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
             // 
@@ -308,7 +311,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::FinTracker.Properties.Resources.icon_setaDir;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(210, 18);
+            this.pictureBox3.Location = new System.Drawing.Point(284, 18);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(10, 16);
             this.pictureBox3.TabIndex = 63;
@@ -327,18 +330,18 @@
             this.label5.Text = "Ver perfil";
             this.label5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
             // 
-            // label4
+            // nomeUsuario
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.nomeUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(57, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 16);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Nome Sobrenome";
-            this.label4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
+            this.nomeUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.nomeUsuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeUsuario.Location = new System.Drawing.Point(57, 7);
+            this.nomeUsuario.Name = "nomeUsuario";
+            this.nomeUsuario.Size = new System.Drawing.Size(212, 16);
+            this.nomeUsuario.TabIndex = 1;
+            this.nomeUsuario.Text = "Nome Sobrenome";
+            this.nomeUsuario.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
             // 
             // pictureBox2
             // 
@@ -384,6 +387,21 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "O que deseja importar ?";
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::FinTracker.Properties.Resources.icon_notification;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.InitialImage = null;
+            this.pictureBox4.Location = new System.Drawing.Point(903, 20);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(37, 37);
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            // 
             // Importar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -414,6 +432,7 @@
             this.pnlVerPerfil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -441,7 +460,8 @@
         private System.Windows.Forms.Panel pnlVerPerfil;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label nomeUsuario;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

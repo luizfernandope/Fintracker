@@ -136,6 +136,12 @@
     <Compile Include="AlternativeTelas\EditarPerfil.Designer.cs">
       <DependentUpon>EditarPerfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlternativeTelas\GerirNovosCadastros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternativeTelas\GerirNovosCadastros.Designer.cs">
+      <DependentUpon>GerirNovosCadastros.cs</DependentUpon>
+    </Compile>
     <Compile Include="AlternativeTelas\MudarSenha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,31 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\MetodosDB.cs" />
+    <Compile Include="LoginCadastro\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginCadastro\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCadastro\Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginCadastro\Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCadastro\Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginCadastro\Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginCadastro\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginCadastro\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\ItensVenda.cs" />
     <Compile Include="Models\Produto.cs" />
@@ -236,6 +267,9 @@
     <EmbeddedResource Include="AlternativeTelas\EditarPerfil.resx">
       <DependentUpon>EditarPerfil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AlternativeTelas\GerirNovosCadastros.resx">
+      <DependentUpon>GerirNovosCadastros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AlternativeTelas\MudarSenha.resx">
       <DependentUpon>MudarSenha.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,6 +284,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCadastro\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCadastro\Password.resx">
+      <DependentUpon>Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCadastro\Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginCadastro\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -404,7 +450,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\icon_notification.svg" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\shapes_backgrounds\whiteCardBg.png" />
   </ItemGroup>
@@ -413,6 +461,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sombraAbaixo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_notification.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

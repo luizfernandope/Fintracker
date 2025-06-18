@@ -51,6 +51,7 @@ namespace FinTracker.BD
                 return dt; 
             }catch(Exception e)
             {
+                MessageBox.Show("Erro ao buscar fornecedores: " + e.Message);
                 return null;
             }
         }

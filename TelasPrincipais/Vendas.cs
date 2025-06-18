@@ -24,7 +24,8 @@ namespace FinTracker.TelasPrincipais
         List<int> indexVendasSelecionadas = new List<int>();
 
         private int paginaAtual = 1, totalPaginas = 1;
-        public Vendas()
+        Admin admin;
+        public void inicializar()
         {
             InitializeComponent();
             lblData.Text = DateTime.Now.ToString(@"ddddd, dd \de  MMMMM \de yyyy.");
@@ -32,10 +33,20 @@ namespace FinTracker.TelasPrincipais
             cmbPagamento.SelectedIndex = 0;
             atualizarNavegacao(paginaAtual, totalPaginas);
         }
+        public Vendas()
+        {
+            inicializar();
+        }
+        public Vendas(Admin admin)
+        {
+            inicializar();
+            this.admin = admin;
+            nomeUsuario.Text = admin.GetNome();
+        }
 
         private void pnlVerPerfil_Click(object sender, MouseEventArgs e)
         {
-            Perfil perfil = new Perfil();
+            Perfil perfil = new Perfil(admin);
             perfil.Show();
         }
 
@@ -377,6 +388,12 @@ namespace FinTracker.TelasPrincipais
                     
                 }
             }
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            GerirNovosCadastros gerirNovosCadastros = new GerirNovosCadastros();
+            gerirNovosCadastros.Show();
         }
 
         private void paginaAnterior_Click(object sender, EventArgs e)

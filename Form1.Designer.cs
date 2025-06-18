@@ -62,6 +62,7 @@
             this.panel1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.MinimumSize = new System.Drawing.Size(200, 681);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 681);
             this.panel1.TabIndex = 7;
@@ -80,6 +81,7 @@
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // label1
             // 
@@ -190,7 +192,7 @@
             this.btnPagamentos.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.btnPagamentos.Size = new System.Drawing.Size(180, 48);
             this.btnPagamentos.TabIndex = 2;
-            this.btnPagamentos.Text = "          Pagamentos";
+            this.btnPagamentos.Text = "          Despesas";
             this.btnPagamentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPagamentos.UseVisualStyleBackColor = false;
             this.btnPagamentos.Click += new System.EventHandler(this.btnPagamentos_Click);
@@ -250,9 +252,12 @@
             this.ClientSize = new System.Drawing.Size(1284, 681);
             this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(960, 400);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Fintracker Software";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

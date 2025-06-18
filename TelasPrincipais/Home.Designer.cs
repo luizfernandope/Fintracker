@@ -36,10 +36,11 @@
             this.pnlVerPerfil = new System.Windows.Forms.Panel();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.label50 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
+            this.nomeUsuario = new System.Windows.Forms.Label();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.lblData = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelFiltros = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -164,6 +165,7 @@
             this.pnlVerPerfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelFiltros.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -215,10 +217,11 @@
             this.panel2.Controls.Add(this.pnlVerPerfil);
             this.panel2.Controls.Add(this.lblData);
             this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1317, 73);
+            this.panel2.Size = new System.Drawing.Size(1334, 73);
             this.panel2.TabIndex = 24;
             // 
             // pnlVerPerfil
@@ -229,12 +232,12 @@
             this.pnlVerPerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlVerPerfil.Controls.Add(this.pictureBox19);
             this.pnlVerPerfil.Controls.Add(this.label50);
-            this.pnlVerPerfil.Controls.Add(this.label59);
+            this.pnlVerPerfil.Controls.Add(this.nomeUsuario);
             this.pnlVerPerfil.Controls.Add(this.pictureBox20);
             this.pnlVerPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnlVerPerfil.Location = new System.Drawing.Point(1063, 12);
+            this.pnlVerPerfil.Location = new System.Drawing.Point(1006, 12);
             this.pnlVerPerfil.Name = "pnlVerPerfil";
-            this.pnlVerPerfil.Size = new System.Drawing.Size(230, 53);
+            this.pnlVerPerfil.Size = new System.Drawing.Size(304, 53);
             this.pnlVerPerfil.TabIndex = 3;
             this.pnlVerPerfil.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
             // 
@@ -244,7 +247,7 @@
             this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox19.BackgroundImage = global::FinTracker.Properties.Resources.icon_setaDir;
             this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox19.Location = new System.Drawing.Point(210, 18);
+            this.pictureBox19.Location = new System.Drawing.Point(284, 18);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(10, 16);
             this.pictureBox19.TabIndex = 63;
@@ -263,18 +266,18 @@
             this.label50.Text = "Ver perfil";
             this.label50.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
             // 
-            // label59
+            // nomeUsuario
             // 
-            this.label59.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.nomeUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label59.BackColor = System.Drawing.Color.Transparent;
-            this.label59.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(57, 7);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(138, 16);
-            this.label59.TabIndex = 1;
-            this.label59.Text = "Nome Sobrenome";
-            this.label59.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
+            this.nomeUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.nomeUsuario.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nomeUsuario.Location = new System.Drawing.Point(57, 7);
+            this.nomeUsuario.Name = "nomeUsuario";
+            this.nomeUsuario.Size = new System.Drawing.Size(212, 16);
+            this.nomeUsuario.TabIndex = 1;
+            this.nomeUsuario.Text = "Nome Sobrenome";
+            this.nomeUsuario.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pnlVerPerfil_Click);
             // 
             // pictureBox20
             // 
@@ -305,8 +308,23 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 72);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1317, 1);
+            this.panel3.Size = new System.Drawing.Size(1334, 1);
             this.panel3.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::FinTracker.Properties.Resources.icon_notification;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(954, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(37, 37);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -336,7 +354,7 @@
             this.panelFiltros.Location = new System.Drawing.Point(404, 1343);
             this.panelFiltros.MinimumSize = new System.Drawing.Size(564, 127);
             this.panelFiltros.Name = "panelFiltros";
-            this.panelFiltros.Size = new System.Drawing.Size(787, 127);
+            this.panelFiltros.Size = new System.Drawing.Size(617, 127);
             this.panelFiltros.TabIndex = 28;
             this.panelFiltros.Resize += new System.EventHandler(this.panelFiltros_SizeChanged);
             // 
@@ -375,7 +393,7 @@
             this.btnFiltrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFiltrar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
             this.btnFiltrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFiltrar.Location = new System.Drawing.Point(544, 69);
+            this.btnFiltrar.Location = new System.Drawing.Point(374, 69);
             this.btnFiltrar.MinimumSize = new System.Drawing.Size(145, 30);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(203, 40);
@@ -455,7 +473,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1151, 209);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(981, 209);
             this.tableLayoutPanel1.TabIndex = 29;
             // 
             // panel1
@@ -467,7 +485,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(266, 88);
+            this.panel1.Size = new System.Drawing.Size(224, 88);
             this.panel1.TabIndex = 26;
             // 
             // valorCard1
@@ -491,7 +509,7 @@
             this.tituloCard1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
             this.tituloCard1.Location = new System.Drawing.Point(18, 8);
             this.tituloCard1.Name = "tituloCard1";
-            this.tituloCard1.Size = new System.Drawing.Size(166, 38);
+            this.tituloCard1.Size = new System.Drawing.Size(124, 38);
             this.tituloCard1.TabIndex = 1;
             this.tituloCard1.Text = "Valor total de vendas";
             // 
@@ -504,7 +522,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(3, 117);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(266, 89);
+            this.panel11.Size = new System.Drawing.Size(224, 89);
             this.panel11.TabIndex = 26;
             // 
             // valorCard5
@@ -528,7 +546,7 @@
             this.tituloCard5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
             this.tituloCard5.Location = new System.Drawing.Point(18, 8);
             this.tituloCard5.Name = "tituloCard5";
-            this.tituloCard5.Size = new System.Drawing.Size(200, 38);
+            this.tituloCard5.Size = new System.Drawing.Size(158, 38);
             this.tituloCard5.TabIndex = 1;
             this.tituloCard5.Text = "Vendas pendentes";
             // 
@@ -539,9 +557,9 @@
             this.panel12.Controls.Add(this.valorCard2);
             this.panel12.Controls.Add(this.tituloCard2);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(295, 3);
+            this.panel12.Location = new System.Drawing.Point(253, 3);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(266, 88);
+            this.panel12.Size = new System.Drawing.Size(224, 88);
             this.panel12.TabIndex = 26;
             // 
             // valorCard2
@@ -565,7 +583,7 @@
             this.tituloCard2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
             this.tituloCard2.Location = new System.Drawing.Point(18, 8);
             this.tituloCard2.Name = "tituloCard2";
-            this.tituloCard2.Size = new System.Drawing.Size(200, 38);
+            this.tituloCard2.Size = new System.Drawing.Size(158, 38);
             this.tituloCard2.TabIndex = 1;
             this.tituloCard2.Text = "Valor médio de venda";
             // 
@@ -576,9 +594,9 @@
             this.panel14.Controls.Add(this.valorCard7);
             this.panel14.Controls.Add(this.tituloCard7);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(587, 117);
+            this.panel14.Location = new System.Drawing.Point(503, 117);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(266, 89);
+            this.panel14.Size = new System.Drawing.Size(224, 89);
             this.panel14.TabIndex = 26;
             // 
             // valorCard7
@@ -602,7 +620,7 @@
             this.tituloCard7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
             this.tituloCard7.Location = new System.Drawing.Point(18, 8);
             this.tituloCard7.Name = "tituloCard7";
-            this.tituloCard7.Size = new System.Drawing.Size(200, 38);
+            this.tituloCard7.Size = new System.Drawing.Size(158, 38);
             this.tituloCard7.TabIndex = 1;
             this.tituloCard7.Text = "Nº Clientes com vendas registradas neste período";
             // 
@@ -613,9 +631,9 @@
             this.panel15.Controls.Add(this.tituloCard6);
             this.panel15.Controls.Add(this.valorCard6);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(295, 117);
+            this.panel15.Location = new System.Drawing.Point(253, 117);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(266, 89);
+            this.panel15.Size = new System.Drawing.Size(224, 89);
             this.panel15.TabIndex = 26;
             // 
             // tituloCard6
@@ -627,7 +645,7 @@
             this.tituloCard6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
             this.tituloCard6.Location = new System.Drawing.Point(18, 8);
             this.tituloCard6.Name = "tituloCard6";
-            this.tituloCard6.Size = new System.Drawing.Size(200, 38);
+            this.tituloCard6.Size = new System.Drawing.Size(158, 38);
             this.tituloCard6.TabIndex = 2;
             this.tituloCard6.Text = "Nº de produdos únicos vendidos";
             // 
@@ -650,9 +668,9 @@
             this.panel17.Controls.Add(this.tituloCard8);
             this.panel17.Controls.Add(this.valorCard8);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(879, 117);
+            this.panel17.Location = new System.Drawing.Point(753, 117);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(269, 89);
+            this.panel17.Size = new System.Drawing.Size(225, 89);
             this.panel17.TabIndex = 26;
             // 
             // tituloCard8
@@ -664,7 +682,7 @@
             this.tituloCard8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
             this.tituloCard8.Location = new System.Drawing.Point(18, 8);
             this.tituloCard8.Name = "tituloCard8";
-            this.tituloCard8.Size = new System.Drawing.Size(201, 38);
+            this.tituloCard8.Size = new System.Drawing.Size(157, 38);
             this.tituloCard8.TabIndex = 2;
             this.tituloCard8.Text = "Quantidade de produtos vendidos";
             // 
@@ -687,9 +705,9 @@
             this.panel16.Controls.Add(this.valorCard4);
             this.panel16.Controls.Add(this.tituloCard4);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(879, 3);
+            this.panel16.Location = new System.Drawing.Point(753, 3);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(269, 88);
+            this.panel16.Size = new System.Drawing.Size(225, 88);
             this.panel16.TabIndex = 26;
             // 
             // valorCard4
@@ -713,7 +731,7 @@
             this.tituloCard4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
             this.tituloCard4.Location = new System.Drawing.Point(18, 8);
             this.tituloCard4.Name = "tituloCard4";
-            this.tituloCard4.Size = new System.Drawing.Size(201, 38);
+            this.tituloCard4.Size = new System.Drawing.Size(157, 38);
             this.tituloCard4.TabIndex = 1;
             this.tituloCard4.Text = "Vendas concluídas";
             // 
@@ -724,9 +742,9 @@
             this.panel13.Controls.Add(this.valorCard3);
             this.panel13.Controls.Add(this.tituloCard3);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(587, 3);
+            this.panel13.Location = new System.Drawing.Point(503, 3);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(266, 88);
+            this.panel13.Size = new System.Drawing.Size(224, 88);
             this.panel13.TabIndex = 26;
             // 
             // valorCard3
@@ -750,7 +768,7 @@
             this.tituloCard3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
             this.tituloCard3.Location = new System.Drawing.Point(18, 8);
             this.tituloCard3.Name = "tituloCard3";
-            this.tituloCard3.Size = new System.Drawing.Size(200, 38);
+            this.tituloCard3.Size = new System.Drawing.Size(158, 38);
             this.tituloCard3.TabIndex = 1;
             this.tituloCard3.Text = "Vendas canceladas";
             // 
@@ -986,7 +1004,7 @@
             this.panel4.Location = new System.Drawing.Point(40, 1482);
             this.panel4.MinimumSize = new System.Drawing.Size(930, 22);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1151, 22);
+            this.panel4.Size = new System.Drawing.Size(981, 22);
             this.panel4.TabIndex = 32;
             // 
             // pnlPaginasPeriodoTempo
@@ -997,7 +1015,7 @@
             this.pnlPaginasPeriodoTempo.Controls.Add(this.pagina2infoPeriodo);
             this.pnlPaginasPeriodoTempo.Controls.Add(this.pagina3infoPeriodo);
             this.pnlPaginasPeriodoTempo.Controls.Add(this.pagina4infoPeriodo);
-            this.pnlPaginasPeriodoTempo.Location = new System.Drawing.Point(1042, 0);
+            this.pnlPaginasPeriodoTempo.Location = new System.Drawing.Point(872, 0);
             this.pnlPaginasPeriodoTempo.Name = "pnlPaginasPeriodoTempo";
             this.pnlPaginasPeriodoTempo.Size = new System.Drawing.Size(88, 22);
             this.pnlPaginasPeriodoTempo.TabIndex = 46;
@@ -1526,7 +1544,7 @@
             this.panel6.Location = new System.Drawing.Point(40, 2482);
             this.panel6.MinimumSize = new System.Drawing.Size(897, 142);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1151, 142);
+            this.panel6.Size = new System.Drawing.Size(981, 142);
             this.panel6.TabIndex = 42;
             // 
             // label48
@@ -1588,7 +1606,7 @@
             this.btnConfirmarDataFluxoCaixa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmarDataFluxoCaixa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
             this.btnConfirmarDataFluxoCaixa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConfirmarDataFluxoCaixa.Location = new System.Drawing.Point(686, 15);
+            this.btnConfirmarDataFluxoCaixa.Location = new System.Drawing.Point(516, 15);
             this.btnConfirmarDataFluxoCaixa.MinimumSize = new System.Drawing.Size(145, 30);
             this.btnConfirmarDataFluxoCaixa.Name = "btnConfirmarDataFluxoCaixa";
             this.btnConfirmarDataFluxoCaixa.Size = new System.Drawing.Size(425, 109);
@@ -1615,7 +1633,7 @@
             this.panel5.Location = new System.Drawing.Point(40, 1736);
             this.panel5.MinimumSize = new System.Drawing.Size(930, 40);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1151, 40);
+            this.panel5.Size = new System.Drawing.Size(981, 40);
             this.panel5.TabIndex = 45;
             // 
             // proximaPagina
@@ -1624,7 +1642,7 @@
             this.proximaPagina.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("proximaPagina.BackgroundImage")));
             this.proximaPagina.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.proximaPagina.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.proximaPagina.Location = new System.Drawing.Point(1089, 0);
+            this.proximaPagina.Location = new System.Drawing.Point(919, 0);
             this.proximaPagina.Name = "proximaPagina";
             this.proximaPagina.Size = new System.Drawing.Size(40, 40);
             this.proximaPagina.TabIndex = 33;
@@ -1637,7 +1655,7 @@
             this.paginaAnterior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("paginaAnterior.BackgroundImage")));
             this.paginaAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.paginaAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.paginaAnterior.Location = new System.Drawing.Point(1017, 0);
+            this.paginaAnterior.Location = new System.Drawing.Point(847, 0);
             this.paginaAnterior.Name = "paginaAnterior";
             this.paginaAnterior.Size = new System.Drawing.Size(40, 40);
             this.paginaAnterior.TabIndex = 33;
@@ -1655,7 +1673,7 @@
             this.panel34.Location = new System.Drawing.Point(40, 1842);
             this.panel34.MinimumSize = new System.Drawing.Size(669, 285);
             this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(1151, 285);
+            this.panel34.Size = new System.Drawing.Size(981, 285);
             this.panel34.TabIndex = 38;
             // 
             // chart1
@@ -1672,7 +1690,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(762, 277);
+            this.chart1.Size = new System.Drawing.Size(592, 277);
             this.chart1.TabIndex = 42;
             this.chart1.Text = "chart1";
             // 
@@ -1690,7 +1708,7 @@
             this.panel18.Controls.Add(this.label8);
             this.panel18.Controls.Add(this.label26);
             this.panel18.Controls.Add(this.label5);
-            this.panel18.Location = new System.Drawing.Point(831, 48);
+            this.panel18.Location = new System.Drawing.Point(661, 48);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(281, 193);
             this.panel18.TabIndex = 41;
@@ -1923,7 +1941,7 @@
             this.fluxoDeCaixa1.Location = new System.Drawing.Point(40, 2645);
             this.fluxoDeCaixa1.MinimumSize = new System.Drawing.Size(760, 572);
             this.fluxoDeCaixa1.Name = "fluxoDeCaixa1";
-            this.fluxoDeCaixa1.Size = new System.Drawing.Size(1218, 572);
+            this.fluxoDeCaixa1.Size = new System.Drawing.Size(1048, 572);
             this.fluxoDeCaixa1.TabIndex = 46;
             // 
             // Home
@@ -1932,7 +1950,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
-            this.ClientSize = new System.Drawing.Size(1334, 700);
+            this.ClientSize = new System.Drawing.Size(1351, 700);
             this.Controls.Add(this.fluxoDeCaixa1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.label49);
@@ -1955,6 +1973,7 @@
             this.pnlVerPerfil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelFiltros.ResumeLayout(false);
             this.panelFiltros.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -2135,7 +2154,7 @@
         private System.Windows.Forms.Panel pnlVerPerfil;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label nomeUsuario;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Label valorCard2;
         private System.Windows.Forms.Label tituloCard2;
@@ -2155,5 +2174,6 @@
         private System.Windows.Forms.PictureBox paginaAnterior;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private Controles.FluxoDeCaixa fluxoDeCaixa1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
