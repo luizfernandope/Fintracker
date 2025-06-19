@@ -1,6 +1,9 @@
-﻿using MySql.Data.MySqlClient;
+﻿using FinTracker.Interfaces;
+using MySql.Data.MySqlClient;
 using System;
 using System.Data;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace FinTracker.BD
 {
@@ -8,9 +11,8 @@ namespace FinTracker.BD
     {
         private string _connectionString;
 
-        public AdminRepository(string connectionString)
+        public AdminRepository()
         {
-            _connectionString = connectionString;
         }
 
         public void AddAdmin(string nome, string email, string senha)
@@ -40,11 +42,11 @@ namespace FinTracker.BD
             }
         }
 
-        public void UpdateAdmin(int idAdmin, string nome, string email, string senha)
+        public async Task<bool> UpdateAdmin(int idAdmin, string nome, string email, string senha)
         {
-            using (MySqlConnection conn = new MySqlConnection(_connectionString))
+            try
             {
-                conn.Open();
+                MySqlConnection conn = await MetodosDB.conexao();
                 string query = "UPDATE Admin SET Nome = @Nome, Email = @Email, Senha = @Senha WHERE id_Admin = @idAdmin";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@idAdmin", idAdmin);
@@ -52,18 +54,32 @@ namespace FinTracker.BD
                 cmd.Parameters.AddWithValue("@Email", email);
                 cmd.Parameters.AddWithValue("@Senha", senha);
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Atualizado com sucesso.");
+                return true;
             }
+            catch (Exception e)
+            {
+                MessageBox.Show("Erro ao atualizar" + e.Message);
+            }
+            return false;
         }
 
-        public void DeleteAdmin(int idAdmin)
+        public async Task<bool> DeleteAdmin(int idAdmin)
         {
-            using (MySqlConnection conn = new MySqlConnection(_connectionString))
+            try
             {
-                conn.Open();
+                MySqlConnection conn = await MetodosDB.conexao(); ;
                 string query = "DELETE FROM Admin WHERE id_Admin = @idAdmin";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@idAdmin", idAdmin);
                 cmd.ExecuteNonQuery();
+                MessageBox.Show("Conta exlcuída com sucesso.");
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Erro ao deletar conta.\n" + e.Message);
+                return false;
             }
         }
     }

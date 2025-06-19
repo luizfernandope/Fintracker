@@ -116,6 +116,10 @@ namespace FinTracker
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            //perguntar se o usuario realmente deseja sair
+            DialogResult dialogResult = MessageBox.Show("Deseja realmente sair?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dialogResult == DialogResult.No)
+                return; //se o usuario nn quiser sair, nn faz nada
             telaMae.mudarTelaDoPanelPrincipal(new Login(telaMae));
             telaMae.Size = new System.Drawing.Size(1080, 604); // Definindo um tamanho fixo para a tela principal
             telaMae.MaximizeBox = false;

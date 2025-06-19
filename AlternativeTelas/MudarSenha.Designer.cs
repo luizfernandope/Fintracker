@@ -29,13 +29,16 @@
         private void InitializeComponent()
         {
             this.btnSalvar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.novaSenha = new System.Windows.Forms.TextBox();
+            this.senhaAtual = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.novaSenha2 = new System.Windows.Forms.TextBox();
+            this.checkSenha2 = new System.Windows.Forms.CheckBox();
+            this.checkSenha1 = new System.Windows.Forms.CheckBox();
+            this.checkSenhaAtual = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnSalvar
@@ -53,26 +56,29 @@
             this.btnSalvar.TabIndex = 68;
             this.btnSalvar.Text = "Definir nova senha";
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
-            // textBox2
+            // novaSenha
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.novaSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(22, 190);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(761, 31);
-            this.textBox2.TabIndex = 66;
+            this.novaSenha.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.novaSenha.Location = new System.Drawing.Point(22, 190);
+            this.novaSenha.Name = "novaSenha";
+            this.novaSenha.PasswordChar = '•';
+            this.novaSenha.Size = new System.Drawing.Size(761, 31);
+            this.novaSenha.TabIndex = 66;
             // 
-            // textBox1
+            // senhaAtual
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.senhaAtual.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(22, 110);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(761, 31);
-            this.textBox1.TabIndex = 67;
+            this.senhaAtual.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.senhaAtual.Location = new System.Drawing.Point(22, 110);
+            this.senhaAtual.Name = "senhaAtual";
+            this.senhaAtual.PasswordChar = '•';
+            this.senhaAtual.Size = new System.Drawing.Size(761, 31);
+            this.senhaAtual.TabIndex = 67;
             // 
             // label3
             // 
@@ -122,15 +128,52 @@
             this.label4.TabIndex = 63;
             this.label4.Text = "Repita a nova senha";
             // 
-            // textBox3
+            // novaSenha2
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.novaSenha2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(22, 270);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(761, 31);
-            this.textBox3.TabIndex = 66;
+            this.novaSenha2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.novaSenha2.Location = new System.Drawing.Point(22, 270);
+            this.novaSenha2.Name = "novaSenha2";
+            this.novaSenha2.PasswordChar = '•';
+            this.novaSenha2.Size = new System.Drawing.Size(761, 31);
+            this.novaSenha2.TabIndex = 66;
+            // 
+            // checkSenha2
+            // 
+            this.checkSenha2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkSenha2.AutoSize = true;
+            this.checkSenha2.Location = new System.Drawing.Point(758, 278);
+            this.checkSenha2.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSenha2.Name = "checkSenha2";
+            this.checkSenha2.Size = new System.Drawing.Size(15, 14);
+            this.checkSenha2.TabIndex = 69;
+            this.checkSenha2.UseVisualStyleBackColor = true;
+            this.checkSenha2.CheckedChanged += new System.EventHandler(this.checkSenha2_CheckedChanged);
+            // 
+            // checkSenha1
+            // 
+            this.checkSenha1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkSenha1.AutoSize = true;
+            this.checkSenha1.Location = new System.Drawing.Point(758, 198);
+            this.checkSenha1.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSenha1.Name = "checkSenha1";
+            this.checkSenha1.Size = new System.Drawing.Size(15, 14);
+            this.checkSenha1.TabIndex = 69;
+            this.checkSenha1.UseVisualStyleBackColor = true;
+            this.checkSenha1.CheckedChanged += new System.EventHandler(this.checkSenha1_CheckedChanged);
+            // 
+            // checkSenhaAtual
+            // 
+            this.checkSenhaAtual.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkSenhaAtual.AutoSize = true;
+            this.checkSenhaAtual.Location = new System.Drawing.Point(758, 118);
+            this.checkSenhaAtual.Margin = new System.Windows.Forms.Padding(2);
+            this.checkSenhaAtual.Name = "checkSenhaAtual";
+            this.checkSenhaAtual.Size = new System.Drawing.Size(15, 14);
+            this.checkSenhaAtual.TabIndex = 69;
+            this.checkSenhaAtual.UseVisualStyleBackColor = true;
+            this.checkSenhaAtual.CheckedChanged += new System.EventHandler(this.checkSenhaAtual_CheckedChanged);
             // 
             // MudarSenha
             // 
@@ -138,10 +181,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.checkSenhaAtual);
+            this.Controls.Add(this.checkSenha1);
+            this.Controls.Add(this.checkSenha2);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.novaSenha2);
+            this.Controls.Add(this.novaSenha);
+            this.Controls.Add(this.senhaAtual);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -157,12 +203,15 @@
         #endregion
 
         private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox novaSenha;
+        private System.Windows.Forms.TextBox senhaAtual;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox novaSenha2;
+        private System.Windows.Forms.CheckBox checkSenha2;
+        private System.Windows.Forms.CheckBox checkSenha1;
+        private System.Windows.Forms.CheckBox checkSenhaAtual;
     }
 }

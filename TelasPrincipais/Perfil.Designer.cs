@@ -37,7 +37,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnMudarSenha = new System.Windows.Forms.Button();
             this.btnEditarPerfil = new System.Windows.Forms.Button();
-            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnExcluirPerfil = new System.Windows.Forms.Button();
             this.pnlTela2 = new System.Windows.Forms.Panel();
             this.pnlTelaClicada = new System.Windows.Forms.Panel();
             this.panelParaVoltar = new System.Windows.Forms.Panel();
@@ -176,22 +176,23 @@
             this.btnEditarPerfil.UseVisualStyleBackColor = false;
             this.btnEditarPerfil.Click += new System.EventHandler(this.btnEditarPerfil_Click);
             // 
-            // btnLogout
+            // btnExcluirPerfil
             // 
-            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.btnExcluirPerfil.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogout.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(30, 583);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(800, 48);
-            this.btnLogout.TabIndex = 3;
-            this.btnLogout.Text = "Excluir perfil e conta";
-            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnExcluirPerfil.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.btnExcluirPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExcluirPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnExcluirPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluirPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluirPerfil.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExcluirPerfil.Location = new System.Drawing.Point(30, 583);
+            this.btnExcluirPerfil.Name = "btnExcluirPerfil";
+            this.btnExcluirPerfil.Size = new System.Drawing.Size(800, 48);
+            this.btnExcluirPerfil.TabIndex = 3;
+            this.btnExcluirPerfil.Text = "Excluir perfil e conta";
+            this.btnExcluirPerfil.UseVisualStyleBackColor = false;
+            this.btnExcluirPerfil.Click += new System.EventHandler(this.btnExcluirPerfil_Click);
             // 
             // pnlTela2
             // 
@@ -201,17 +202,17 @@
             this.pnlTela2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
             this.pnlTela2.Controls.Add(this.pnlTelaClicada);
             this.pnlTela2.Controls.Add(this.panelParaVoltar);
-            this.pnlTela2.Location = new System.Drawing.Point(0, -1);
+            this.pnlTela2.Location = new System.Drawing.Point(0, 0);
             this.pnlTela2.Name = "pnlTela2";
-            this.pnlTela2.Size = new System.Drawing.Size(860, 662);
+            this.pnlTela2.Size = new System.Drawing.Size(860, 661);
             this.pnlTela2.TabIndex = 4;
             this.pnlTela2.Visible = false;
             // 
             // pnlTelaClicada
             // 
-            this.pnlTelaClicada.Location = new System.Drawing.Point(0, 64);
+            this.pnlTelaClicada.Location = new System.Drawing.Point(0, 65);
             this.pnlTelaClicada.Name = "pnlTelaClicada";
-            this.pnlTelaClicada.Size = new System.Drawing.Size(860, 597);
+            this.pnlTelaClicada.Size = new System.Drawing.Size(860, 596);
             this.pnlTelaClicada.TabIndex = 5;
             this.pnlTelaClicada.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTelaClicada_Paint);
             // 
@@ -247,7 +248,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(860, 661);
             this.Controls.Add(this.pnlTela2);
-            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.btnExcluirPerfil);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Perfil";
@@ -275,7 +276,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnEditarPerfil;
         private System.Windows.Forms.Button btnMudarSenha;
-        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnExcluirPerfil;
         private System.Windows.Forms.Panel pnlTela2;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Panel panelParaVoltar;
