@@ -11,6 +11,7 @@ namespace FinTracker.Models
     {
         public int IdVenda { get; set; }
         public int IdCliente { get; set; }
+        public string IdCliente2 { get; set; }
         public String nomeCliente { get; set; }
         public string Metodo { get; set; }
         public string Status { get; set; }

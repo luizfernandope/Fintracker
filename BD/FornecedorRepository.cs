@@ -38,6 +38,27 @@ namespace FinTracker.BD
                 await cmd.ExecuteNonQueryAsync();
             
         }
+        public async void AddFornecedor2(Fornecedor f)
+        {
+            MySqlConnection conn = await MetodosDB.conexao();
+                string query = "INSERT INTO fornecedor (Nome, Data_de_Cadastro, CNPJ, Endereco, Bairro, Cidade, Estado, CEP, Telefone, Email, Status) " +
+                               "VALUES (@Nome, @DataCadastro, @CNPJ, @Endereco, @Bairro, @Cidade, @Estado, @CEP, @Telefone, @Email, @Status)";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Nome",f.Nome);
+                string data = DateTime.Parse(f.Data_de_Cadastro).ToString("yyyy-MM-dd HH:mm:ss");
+                cmd.Parameters.AddWithValue("@DataCadastro", data);
+                cmd.Parameters.AddWithValue("@CNPJ", f.CNPJ);
+                cmd.Parameters.AddWithValue("@Endereco", f.Endereco);
+                cmd.Parameters.AddWithValue("@Bairro", f.Bairro);
+                cmd.Parameters.AddWithValue("@Cidade", f.Cidade);
+                cmd.Parameters.AddWithValue("@Estado", f.Estado);
+                cmd.Parameters.AddWithValue("@CEP", f.CEP);
+                cmd.Parameters.AddWithValue("@Telefone", f.Telefone);
+                cmd.Parameters.AddWithValue("@Email", f.Email);
+                cmd.Parameters.AddWithValue("@Status", f.Status);
+                await cmd.ExecuteNonQueryAsync();
+            
+        }
 
         public async Task<DataTable> GetFornecedores()
         {
@@ -54,6 +75,17 @@ namespace FinTracker.BD
                 MessageBox.Show("Erro ao buscar fornecedores: " + e.Message);
                 return null;
             }
+        }
+
+        public async Task<string> pegarNomeByid(int idFonecedor)
+        {
+
+            MySqlConnection conn = await MetodosDB.conexao();
+            string query = "SELECT Nome FROM fornecedor WHERE id_Fornecedor = @idFonecedor";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@idFonecedor", idFonecedor);
+            object result = await cmd.ExecuteScalarAsync();
+            return result != null ? result.ToString() : string.Empty;
         }
 
         public async void UpdateFornecedor(object fornecedor)

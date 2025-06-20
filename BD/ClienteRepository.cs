@@ -6,6 +6,7 @@ using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -27,6 +28,26 @@ namespace FinTracker.BD
             MySqlCommand cmd = new MySqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@Nome", c.Nome);
             cmd.Parameters.AddWithValue("@DataCadastro", c.Data_de_Cadastro);
+            cmd.Parameters.AddWithValue("@CNPJ", c.CNPJ);
+            cmd.Parameters.AddWithValue("@Endereco", c.Endereco);
+            cmd.Parameters.AddWithValue("@Bairro", c.Bairro);
+            cmd.Parameters.AddWithValue("@Cidade", c.Cidade);
+            cmd.Parameters.AddWithValue("@Estado", c.Estado);
+            cmd.Parameters.AddWithValue("@CEP", c.CEP);
+            cmd.Parameters.AddWithValue("@Telefone", c.Telefone);
+            cmd.Parameters.AddWithValue("@Email", c.Email);
+            cmd.Parameters.AddWithValue("@Status", c.Status);
+            await cmd.ExecuteNonQueryAsync();
+        }
+        public async void AddCliente2(Cliente c)
+        {
+            MySqlConnection conn = await MetodosDB.conexao();
+            string query = "INSERT INTO cliente (Nome, Data_de_Cadastro, CNPJ, Endereco, Bairro, Cidade, Estado, CEP, Telefone, Email, Status) " +
+                           "VALUES (@Nome, @DataCadastro, @CNPJ, @Endereco, @Bairro, @Cidade, @Estado, @CEP, @Telefone, @Email, @Status)";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@Nome", c.Nome);
+            string data = DateTime.Parse(c.Data_de_Cadastro).ToString("yyyy-MM-dd HH:mm:ss");
+            cmd.Parameters.AddWithValue("@DataCadastro", data);
             cmd.Parameters.AddWithValue("@CNPJ", c.CNPJ);
             cmd.Parameters.AddWithValue("@Endereco", c.Endereco);
             cmd.Parameters.AddWithValue("@Bairro", c.Bairro);
@@ -69,6 +90,17 @@ namespace FinTracker.BD
             cmd.Parameters.AddWithValue("@Status", c.Status);
             await cmd.ExecuteNonQueryAsync();
             
+        }
+
+        public async Task<string> pegarNomeByid(int idCliente)
+        {
+
+            MySqlConnection conn = await MetodosDB.conexao();
+            string query = "SELECT Nome FROM cliente WHERE id_Cliente = @idCliente";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@idCliente", idCliente);
+            object result = await cmd.ExecuteScalarAsync();
+            return result != null ? result.ToString() : string.Empty;
         }
 
         public async void DeleteCliente(int idCliente)

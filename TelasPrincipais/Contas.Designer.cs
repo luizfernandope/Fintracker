@@ -37,11 +37,23 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblData = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTotal = new System.Windows.Forms.Label();
+            this.txtQtdEncontrado = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlBotoes = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlVerPerfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.pnlBotoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -158,12 +170,134 @@
             this.panel3.Size = new System.Drawing.Size(1300, 1);
             this.panel3.TabIndex = 0;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.panel1.Controls.Add(this.txtTotal);
+            this.panel1.Controls.Add(this.txtQtdEncontrado);
+            this.panel1.Controls.Add(this.flowLayoutPanel1);
+            this.panel1.Controls.Add(this.pnlBotoes);
+            this.panel1.Location = new System.Drawing.Point(40, 107);
+            this.panel1.MinimumSize = new System.Drawing.Size(746, 400);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1220, 552);
+            this.panel1.TabIndex = 25;
+            // 
+            // txtTotal
+            // 
+            this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTotal.AutoSize = true;
+            this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotal.Location = new System.Drawing.Point(1052, 524);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(157, 13);
+            this.txtTotal.TabIndex = 2;
+            this.txtTotal.Text = "Valor total: R$ 148.999,88";
+            // 
+            // txtQtdEncontrado
+            // 
+            this.txtQtdEncontrado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtQtdEncontrado.AutoSize = true;
+            this.txtQtdEncontrado.Location = new System.Drawing.Point(10, 524);
+            this.txtQtdEncontrado.Name = "txtQtdEncontrado";
+            this.txtQtdEncontrado.Size = new System.Drawing.Size(84, 13);
+            this.txtQtdEncontrado.TabIndex = 2;
+            this.txtQtdEncontrado.Text = "22  encotrado(s)";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(10, 77);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1199, 432);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // pnlBotoes
+            // 
+            this.pnlBotoes.Controls.Add(this.button2);
+            this.pnlBotoes.Controls.Add(this.button1);
+            this.pnlBotoes.Controls.Add(this.btnCancelar);
+            this.pnlBotoes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBotoes.Location = new System.Drawing.Point(0, 0);
+            this.pnlBotoes.Name = "pnlBotoes";
+            this.pnlBotoes.Size = new System.Drawing.Size(1220, 67);
+            this.pnlBotoes.TabIndex = 0;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.button2.Location = new System.Drawing.Point(10, 15);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 37);
+            this.button2.TabIndex = 88;
+            this.button2.Text = "Ver todos";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(382, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(160, 37);
+            this.button1.TabIndex = 88;
+            this.button1.Text = "Contas a pagar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.White;
+            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCancelar.Location = new System.Drawing.Point(196, 15);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(160, 37);
+            this.btnCancelar.TabIndex = 88;
+            this.btnCancelar.Text = "Contas a receber";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Location = new System.Drawing.Point(738, 80);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(107, 27);
+            this.panel5.TabIndex = 26;
+            // 
+            // panel6
+            // 
+            this.panel6.Location = new System.Drawing.Point(0, 511);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(37, 27);
+            this.panel6.TabIndex = 26;
+            // 
             // Contas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1300, 700);
+            this.Controls.Add(this.panel6);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Contas";
@@ -175,6 +309,9 @@
             this.pnlVerPerfil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.pnlBotoes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -190,5 +327,15 @@
         private System.Windows.Forms.Label nomeUsuario;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlBotoes;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label txtQtdEncontrado;
+        private System.Windows.Forms.Label txtTotal;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel6;
     }
 }

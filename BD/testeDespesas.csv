@@ -1,0 +1,6 @@
+id_Pagamento,Data,Metodo,Tipo,Parcelas,Valor,descricao
+,2025-06-20 10:00:00,Cartão de Crédito,À Vista,1,150.00,Pgto pedido #1001
+,2025-06-21 11:30:00,Boleto,Boleto Bancário,1,320.50,Pgto pedido #1002
+,2025-06-22 14:45:00,Pix,Instantâneo,1,75.90,Pgto pedido #1003
+,2025-06-23 09:15:00,Cartão de Crédito,Parcelado,3,450.00,Pgto pedido #1004
+,2025-06-24 16:00:00,Dinheiro,À Vista,1,200.00,Pgto pedido #1005

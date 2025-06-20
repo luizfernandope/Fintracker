@@ -1,0 +1,6 @@
+id_Fornecedor,Nome,Data_de_Cadastro,CNPJ,Endereco,Bairro,Cidade,Estado,CEP,Telefone,Email,Status
+,Fornecedor A,2025-06-20 09:00:00,11222333000144,Rua Alpha 100,Centro,São Paulo,SP,01010-000,(11) 91234-1111,contato@fornecedora.com,Ativo
+,Fornecedor B,2025-06-21 10:30:00,22333444000155,Av. Beta 200,Jardins,São Paulo,SP,01414-000,(11) 92345-2222,contato@fornecedorb.com,Ativo
+,Fornecedor C,2025-06-22 11:45:00,33444555000166,Rua Gamma 300,Santa Cecília,São Paulo,SP,01212-000,(11) 93456-3333,contato@fornecedorc.com,Inativo
+,Fornecedor D,2025-06-23 14:15:00,44555666000177,Av. Delta 400,Centro,Rio de Janeiro,RJ,20020-000,(21) 94567-4444,contato@fornecedord.com,Ativo
+,Fornecedor E,2025-06-24 16:45:00,55666777000188,Rua Epsilon 500,Lapa,Rio de Janeiro,RJ,20220-000,(21) 95678-5555,contato@fornecedore.com,Ativo

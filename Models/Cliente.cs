@@ -8,18 +8,18 @@ namespace FinTracker.Models
 {
     public class Cliente
     {
-        public int id_Cliente;
-        public string Nome;
-        public string Data_de_Cadastro;
-        public string CNPJ;
-        public string Endereco;
-        public string Bairro;
-        public string Cidade;
-        public string Estado;
-        public string CEP;
-        public string Telefone;
-        public string Email;
-        public string Status;
+        public int id_Cliente { get; set; }
+        public string Nome { get; set; }
+        public string Data_de_Cadastro { get; set; }
+        public string CNPJ { get; set; }
+        public string Endereco { get; set; }
+        public string Bairro   { get; set; }
+        public string Cidade   { get; set; }
+        public string Estado   { get; set; }
+        public string CEP      { get; set; }
+        public string Telefone { get; set; }
+        public string Email    { get; set; }
+        public string Status { get; set; }
 
         public Cliente(String nome, string Data_de_Cadastro, String cnpj, String endereco, String bairro, String cidade, String estado, String cep, String telefone, String email, String status)
         {

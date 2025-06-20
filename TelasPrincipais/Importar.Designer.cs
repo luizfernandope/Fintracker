@@ -30,10 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Importar));
             this.flpOpçõesDeTaela = new System.Windows.Forms.FlowLayoutPanel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rdbFornecedores = new System.Windows.Forms.RadioButton();
+            this.rdbClientes = new System.Windows.Forms.RadioButton();
+            this.rdbPagamentos = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,6 +42,7 @@
             this.btnFileToExport = new System.Windows.Forms.Button();
             this.btnAllowEdit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnlVerPerfil = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,136 +51,120 @@
             this.lblData = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.flpOpçõesDeTaela.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlVerPerfil.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // flpOpçõesDeTaela
             // 
             this.flpOpçõesDeTaela.AutoSize = true;
             this.flpOpçõesDeTaela.BackColor = System.Drawing.Color.Transparent;
-            this.flpOpçõesDeTaela.Controls.Add(this.radioButton2);
-            this.flpOpçõesDeTaela.Controls.Add(this.radioButton1);
-            this.flpOpçõesDeTaela.Controls.Add(this.radioButton3);
-            this.flpOpçõesDeTaela.Controls.Add(this.radioButton4);
+            this.flpOpçõesDeTaela.Controls.Add(this.rdbFornecedores);
+            this.flpOpçõesDeTaela.Controls.Add(this.rdbClientes);
+            this.flpOpçõesDeTaela.Controls.Add(this.rdbPagamentos);
             this.flpOpçõesDeTaela.Location = new System.Drawing.Point(30, 146);
             this.flpOpçõesDeTaela.Margin = new System.Windows.Forms.Padding(0);
             this.flpOpçõesDeTaela.MinimumSize = new System.Drawing.Size(330, 104);
             this.flpOpçõesDeTaela.Name = "flpOpçõesDeTaela";
-            this.flpOpçõesDeTaela.Size = new System.Drawing.Size(649, 104);
+            this.flpOpçõesDeTaela.Size = new System.Drawing.Size(495, 104);
             this.flpOpçõesDeTaela.TabIndex = 18;
             this.flpOpçõesDeTaela.WrapContents = false;
             // 
-            // radioButton2
+            // rdbFornecedores
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.radioButton2.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Image = ((System.Drawing.Image)(resources.GetObject("radioButton2.Image")));
-            this.radioButton2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.radioButton2.Location = new System.Drawing.Point(10, 10);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(10);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
-            this.radioButton2.Size = new System.Drawing.Size(166, 84);
-            this.radioButton2.TabIndex = 12;
-            this.radioButton2.Text = "Fornecedores";
-            this.radioButton2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.rdbFornecedores.AutoSize = true;
+            this.rdbFornecedores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.rdbFornecedores.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.rdbFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbFornecedores.Image = ((System.Drawing.Image)(resources.GetObject("rdbFornecedores.Image")));
+            this.rdbFornecedores.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rdbFornecedores.Location = new System.Drawing.Point(10, 10);
+            this.rdbFornecedores.Margin = new System.Windows.Forms.Padding(10);
+            this.rdbFornecedores.Name = "rdbFornecedores";
+            this.rdbFornecedores.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
+            this.rdbFornecedores.Size = new System.Drawing.Size(166, 84);
+            this.rdbFornecedores.TabIndex = 12;
+            this.rdbFornecedores.Text = "Fornecedores";
+            this.rdbFornecedores.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rdbFornecedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rdbFornecedores.UseVisualStyleBackColor = false;
             // 
-            // radioButton1
+            // rdbClientes
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.radioButton1.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Image = ((System.Drawing.Image)(resources.GetObject("radioButton1.Image")));
-            this.radioButton1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.radioButton1.Location = new System.Drawing.Point(196, 10);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(10);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
-            this.radioButton1.Size = new System.Drawing.Size(124, 84);
-            this.radioButton1.TabIndex = 12;
-            this.radioButton1.Text = "Clientes";
-            this.radioButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.rdbClientes.AutoSize = true;
+            this.rdbClientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.rdbClientes.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.rdbClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbClientes.Image = ((System.Drawing.Image)(resources.GetObject("rdbClientes.Image")));
+            this.rdbClientes.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rdbClientes.Location = new System.Drawing.Point(196, 10);
+            this.rdbClientes.Margin = new System.Windows.Forms.Padding(10);
+            this.rdbClientes.Name = "rdbClientes";
+            this.rdbClientes.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
+            this.rdbClientes.Size = new System.Drawing.Size(124, 84);
+            this.rdbClientes.TabIndex = 12;
+            this.rdbClientes.Text = "Clientes";
+            this.rdbClientes.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rdbClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rdbClientes.UseVisualStyleBackColor = false;
             // 
-            // radioButton3
+            // rdbPagamentos
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.radioButton3.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Image = ((System.Drawing.Image)(resources.GetObject("radioButton3.Image")));
-            this.radioButton3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.radioButton3.Location = new System.Drawing.Point(340, 10);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(10);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
-            this.radioButton3.Size = new System.Drawing.Size(157, 84);
-            this.radioButton3.TabIndex = 12;
-            this.radioButton3.Text = "Pagamentos";
-            this.radioButton3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.radioButton3.UseVisualStyleBackColor = false;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
-            this.radioButton4.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Image = ((System.Drawing.Image)(resources.GetObject("radioButton4.Image")));
-            this.radioButton4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.radioButton4.Location = new System.Drawing.Point(517, 10);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(10);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
-            this.radioButton4.Size = new System.Drawing.Size(122, 78);
-            this.radioButton4.TabIndex = 12;
-            this.radioButton4.Text = "Vendas";
-            this.radioButton4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.radioButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.radioButton4.UseVisualStyleBackColor = false;
+            this.rdbPagamentos.AutoSize = true;
+            this.rdbPagamentos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.rdbPagamentos.CheckAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.rdbPagamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdbPagamentos.Image = ((System.Drawing.Image)(resources.GetObject("rdbPagamentos.Image")));
+            this.rdbPagamentos.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rdbPagamentos.Location = new System.Drawing.Point(340, 10);
+            this.rdbPagamentos.Margin = new System.Windows.Forms.Padding(10);
+            this.rdbPagamentos.Name = "rdbPagamentos";
+            this.rdbPagamentos.Padding = new System.Windows.Forms.Padding(20, 10, 20, 10);
+            this.rdbPagamentos.Size = new System.Drawing.Size(139, 84);
+            this.rdbPagamentos.TabIndex = 12;
+            this.rdbPagamentos.Text = "Despesas";
+            this.rdbPagamentos.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rdbPagamentos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rdbPagamentos.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(43, 900);
+            this.label3.Location = new System.Drawing.Point(43, 952);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1204, 40);
+            this.label3.Size = new System.Drawing.Size(1204, 22);
             this.label3.TabIndex = 22;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(43, 488);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
-            this.dataGridView1.MinimumSize = new System.Drawing.Size(330, 330);
+            this.dataGridView1.MinimumSize = new System.Drawing.Size(330, 130);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1204, 330);
+            this.dataGridView1.Size = new System.Drawing.Size(1204, 385);
             this.dataGridView1.TabIndex = 21;
             // 
             // button2
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
             this.button2.FlatAppearance.BorderSize = 0;
@@ -188,7 +172,7 @@
             this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(43, 850);
+            this.button2.Location = new System.Drawing.Point(43, 896);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.MinimumSize = new System.Drawing.Size(145, 30);
             this.button2.Name = "button2";
@@ -196,6 +180,7 @@
             this.button2.TabIndex = 20;
             this.button2.Text = "Adicionar dados ao sistema";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -275,6 +260,7 @@
             this.btnAllowEdit.TabIndex = 16;
             this.btnAllowEdit.Text = "Habilitar edição de dados na tabela";
             this.btnAllowEdit.UseVisualStyleBackColor = false;
+            this.btnAllowEdit.Click += new System.EventHandler(this.btnAllowEdit_Click);
             // 
             // panel2
             // 
@@ -287,6 +273,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1300, 73);
             this.panel2.TabIndex = 23;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.BackgroundImage = global::FinTracker.Properties.Resources.icon_notification;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox4.InitialImage = null;
+            this.pictureBox4.Location = new System.Drawing.Point(903, 20);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(37, 37);
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pnlVerPerfil
             // 
@@ -387,20 +388,34 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "O que deseja importar ?";
             // 
-            // pictureBox4
+            // label4
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::FinTracker.Properties.Resources.icon_notification;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.InitialImage = null;
-            this.pictureBox4.Location = new System.Drawing.Point(903, 20);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(37, 37);
-            this.pictureBox4.TabIndex = 4;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(9, 786);
+            this.label4.Margin = new System.Windows.Forms.Padding(0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 22);
+            this.label4.TabIndex = 22;
+            // 
+            // button1
+            // 
+            this.button1.AutoSize = true;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(168)))), ((int)(((byte)(114)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(40, 430);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.MinimumSize = new System.Drawing.Size(145, 30);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(180, 40);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "como fazer ?";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Importar
             // 
@@ -410,10 +425,12 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1300, 974);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAllowEdit);
             this.Controls.Add(this.flpOpçõesDeTaela);
             this.Controls.Add(this.label1);
@@ -428,11 +445,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlVerPerfil.ResumeLayout(false);
             this.pnlVerPerfil.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -446,10 +463,9 @@
         private System.Windows.Forms.Button btnFileToExport;
         private System.Windows.Forms.Button btnAllowEdit;
         private System.Windows.Forms.FlowLayoutPanel flpOpçõesDeTaela;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton rdbFornecedores;
+        private System.Windows.Forms.RadioButton rdbClientes;
+        private System.Windows.Forms.RadioButton rdbPagamentos;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -463,5 +479,7 @@
         private System.Windows.Forms.Label nomeUsuario;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }

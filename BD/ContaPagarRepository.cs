@@ -1,6 +1,10 @@
-﻿using MySql.Data.MySqlClient;
+﻿using FinTracker.Interfaces;
+using FinTracker.Models;
+using MySql.Data.MySqlClient;
 using System;
+using System.Collections.Generic;
 using System.Data;
+using System.Threading.Tasks;
 
 namespace FinTracker.BD
 {
@@ -11,6 +15,9 @@ namespace FinTracker.BD
         public ContaPagarRepository(string connectionString)
         {
             _connectionString = connectionString;
+        }
+        public ContaPagarRepository()
+        {
         }
 
         public void AddContaPagar(decimal valor, int idFornecedor, string metodoPagamento, DateTime dataTransacao, DateTime? previsaoTermino)
@@ -40,6 +47,32 @@ namespace FinTracker.BD
                 da.Fill(dt);
                 return dt;
             }
+        }
+        public async Task<List<Conta>> pegarContas_a_pagar()
+        {
+            List<Conta> contas = new List<Conta>();
+            MySqlConnection conn = await MetodosDB.conexao();
+            string query = "SELECT * FROM conta_a_pagar";
+                MySqlCommand cmd = new MySqlCommand(query, conn);
+                using (MySqlDataReader reader = (MySqlDataReader) await cmd.ExecuteReaderAsync())
+                {
+                    while (await reader.ReadAsync())
+                    {
+                        Conta conta = new Conta
+                        {
+                            id_Conta_a_Pagar = reader.GetInt32("id_Conta_a_Pagar"),
+                            id_Fornecedor = reader.GetInt32("id_Fornecedor"),
+                            valor = reader.GetDouble("Valor"),
+                            metodoPagamento = reader.GetString("Metodo_de_Pagamento"),
+                            dataTransacao = reader.GetDateTime("Data_de_Transacao"),
+                            previsaoTermino = reader.GetDateTime("Previsao_de_Termino") ,
+                            descricao = reader.GetString("Descricao")
+                        };
+                        conta.nomeFornecedor = await new FornecedorRepository().pegarNomeByid(conta.id_Fornecedor);
+                        contas.Add(conta);
+                    }
+                }
+            return contas;
         }
 
         public void UpdateContaPagar(int idContaPagar, decimal valor, int idFornecedor, string metodoPagamento, DateTime dataTransacao, DateTime? previsaoTermino)

@@ -1,4 +1,5 @@
 ﻿using FinTracker.Interfaces;
+using FinTracker.Models;
 using MySql.Data.MySqlClient;
 using System;
 using System.Data;
@@ -13,17 +14,18 @@ namespace FinTracker.BD
         {
         }
 
-        public async void AddPagamentoAsync(DateTime data, string metodo, string tipo, int parcelas, decimal valor)
+        public async void AddPagamentoAsync(Despesa d)
         {
             MySqlConnection conn = await MetodosDB.conexao();
-            conn.Open();
-                string query = "INSERT INTO Pagamento (Data, Método, Tipo, Parcelas, Valor) VALUES (@Data, @Metodo, @Tipo, @Parcelas, @Valor)";
+                string query = "INSERT INTO Pagamento (Data, Metodo, Tipo, Parcelas, Valor, descricao) VALUES (@Data, @Metodo, @Tipo, @Parcelas, @Valor, @descricao)";
                 MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Data", data);
-                cmd.Parameters.AddWithValue("@Metodo", metodo);
-                cmd.Parameters.AddWithValue("@Tipo", tipo);
-                cmd.Parameters.AddWithValue("@Parcelas", parcelas);
-                cmd.Parameters.AddWithValue("@Valor", valor);
+
+                cmd.Parameters.AddWithValue("@Data", d.Data.ToString("yyyy-MM-dd HH:mm:ss"));
+                cmd.Parameters.AddWithValue("@Metodo", d.Metodo);
+                cmd.Parameters.AddWithValue("@Tipo", d.Tipo);
+                cmd.Parameters.AddWithValue("@Parcelas", d.Parcelas);
+                cmd.Parameters.AddWithValue("@Valor", d.Valor);
+                cmd.Parameters.AddWithValue("@descricao", d.Descricao);
                 cmd.ExecuteNonQuery();
             
         }
