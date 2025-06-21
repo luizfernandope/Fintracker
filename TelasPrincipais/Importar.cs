@@ -52,7 +52,32 @@ namespace FinTracker.Telas
         private void panel1_DragEnter(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
-                e.Effect = DragDropEffects.Copy;
+            {
+                //se tem mais de um arquivo, não permite o drop
+                if (e.Data.GetData(DataFormats.FileDrop) is string[] files && files.Length > 1)
+                {
+                    MessageBox.Show("Por favor, arraste apenas um arquivo Excel (.xlsx).", "Múltiplos Arquivos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    e.Effect = DragDropEffects.None;
+                    return;
+                }
+                //se for um arquivo Excel, preenche o ataGridView1 com os dados do arquivo
+                if (e.Data.GetData(DataFormats.FileDrop) is string[] files1 && files1.Length > 0)
+                {
+                    string filePath = files1[0];
+                    if (filePath.EndsWith(".xlsx"))
+                    {
+                        // Lê o Excel como DataTable
+                        var table = MiniExcel.QueryAsDataTable(filePath, useHeaderRow: true);
+                        dataGridView1.DataSource = table;
+                        limparLinhasBrancas();
+                        formatarCelulasDgv();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Por favor, arraste um arquivo Excel (.xlsx).", "Formato Inválido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+            }
         }
 
         private void btnFileToExport_Click(object sender, EventArgs e)

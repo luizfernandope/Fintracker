@@ -45,6 +45,13 @@ namespace FinTracker.Telas
             addLabelTip(despesasAllTime, "Soma de todas despesas (sem contar impostos).");
             //atualizarReceitaDoUltimo(null,null);
             atualizaTransacoesPendentes(null, null);
+            changeVisibityDadosTodosTempos(verReceita, null);
+            changeVisibityDadosTodosTempos(verSaidas, null);
+            // Garante que a data mínima do DateTimePicker final não seja menor que a do inicial
+            dateTimePickerFim.MinDate = dateTimePickerInicio.Value.AddMonths(1);
+            //data maxima 1 ano depois do inicial
+            dateTimePickerFim.MaxDate = dateTimePickerInicio.Value.AddYears(1);
+
         }
         public Home()
         {
@@ -671,7 +678,13 @@ namespace FinTracker.Telas
             else if (cmbReceitaUltimo.Text == "Semestre")
             {
                 mes = DateTime.Today.AddMonths(-6).ToString("MM");
-                ano = DateTime.Today.AddMonths(-6).ToString("yyyy");
+                if (mes.Equals("12"))
+                {
+                    mes = "01";
+                    ano = DateTime.Today.AddMonths(-5).ToString("yyyy");
+                }
+                else
+                    ano = DateTime.Today.AddMonths(-6).ToString("yyyy");
             }
             else if (cmbReceitaUltimo.Text == "Ano")
             {
@@ -724,7 +737,13 @@ namespace FinTracker.Telas
             else if (cmbTransacoesNeste.Text == "Semestre")
             {
                 mes = DateTime.Today.AddMonths(-6).ToString("MM");
-                ano = DateTime.Today.AddMonths(-6).ToString("yyyy");
+                if(mes.Equals("12"))
+                {
+                    mes = "1";
+                    ano = DateTime.Today.AddMonths(-5).ToString("yyyy");
+                }
+                else
+                    ano = DateTime.Today.AddMonths(-6).ToString("yyyy");
             }
             else if (cmbTransacoesNeste.Text == "Ano")
             {
@@ -752,12 +771,6 @@ namespace FinTracker.Telas
                     circularProgressBar1.Value = 100; // Se não houver nada a pagar, considera 0%
                 else
                 {
-                    // Calcula a porcentagem de aPagar em relação a aReceber, dividido por 2 para ajustar o valor do progress bar
-                    // (0 a 100) / 2 = (0 a 50)
-                    // Isso é feito para que o valor máximo do progress bar seja 50, já que ele representa a metade do total
-                    // de aPagar e aReceber, assim o progress bar não chega a 100% quando ambos são iguais.
-                    // Exemplo: Se aPagar = 50 e aReceber = 100, então circularProgressBar1.Value = (50 / 100) * 100 / 2 = 25
-                    //para aPagar == 500 e aReceber == 232 resulta em 107 e 107 é maior que 100. tem que resover isso
                     if (aPagar > aReceber)
                         circularProgressBar1.Value = 0; // Se aPagar for maior que aReceber, considera 100%
                     else
@@ -781,6 +794,8 @@ namespace FinTracker.Telas
         {
             // Garante que a data mínima do DateTimePicker final não seja menor que a do inicial
             dateTimePickerFim.MinDate = dateTimePickerInicio.Value.AddMonths(1);
+            //data maxima 1 ano depois do inicial
+            dateTimePickerFim.MaxDate = dateTimePickerInicio.Value.AddYears(1);
         }
 
         private void dateTimePickerFim_ValueChanged(object sender, EventArgs e)

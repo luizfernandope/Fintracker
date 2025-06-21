@@ -25,6 +25,14 @@ namespace FinTracker.Controles
 
         private void prepararDesign()
         {
+            //proibir alterar dados
+            dgv.AllowUserToAddRows = false;
+            dgv.AllowUserToDeleteRows = false;
+            dgv.AllowUserToResizeRows = false;
+            //proibir ordenação das colunas
+            dgv.AllowUserToOrderColumns = false;
+            //proibir edição de dados
+            dgv.ReadOnly = true;
             //instanciando o label do cabeçalho e aplicando o estilo dele
             Label headerLabel = new Label
             {
@@ -47,6 +55,8 @@ namespace FinTracker.Controles
 
             //alterando fonte do dataGridView
             dgv.DefaultCellStyle.Font = new Font("Arial", 12, FontStyle.Regular);
+            // definir altura das linhas do dataGridView
+            dgv.RowTemplate.Height = 40; // Altura das linhas
         }
 
         public async void pegarDados(List<(int Ano, int Mes)> datas)
@@ -62,20 +72,21 @@ namespace FinTracker.Controles
             {
                 if (i == datas.Count - 1)
                 {
-                    cmdEntradas += $"SUM(CASE WHEN DATE_FORMAT(v.data_transacao, '%Y-%m') = '{datas[i].Ano}-{datas[i].Mes}' THEN iv.preco ELSE 0 END) \n";
-                    cmdSaidas += $"SUM(CASE WHEN DATE_FORMAT(data, '%Y-%m') = '{datas[i].Ano}-{datas[i].Mes}' THEN valor ELSE 0 END) \n";
+
+                    cmdEntradas += $"SUM(CASE WHEN DATE_FORMAT(v.data_transacao, '%Y-%m') = '{datas[i].Ano}-{datas[i].Mes.ToString("D2")}' THEN iv.preco ELSE 0 END) \n";
+                    cmdSaidas += $"SUM(CASE WHEN DATE_FORMAT(data, '%Y-%m') = '{datas[i].Ano}-{datas[i].Mes.ToString("D2")}' THEN valor ELSE 0 END) \n";
                     break;
                 }
-                cmdEntradas += $"SUM(CASE WHEN DATE_FORMAT(v.data_transacao, '%Y-%m') = '{datas[i].Ano}-{datas[i].Mes}' THEN iv.preco ELSE 0 END), \n";
-                cmdSaidas += $"SUM(CASE WHEN DATE_FORMAT(data, '%Y-%m') = '{datas[i].Ano}-{datas[i].Mes}' THEN valor ELSE 0 END), \n";
+                cmdEntradas += $"SUM(CASE WHEN DATE_FORMAT(v.data_transacao, '%Y-%m') = '{datas[i].Ano}-{datas[i].Mes.ToString("D2")}' THEN iv.preco ELSE 0 END), \n";
+                cmdSaidas += $"SUM(CASE WHEN DATE_FORMAT(data, '%Y-%m') = '{datas[i].Ano}-{datas[i].Mes.ToString("D2")}' THEN valor ELSE 0 END), \n";
             }
             cmdEntradas += "FROM venda v \nJOIN itensVenda iv ON v.id_Venda = iv.id_Venda \nJOIN produto p ON iv.id_Produto = p.id_Produto \nGROUP BY p.Nome;";
             cmdSaidas += "FROM pagamento v GROUP BY descricao;";
             String[] comandosParaSaldoInicial =
             {
                 "SELECT sum(preco) 'valor total de vendas' FROM itensVenda iv inner join venda v on v.id_Venda = iv.id_Venda " +
-                $"where month(v.data_transacao) < {mes1} and year(data_transacao) <=  {ano1};",
-                $"SELECT sum(valor) FROM conta_a_receber where month(Data_de_Transacao) <= {mes1} and year(Data_de_Transacao) <= {ano1}"
+                $"where month(v.data_transacao) < {mes1.ToString("D2")} and year(data_transacao) <=  {ano1};",
+                $"SELECT sum(valor) FROM conta_a_receber where month(Data_de_Transacao) <= {mes1.ToString("D2")} and year(Data_de_Transacao) <= {ano1}"
             };
             String resultadoCaixa = await MetodosDB.somarResultDeMultiplasQuerrys(comandosParaSaldoInicial);
             MySqlCommand cmd1 = new MySqlCommand(cmdEntradas, con);
