@@ -156,6 +156,8 @@ namespace FinTracker.AlternativeTelas
             ProdutoRepository produtosRepository = new ProdutoRepository();
             produtos = await produtosRepository.PegarTodosProdutos();
             produtosDisponiveisSelecao.Clear();
+            if (produtos == null || produtos.Count < 1)
+                return;
             foreach(Produto p in produtos)
                 produtosDisponiveisSelecao.Add(p.Nome);
             pnlProdutos.Controls.Add(novaLinhaAddProduto());

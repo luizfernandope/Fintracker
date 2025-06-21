@@ -98,8 +98,32 @@ namespace FinTracker.TelasPrincipais
             btnOptions.FlatAppearance.BorderSize = 0;
 
             ContextMenuStrip menu = new ContextMenuStrip();
-            menu.Items.Add("Editar", null, (s, e) => MessageBox.Show("Editar clicado"));
-            menu.Items.Add("Apagar", null, (s, e) => MessageBox.Show("Apagar clicado"));
+            menu.Items.Add("Editar", null, (s, e) =>
+            {
+                NovaConta novaConta = new NovaConta(conta);
+                novaConta.Show();
+            });
+            menu.Items.Add("Apagar", null, (s, e) =>
+            {
+                if(conta.nomeCliente != null && conta.nomeCliente != "") // Conta a receber (cliente)
+                {
+                    DialogResult result = MessageBox.Show("Tem certeza que deseja apagar a conta a receber de " + conta.nomeCliente + "?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (result == DialogResult.Yes)
+                    {
+                        new ContaReceberRepository().DeleteContaReceber(conta.id_Conta_a_Receber);
+                        cardPanel.Dispose(); // Remove o card da tela
+                    }
+                }
+                else // Conta a pagar (fornecedor)
+                {
+                    DialogResult result = MessageBox.Show("Tem certeza que deseja apagar a conta a pagar de " + conta.nomeFornecedor + "?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (result == DialogResult.Yes)
+                    {
+                        new ContaPagarRepository().DeleteContaPagar(conta.id_Conta_a_Pagar);
+                        cardPanel.Dispose(); // Remove o card da tela
+                    }
+                }
+            });
             btnOptions.Click += (s, e) =>
             {
                 menu.Show(btnOptions, new Point(0, btnOptions.Height));
@@ -266,6 +290,12 @@ namespace FinTracker.TelasPrincipais
             }
             txtTotal.Text = "Valor total: R$ " + valorTotal.ToString("F2");
             txtQtdEncontrado.Text = "Quantidade encontrada: " + (contas_a_receber.Count + contas_a_pagar.Count).ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            NovaConta novaConta = new NovaConta();
+            novaConta.Show();
         }
     }
 }

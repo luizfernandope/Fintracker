@@ -20,20 +20,19 @@ namespace FinTracker.BD
         {
         }
 
-        public void AddContaPagar(decimal valor, int idFornecedor, string metodoPagamento, DateTime dataTransacao, DateTime? previsaoTermino)
+        public async void AddContaPagar(Conta conta)
         {
-            using (MySqlConnection conn = new MySqlConnection(_connectionString))
-            {
-                conn.Open();
-                string query = "INSERT INTO Conta_a_Pagar (Valor, id_Fornecedor, Método_de_Pagamento, Data_de_Transação, Previsão_de_Término) VALUES (@Valor, @idFornecedor, @MetodoPagamento, @DataTransacao, @PrevisaoTermino)";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Valor", valor);
-                cmd.Parameters.AddWithValue("@idFornecedor", idFornecedor);
-                cmd.Parameters.AddWithValue("@MetodoPagamento", metodoPagamento);
-                cmd.Parameters.AddWithValue("@DataTransacao", dataTransacao);
-                cmd.Parameters.AddWithValue("@PrevisaoTermino", (object)previsaoTermino ?? DBNull.Value);
-                cmd.ExecuteNonQuery();
-            }
+
+            MySqlConnection conn = await MetodosDB.conexao();
+            string query = "INSERT INTO Conta_a_Pagar (Valor, id_Fornecedor, Metodo_de_Pagamento, Data_de_Transacao, Previsao_de_Termino, descricao) VALUES (@Valor, @idFornecedor, @MetodoPagamento, @DataTransacao, @PrevisaoTermino, @descricao)";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@Valor", conta.valor);
+            cmd.Parameters.AddWithValue("@idFornecedor", conta.id_Fornecedor);
+            cmd.Parameters.AddWithValue("@MetodoPagamento", conta.metodoPagamento);
+            cmd.Parameters.AddWithValue("@descricao", conta.descricao);
+            cmd.Parameters.AddWithValue("@DataTransacao", conta.dataTransacao.ToString("yyyy-MM-dd HH:mm:ss"));
+            cmd.Parameters.AddWithValue("@PrevisaoTermino", conta.previsaoTermino.ToString("yyyy-MM-dd HH:mm:ss"));
+            cmd.ExecuteNonQuery();
         }
 
         public DataTable GetContasPagar()
@@ -75,33 +74,28 @@ namespace FinTracker.BD
             return contas;
         }
 
-        public void UpdateContaPagar(int idContaPagar, decimal valor, int idFornecedor, string metodoPagamento, DateTime dataTransacao, DateTime? previsaoTermino)
+        public async void UpdateContaPagar(Conta c)
         {
-            using (MySqlConnection conn = new MySqlConnection(_connectionString))
-            {
-                conn.Open();
-                string query = "UPDATE Conta_a_Pagar SET Valor = @Valor, id_Fornecedor = @idFornecedor, Método_de_Pagamento = @MetodoPagamento, Data_de_Transação = @DataTransacao, Previsão_de_Término = @PrevisaoTermino WHERE id_Conta_a_Pagar = @idContaPagar";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@idContaPagar", idContaPagar);
-                cmd.Parameters.AddWithValue("@Valor", valor);
-                cmd.Parameters.AddWithValue("@idFornecedor", idFornecedor);
-                cmd.Parameters.AddWithValue("@MetodoPagamento", metodoPagamento);
-                cmd.Parameters.AddWithValue("@DataTransacao", dataTransacao);
-                cmd.Parameters.AddWithValue("@PrevisaoTermino", (object)previsaoTermino ?? DBNull.Value);
-                cmd.ExecuteNonQuery();
-            }
+            MySqlConnection conn = await MetodosDB.conexao();
+            string query = "UPDATE Conta_a_Pagar SET Valor = @Valor, descricao = @descricao, id_Fornecedor = @idFornecedor, Metodo_de_Pagamento = @MetodoPagamento, Data_de_Transacao = @DataTransacao, Previsao_de_Termino = @PrevisaoTermino WHERE id_Conta_a_Pagar = @idContaPagar";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@idContaPagar", c.id_Conta_a_Pagar);
+            cmd.Parameters.AddWithValue("@Valor", c.valor);
+            cmd.Parameters.AddWithValue("@idFornecedor", c.id_Fornecedor);
+            cmd.Parameters.AddWithValue("@MetodoPagamento", c.metodoPagamento);
+            cmd.Parameters.AddWithValue("@descricao", c.descricao);
+            cmd.Parameters.AddWithValue("@DataTransacao", c.dataTransacao.ToString("yyyy-MM-dd HH:mm:ss"));
+            cmd.Parameters.AddWithValue("@PrevisaoTermino", c.previsaoTermino.ToString("yyyy-MM-dd HH:mm:ss"));
+            cmd.ExecuteNonQuery();
         }
 
-        public void DeleteContaPagar(int idContaPagar)
+        public async void DeleteContaPagar(int idContaPagar)
         {
-            using (MySqlConnection conn = new MySqlConnection(_connectionString))
-            {
-                conn.Open();
-                string query = "DELETE FROM Conta_a_Pagar WHERE id_Conta_a_Pagar = @idContaPagar";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@idContaPagar", idContaPagar);
-                cmd.ExecuteNonQuery();
-            }
+            MySqlConnection conn = await MetodosDB.conexao();
+            string query = "DELETE FROM Conta_a_Pagar WHERE id_Conta_a_Pagar = @idContaPagar";
+            MySqlCommand cmd = new MySqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@idContaPagar", idContaPagar);
+            cmd.ExecuteNonQuery();
         }
     }
 }

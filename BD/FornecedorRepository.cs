@@ -77,6 +77,19 @@ namespace FinTracker.BD
             }
         }
 
+        public async Task<List<Fornecedor>> PegarTodosFornecedores()
+        {
+            MySqlConnection conn = await MetodosDB.conexao();
+            MySqlCommand cmd = new MySqlCommand("SELECT id_Fornecedor, Nome FROM fornecedor", conn);
+            MySqlDataReader reader = (MySqlDataReader)await cmd.ExecuteReaderAsync();
+            List<Fornecedor> f = new List<Fornecedor>();
+            while (reader.Read())
+            {
+                f.Add(new Fornecedor(reader.GetInt32(0), reader.GetString(1)));
+            }
+            return f;
+        }
+
         public async Task<string> pegarNomeByid(int idFonecedor)
         {
 

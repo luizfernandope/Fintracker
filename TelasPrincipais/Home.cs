@@ -741,10 +741,31 @@ namespace FinTracker.Telas
             double aPagar=0, aReceber=0;
             if (double.TryParse(str1, out aPagar));
             if (double.TryParse(str2, out aReceber));
-            if(aPagar==0 && aReceber==0)
+            if (aPagar == 0 && aReceber == 0)
                 circularProgressBar1.Value = 0;
             else
-                circularProgressBar1.Value = (int)(((aPagar / aReceber) * 100)/2);
+            {
+                //faz a conta para saber de 0 a 100 o valor positvo de aPagar em relação a aReceber
+                if (aReceber == 0)
+                    circularProgressBar1.Value = 0; // Se não houver nada a receber, considera 100% a pagar
+                else if (aPagar == 0)
+                    circularProgressBar1.Value = 100; // Se não houver nada a pagar, considera 0%
+                else
+                {
+                    // Calcula a porcentagem de aPagar em relação a aReceber, dividido por 2 para ajustar o valor do progress bar
+                    // (0 a 100) / 2 = (0 a 50)
+                    // Isso é feito para que o valor máximo do progress bar seja 50, já que ele representa a metade do total
+                    // de aPagar e aReceber, assim o progress bar não chega a 100% quando ambos são iguais.
+                    // Exemplo: Se aPagar = 50 e aReceber = 100, então circularProgressBar1.Value = (50 / 100) * 100 / 2 = 25
+                    //para aPagar == 500 e aReceber == 232 resulta em 107 e 107 é maior que 100. tem que resover isso
+                    if (aPagar > aReceber)
+                        circularProgressBar1.Value = 0; // Se aPagar for maior que aReceber, considera 100%
+                    else
+                        circularProgressBar1.Value = 100 - (int)(((aPagar / aReceber) * 100) / 2);
+
+                }
+            }
+
             aPagarNeste.Text = "R$ " + aPagar;
             aReceberNeste.Text = "R$ " + aReceber;
             

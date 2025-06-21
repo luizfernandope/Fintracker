@@ -92,21 +92,30 @@ namespace FinTracker.BD
 
         public async Task<List<Produto>> PegarTodosProdutos()
         {
-            MySqlConnection conn = await MetodosDB.conexao();
-            MySqlCommand cmd = new MySqlCommand("SELECT id_Produto, Nome, Quantidade, Valor_Unitario FROM produto", conn);
-            MySqlDataReader reader = (MySqlDataReader)await cmd.ExecuteReaderAsync();
-            List<Produto> produtos = new List<Produto>();
-            while (reader.Read())
+            try
             {
-                try { 
-                    produtos.Add(new Produto(reader.GetInt32(0), reader.GetString(1), reader.GetInt32(2), reader.GetDecimal(3)));
-                }
-                catch (Exception ex)
+                MySqlConnection conn = await MetodosDB.conexao();
+                MySqlCommand cmd = new MySqlCommand("SELECT id_Produto, Nome, Quantidade, Valor_Unitario FROM produto", conn);
+                MySqlDataReader reader = (MySqlDataReader)await cmd.ExecuteReaderAsync();
+                List<Produto> produtos = new List<Produto>();
+                while (reader.Read())
                 {
-                    Console.WriteLine("Erro ao ler produto: " + ex.Message);
+                    try
+                    {
+                        produtos.Add(new Produto(reader.GetInt32(0), reader.GetString(1), reader.GetInt32(2), reader.GetDecimal(3)));
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Erro ao ler produto: " + ex.Message);
+                    }
                 }
+                return produtos;
             }
-            return produtos;
+            catch (Exception ex)
+            {
+                Console.WriteLine("Erro ao pegar produtos: " + ex.Message);
+                return null;
+            }
         }
     }
 }

@@ -20,5 +20,14 @@ namespace FinTracker.Models
         public string Telefone;
         public string Email;
         public string Status;
+
+        public Fornecedor()
+        {
+        }
+        public Fornecedor(int id,string nome)
+        {
+            this.id = id;
+            this.Nome = nome;
+        }
     }
 }

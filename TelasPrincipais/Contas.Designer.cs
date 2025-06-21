@@ -47,6 +47,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlVerPerfil.SuspendLayout();
@@ -191,11 +192,11 @@
             this.txtTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTotal.AutoSize = true;
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(1052, 524);
+            this.txtTotal.Location = new System.Drawing.Point(959, 524);
             this.txtTotal.Name = "txtTotal";
-            this.txtTotal.Size = new System.Drawing.Size(157, 13);
+            this.txtTotal.Size = new System.Drawing.Size(125, 13);
             this.txtTotal.TabIndex = 2;
-            this.txtTotal.Text = "Valor total: R$ 148.999,88";
+            this.txtTotal.Text = "Valor total: R$ 00.00";
             // 
             // txtQtdEncontrado
             // 
@@ -203,9 +204,9 @@
             this.txtQtdEncontrado.AutoSize = true;
             this.txtQtdEncontrado.Location = new System.Drawing.Point(10, 524);
             this.txtQtdEncontrado.Name = "txtQtdEncontrado";
-            this.txtQtdEncontrado.Size = new System.Drawing.Size(84, 13);
+            this.txtQtdEncontrado.Size = new System.Drawing.Size(131, 13);
             this.txtQtdEncontrado.TabIndex = 2;
-            this.txtQtdEncontrado.Text = "22  encotrado(s)";
+            this.txtQtdEncontrado.Text = "Quantidade encontrada: 0";
             // 
             // flowLayoutPanel1
             // 
@@ -288,6 +289,25 @@
             this.panel6.Size = new System.Drawing.Size(37, 27);
             this.panel6.TabIndex = 26;
             // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(39)))), ((int)(((byte)(29)))));
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(247)))), ((int)(((byte)(242)))));
+            this.button3.Image = global::FinTracker.Properties.Resources.icon_plusWhite;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(1089, 122);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button3.Size = new System.Drawing.Size(160, 37);
+            this.button3.TabIndex = 88;
+            this.button3.Text = "    Nova conta";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Contas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -295,6 +315,7 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(233)))), ((int)(((byte)(220)))));
             this.ClientSize = new System.Drawing.Size(1300, 700);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
@@ -337,5 +358,6 @@
         private System.Windows.Forms.Label txtTotal;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button button3;
     }
 }

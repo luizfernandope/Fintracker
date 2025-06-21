@@ -94,6 +94,8 @@ namespace FinTracker.TelasPrincipais
             int limitePagina = paginaAtual * 10;
             for (int i=limitePagina-10; i < limitePagina; i++)
             {
+                if(listaVendas.Count <= i || i < 0)
+                    break; //se i for maior que o tamanho da lista ou menor que 0, sai do loop
                 //adiciona a altura de +1 linha na tabela
                 tabela.Height += 72;
                 //adiciona linha a tabela (com heigth 72)
