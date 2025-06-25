@@ -41,13 +41,15 @@ namespace FinTracker.AlternativeTelas
 
         private async void btnSalvar_Click(object sender, EventArgs e)
         {
+                
             if(btnSalvar.Text == "Atualizar Despesa")
             {
                 // Atualiza a despesa existente
                 Despesa despesaAtualizada = pegarCampos();
-                despesaAtualizada.Id = this.despesa.Id; // Preserva o ID da despesa existente para atualização
                 if (despesaAtualizada == null)
                     return;
+                despesaAtualizada.Id = this.despesa.Id; // Preserva o ID da despesa existente para atualização
+                
                 bool sucess = await MetodosDB.atualizarDespesa(despesaAtualizada);
                 if (sucess)
                 {

@@ -38,6 +38,7 @@ namespace FinTracker.AlternativeTelas
                 pnlProdutos.Controls.Add(novaLinhaAddProduto());
             preencherClientes();
             telaQueChamou = quemChamou;
+            btnConsultarValores.Visible = false; //esconde o botao de consultar valores, pois ele so deve aparecer na edicao de vendas
         }
         public VendaFormManipulacao(Venda venda, Vendas quemChamou)
         {
@@ -49,7 +50,7 @@ namespace FinTracker.AlternativeTelas
             btnSalvar.Text = "Atualizar";
             lblTitulo.Text = "Editando venda";
             telaQueChamou = quemChamou;
-
+            
             dateTimePicker1.CustomFormat = "dd/MM/yyyy 'às' HH:mm:ss";
             cmbMetodoPag.SelectedItem = venda.Metodo;
             cmbParcelas.SelectedIndex = venda.Parcelas-1;
@@ -57,6 +58,8 @@ namespace FinTracker.AlternativeTelas
             dateTimePicker1.Value = venda.DataTransacao;
             preencherClientes();
             preencherProdutos();
+            dadosVenda = venda;
+            btnConsultarValores.Visible = true; //mostra o botao de consultar valores, pois ele so deve aparecer na edicao de vendas
         }
 
         private async Task<bool> salvar()
@@ -136,7 +139,6 @@ namespace FinTracker.AlternativeTelas
             foreach (Cliente c in clientes)
             {
                 cmbClientes.Items.Add(c.Nome);
-                produtosDisponiveisSelecao.Add(c.Nome);
             }
             if (ehEdicao)
             {
@@ -169,7 +171,11 @@ namespace FinTracker.AlternativeTelas
                 for(int v=0; v<idsEQtdProdutos.Count;v++)
                 {
                     ItensVenda i = idsEQtdProdutos[v];
-                    ComboBox comboAddProd = pnlProdutos.Controls[pnlProdutos.Controls.Count - 1].Controls[0] as ComboBox;
+                    ComboBox comboAddProd;
+                    if(pnlProdutos.Controls.Count - 1 < 0)
+                        comboAddProd = pnlProdutos.Controls[0].Controls[0] as ComboBox;
+                    else
+                        comboAddProd = pnlProdutos.Controls[pnlProdutos.Controls.Count - 1].Controls[0] as ComboBox;
                     NumericUpDown upDown = pnlProdutos.Controls[pnlProdutos.Controls.Count - 1].Controls[1] as NumericUpDown;
                     foreach(Produto p in produtos)
                     {
@@ -335,6 +341,30 @@ namespace FinTracker.AlternativeTelas
             cmbParcelas.SelectedIndex = 0;
             for(int i=pnlProdutos.Controls.Count-1; i > 0; i--)
                 pnlProdutos.Controls[i].Dispose();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            cmbClientes.SelectedIndex = -1;
+            cmbMetodoPag.SelectedIndex = -1;
+            cmbParcelas.SelectedIndex = -1;
+            
+        }
+
+        private void btnConsultarValores_Click(object sender, EventArgs e)
+        {
+            if(dadosVenda!= null)
+            {
+                string vendaInfo = $"Dados antigos da venda:\n\n" +
+                    $"Cliente: {dadosVenda.nomeCliente}\n" +
+                    $"Data: {dadosVenda.DataTransacao}\n" +
+                    $"Método de Pagamento: {dadosVenda.Metodo}\n" +
+                    $"Parcelas: {dadosVenda.Parcelas}\n" +
+                    $"Status: {dadosVenda.Status}\n" +
+                    $"Itens da Venda:{dadosVenda.QuantidadeProdutos}\n\n" +
+                    $"Total: R$ {dadosVenda.TotalPreco}";
+                MessageBox.Show(vendaInfo);
+            }
         }
     }
 }

@@ -123,7 +123,14 @@ namespace FinTracker.Controles
             }
 
             if (decimal.TryParse(resultadoCaixa, out totalCaixaInicial)) { }
-            preencherDataGrid(linhasEntradas, linhasSaidas, datas, totalCaixaInicial);
+            try
+            {
+                preencherDataGrid(linhasEntradas, linhasSaidas, datas, totalCaixaInicial);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro: " + ex.Message);
+            }
         }
 
         private void preencherDataGrid(List<(String nomeProd, List<decimal> valorMes)> linhasEntradas, List<(String nomeSaida, List<decimal> valorMes)> linhasSaidas, List<(int Ano, int Mes)> datas, decimal totalCaixa)

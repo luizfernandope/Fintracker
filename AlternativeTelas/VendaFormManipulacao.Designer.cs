@@ -280,6 +280,8 @@
             this.btnLimpar.TabIndex = 89;
             this.btnLimpar.Text = "Limpar";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Visible = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnConsultarValores
             // 
@@ -294,6 +296,7 @@
             this.btnConsultarValores.TabIndex = 88;
             this.btnConsultarValores.Text = "Ver valores antigos";
             this.btnConsultarValores.UseVisualStyleBackColor = false;
+            this.btnConsultarValores.Click += new System.EventHandler(this.btnConsultarValores_Click);
             // 
             // VendaFormManipulacao
             // 

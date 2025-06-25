@@ -198,7 +198,9 @@
             "Entrada",
             "Recorrente",
             "Parcelado",
-            "Pré-pago / Pós-pago"});
+            "Pré-pago / Pós-pago",
+            "Boleto Bancário",
+            "Instantâneo"});
             this.cmbTipo.Location = new System.Drawing.Point(370, 234);
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(213, 32);
