@@ -175,27 +175,27 @@ namespace FinTracker.Telas
 
                 valorCard1.Text =  "R$ " + await MetodosDB.executarQuerrySimples("SELECT sum(preco) FROM itensVenda iv " +
                     "inner join venda v on v.id_Venda = iv.id_Venda " +
-                    $"where data_transacao between '{data1}' and '{data2}';");
+                    $"where date_format(data_transacao, '%Y-%m-%d') between '{data1}' and '{data2}';");
                 valorCard2.Text = "R$ " + await MetodosDB.executarQuerrySimples(
                     "SELECT FORMAT(AVG(total_venda), 2) " +
                     "FROM (" +
                     "SELECT iv.id_Venda, SUM(preco) AS total_venda FROM itensVenda iv " +
                     "inner join venda v on v.id_Venda = iv.id_Venda " +
-                    $"where data_transacao between '{data1}' and '{data2}' GROUP BY iv.id_Venda)" +
+                    $"where date_format(data_transacao, '%Y-%m-%d') between '{data1}' and '{data2}' GROUP BY iv.id_Venda)" +
                     "AS subquery;");
                 valorCard3.Text = await MetodosDB.executarQuerrySimples("SELECT count(id_Venda) FROM venda where lower(Status) like 'cancelada' " +
-                    $"and data_transacao between '{data1}' and '{data2}';");
+                    $"and date_format(data_transacao, '%Y-%m-%d') between '{data1}' and '{data2}';");
                 valorCard4.Text = await MetodosDB.executarQuerrySimples("SELECT count(id_Venda) FROM venda where lower(Status) like 'concluida' " +
-                    $"and data_transacao between '{data1}' and '{data2}';");
+                    $"and date_format(data_transacao, '%Y-%m-%d') between '{data1}' and '{data2}';");
                 valorCard5.Text = await MetodosDB.executarQuerrySimples("SELECT count(id_Venda) FROM venda where lower(Status) like 'pendente' " +
-                    $"and data_transacao between '{data1}' and '{data2}';");
+                    $"and date_format(data_transacao, '%Y-%m-%d') between '{data1}' and '{data2}';");
                 valorCard6.Text = await MetodosDB.executarQuerrySimples("SELECT count(distinct iv.id_Produto) FROM itensVenda iv " +
                     "inner join venda v on v.id_Venda = iv.id_Venda " +
-                    $"where data_transacao between '{data1}' and '{data2}';");
+                    $"where date_format(data_transacao, '%Y-%m-%d') between '{data1}' and '{data2}';");
                 valorCard7.Text = await MetodosDB.executarQuerrySimples("SELECT count(distinct id_Cliente) FROM venda " +
-                    $"where data_transacao between '{data1}' and '{data2}';");
+                    $"where date_format(data_transacao, '%Y-%m-%d') between '{data1}' and '{data2}';");
                 valorCard8.Text = await MetodosDB.executarQuerrySimples("SELECT sum(quantidade) FROM itensVenda iv " +
-                    $"inner join venda v on v.id_Venda = iv.id_Venda where data_transacao between '{data1}' and '{data2}';");
+                    $"inner join venda v on v.id_Venda = iv.id_Venda where date_format(data_transacao, '%Y-%m-%d') between '{data1}' and '{data2}';");
                 
             }
             else if (tabelasAlvo[paginaAtual].ToLower() == "pagamento")
@@ -217,14 +217,14 @@ namespace FinTracker.Telas
                 valorCard2.Text = "R$ " + await MetodosDB.executarQuerrySimples("SELECT sum(Valor) FROM pagamento " +
                     $"where Data between '{data1}' and '{data2}';");
 
-                valorCard3.Text = "R$ " + await MetodosDB.executarQuerrySimples($"SELECT FORMAT(avg(Valor), 2) FROM pagamento where Data between '{data1}' and '{data2}';");
+                valorCard3.Text = "R$ " + await MetodosDB.executarQuerrySimples($"SELECT FORMAT(avg(Valor), 2) FROM pagamento where date_format(Data, '%Y-%m-%d') between '{data1}' and '{data2}';");
 
-                valorCard4.Text = "R$ " + await MetodosDB.executarQuerrySimples($"SELECT max(Valor) FROM pagamento where Data between '{data1}' and '{data2}';");
+                valorCard4.Text = "R$ " + await MetodosDB.executarQuerrySimples($"SELECT max(Valor) FROM pagamento where date_format(Data, '%Y-%m-%d') between '{data1}' and '{data2}';");
 
-                valorCard5.Text = "R$ " + await MetodosDB.executarQuerrySimples($"SELECT min(Valor) FROM pagamento where Data between '{data1}' and '{data2}';");
+                valorCard5.Text = "R$ " + await MetodosDB.executarQuerrySimples($"SELECT min(Valor) FROM pagamento where date_format(Data, '%Y-%m-%d') between '{data1}' and '{data2}';");
 
                 String[] valorDoisUltimos2Cards = await MetodosDB.getFirstAndLastOfQuery(
-                    $"SELECT distinct Metodo, count(Metodo) 'frequencia' FROM pagamento where date(Data) between '{data1}' and '{data2}' " +
+                    $"SELECT distinct Metodo, count(Metodo) 'frequencia' FROM pagamento where date_format(Data, '%Y-%m-%d') between '{data1}' and '{data2}' " +
                     "GROUP BY Metodo ORDER BY frequencia DESC;");
                 valorCard6.Text = valorDoisUltimos2Cards[0];
                 valorCard7.Text = valorDoisUltimos2Cards[1];
@@ -244,24 +244,24 @@ namespace FinTracker.Telas
                 limparValorCards();
                 trocarTituloCards(tituloCard);
 
-                valorCard1.Text = await MetodosDB.executarQuerrySimples($"SELECT count(id_Cliente) FROM cliente where date(data_de_Cadastro)  <= '{data2}';");
+                valorCard1.Text = await MetodosDB.executarQuerrySimples($"SELECT count(id_Cliente) FROM cliente where date_format(data_de_Cadastro, '%Y-%m-%d')  <= '{data2}';");
 
-                valorCard2.Text = await MetodosDB.executarQuerrySimples($"SELECT count(id_Cliente) FROM cliente where date(data_de_Cadastro)  between '{data1}' and '{data2}';");
+                valorCard2.Text = await MetodosDB.executarQuerrySimples($"SELECT count(id_Cliente) FROM cliente where date_format(data_de_Cadastro, '%Y-%m-%d')  between '{data1}' and '{data2}';");
 
                 valorCard3.Text = await MetodosDB.executarQuerrySimples("SELECT count(id_Cliente) FROM cliente where lower(Status) like 'ativo' " +
-                    $"and date(data_de_Cadastro)  <= '{data2}';");
+                    $"and date_format(data_de_Cadastro, '%Y-%m-%d')  <= '{data2}';");
 
                 valorCard4.Text = await MetodosDB.executarQuerrySimples("SELECT count(id_Cliente) FROM cliente where lower(Status) like 'inativo' " +
-                    $"and date(data_de_Cadastro)  <= '{data2}';");
+                    $"and date_format(data_de_Cadastro, '%Y-%m-%d')  <= '{data2}';");
 
                 valorCard5.Text = await MetodosDB.executarQuerrySimples("SELECT FORMAT((COUNT(CASE WHEN status = 'ativo' THEN 1 END) / COUNT(*)) * 100, 2) FROM cliente " +
-                    $"where date(Data_de_Cadastro) <= '{data2}';");
+                    $"where date_format(data_de_Cadastro, '%Y-%m-%d') <= '{data2}';");
 
                 valorCard6.Text = await MetodosDB.executarQuerrySimples("SELECT FORMAT((COUNT(CASE WHEN status = 'inativo' THEN 1 END) / COUNT(*)) * 100, 2) FROM cliente " +
-                    $"where date(Data_de_Cadastro) <= '{data2}';");
+                    $"where date_format(data_de_Cadastro, '%Y-%m-%d') <= '{data2}';");
 
                 String[] valorDoisUltimos2Cards = await MetodosDB.getFirstAndLastOfQuery(
-                    $"select distinct cidade, count(Cidade) 'frequencia' from cliente where date(Data_de_Cadastro) <= '{data2}' " +
+                    $"select distinct cidade, count(Cidade) 'frequencia' from cliente where date_format(data_de_Cadastro, '%Y-%m-%d') <= '{data2}' " +
                     "group by Cidade order by frequencia DESC;");
                 valorCard7.Text = valorDoisUltimos2Cards[0];
                 valorCard8.Text = valorDoisUltimos2Cards[1];
@@ -281,18 +281,18 @@ namespace FinTracker.Telas
                 limparValorCards();
                 trocarTituloCards(tituloCard);
 
-                valorCard1.Text = await MetodosDB.executarQuerrySimples($"SELECT count(*) FROM fornecedor where date(data_de_Cadastro)  <= '{data2}';");
-                valorCard2.Text = await MetodosDB.executarQuerrySimples($"SELECT count(id_Fornecedor) FROM fornecedor where date(data_de_Cadastro)  between '{data1}' and '{data2}';");
+                valorCard1.Text = await MetodosDB.executarQuerrySimples($"SELECT count(*) FROM fornecedor where date_format(data_de_Cadastro, '%Y-%m-%d')  <= '{data2}';");
+                valorCard2.Text = await MetodosDB.executarQuerrySimples($"SELECT count(id_Fornecedor) FROM fornecedor where date_format(data_de_Cadastro, '%Y-%m-%d')  between '{data1}' and '{data2}';");
                 valorCard3.Text = await MetodosDB.executarQuerrySimples("SELECT count(id_Fornecedor) FROM fornecedor where lower(Status) like 'ativo' " +
-                    $"and date(data_de_Cadastro)  <= '{data2}';");
+                    $"and date_format(data_de_Cadastro, '%Y-%m-%d')  <= '{data2}';");
                 valorCard4.Text = await MetodosDB.executarQuerrySimples("SELECT count(id_Fornecedor) FROM fornecedor where lower(Status) like 'inativo' " +
-                    $"and date(data_de_Cadastro)  <= '{data2}';");
+                    $"and date_format(data_de_Cadastro, '%Y-%m-%d') <= '{data2}';");
                 valorCard5.Text = await MetodosDB.executarQuerrySimples("SELECT FORMAT((COUNT(CASE WHEN status = 'ativo' THEN 1 END) / COUNT(*)) * 100, 2)  FROM fornecedor " +
-                    $"where date(Data_de_Cadastro) <= '{data2}';");
+                    $"where date_format(data_de_Cadastro, '%Y-%m-%d') <= '{data2}';");
                 valorCard6.Text = await MetodosDB.executarQuerrySimples("SELECT FORMAT((COUNT(CASE WHEN status = 'inativo' THEN 1 END) / COUNT(*)) * 100, 2)  FROM fornecedor " +
-                    $"where date(Data_de_Cadastro) <= '{data2}';");
+                    $"where date_format(data_de_Cadastro, '%Y-%m-%d') <= '{data2}';");
                 String[] valorDoisUltimos2Cards = await MetodosDB.getFirstAndLastOfQuery(
-                    $"select distinct cidade, count(Cidade) 'frequencia' from fornecedor where date(Data_de_Cadastro) <= '{data2}' " +
+                    $"select distinct cidade, count(Cidade) 'frequencia' from fornecedor where date_format(data_de_Cadastro, '%Y-%m-%d') <= '{data2}' " +
                     "group by Cidade order by frequencia DESC");
                 valorCard7.Text = valorDoisUltimos2Cards[0];
                 valorCard8.Text = valorDoisUltimos2Cards[1];
@@ -688,7 +688,7 @@ namespace FinTracker.Telas
             }
             else if (cmbReceitaUltimo.Text == "Ano")
             {
-                mes = DateTime.Today.AddYears(-1).ToString("MM");
+                mes = DateTime.Today.AddMonths(-1).ToString("MM");
                 ano = DateTime.Today.AddYears(-1).ToString("yyyy");
             }
             String entradas = await somarResultDeMultiplasQuerrys(new string[]
